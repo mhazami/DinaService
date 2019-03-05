@@ -108,6 +108,7 @@
     <Content Include="App_theme\DinaTheme\css\style.css" />
     <Content Include="App_theme\DinaTheme\fonts\fontawesome-webfont.svg" />
     <Content Include="App_theme\DinaTheme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_theme\DinaTheme\js\navbar.js" />
     <Content Include="Content\Images\Companys-logo\c1.svg" />
     <Content Include="Content\Images\Companys-logo\c2.svg" />
     <Content Include="Content\Images\Companys-logo\c3.svg" />
