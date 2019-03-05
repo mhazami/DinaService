@@ -68,6 +68,11 @@ body {
     color: #627792;
 }
 
+.mini-header, .mini-footer, .section-header {
+    width: 100%;
+    float: right
+}
+
     .mini-header span, .mini-footer span a {
         font-size: 12px;
     }
@@ -154,13 +159,19 @@ a {
 }
 
 /*.section-study a*/
-.content-navigation-menu .list-nav > li {
+footer .service-footer a, .content-navigation-menu .list-nav > li {
     position: relative;
     transition: all .3s ease-in-out !important
 }
 
+footer .service-footer a {
+    color: #0e2b5c;
+    font-size: 12px;
+    opacity: .6;
+    line-height: 1.8;
+}
     /*.section-study a:after*/
-    .content-navigation-menu .list-nav > li:after {
+    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after {
         width: 0;
         content: "";
         height: 0;
@@ -181,16 +192,28 @@ a {
         transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
     }
 
-    .content-navigation-menu .list-nav > li:after {
+    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after {
         bottom: auto;
         top: 0;
         border-top: 3px solid
     }
 
-    .section-study a:hover:after, .content-navigation-menu .list-nav > li:hover:after {
+    footer .service-footer a:after {
+        bottom: 1px;
+        top: auto;
+        opacity: .7;
+        border-top: 1px solid #ff220b;
+    }
+
+    footer .service-footer a:hover:after, .content-navigation-menu .list-nav > li:hover:after {
         width: 100%;
         right: auto;
         left: 0;
+    }
+
+    footer .service-footer a:hover {
+        color: #ff220b;
+        opacity: .7;
     }
 
 .content-navigation-menu .list-nav > li {
@@ -229,7 +252,7 @@ a {
     -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 5px;
-    padding: 0 25px 40px 25px;
+    padding: 0 20px 40px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all .3s ease-in-out
 }
@@ -392,23 +415,24 @@ a {
     clip-path: polygon(100% 0, 100% 80%, 0% 100%, -200% 0%);
 }
 
-.main-items-list-info {
-    transform: translateY(-85px);
+
+.main-items-list-info span {
+    line-height: 1.9;
+    font-size: 12px;
 }
 
-    .main-items-list-info span {
-        line-height: 1.9;
-        font-size: 12px;
-    }
+.main-items-list-info .row > div {
+    text-align: right;
+}
 
-    .main-items-list-info label {
-        font-size: 26px;
-        color: #fff
-    }
+.main-items-list-info label {
+    font-size: 26px;
+    color: #fff
+}
 
-    .main-items-list-info > li {
-        border-bottom: 1px solid rgba(255,255,255,0.05) !important;
-    }
+.main-items-list-info > li {
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+}
 
 .section-info .container {
     padding: 50px 0;
@@ -584,7 +608,6 @@ a {
 
     .footer-map .owl-carousel .item {
         position: relative;
-        position: relative;
         display: flex;
         padding: 12px 0 0 0;
     }
@@ -598,6 +621,7 @@ a {
         .footer-map .owl-carousel .item h3 {
             color: #0e2b5c;
             font-size: 14px;
+            margin: 11px 0;
         }
 
         .footer-map .owl-carousel .item p {
@@ -703,3 +727,76 @@ a {
     .item-other-texts-content span {
         font-size: 13px;
     }
+
+.footer-map .owl-nav {
+    display: none
+}
+
+.footer-map .owl-dots {
+    padding-top: 60px
+}
+
+.footer-map .owl-theme .owl-dots .owl-dot {
+    transition: all .5s ease-in-out;
+    padding-top: 60px;
+}
+
+    .footer-map .owl-theme .owl-dots .owl-dot span {
+        width: 65px;
+        height: 6px;
+    }
+
+    .footer-map .owl-theme .owl-dots .owl-dot:hover span {
+        background: #dddd;
+    }
+
+    .footer-map .owl-theme .owl-dots .owl-dot.active span, .footer-map .owl-theme .owl-dots .owl-dot.active:hover span {
+        background: #fc5546
+    }
+
+.engine {
+    display: none
+}
+
+.cid-rjOXE0LTRa .mbr-slider .carousel-indicators {
+    width: auto
+}
+
+.left-box-footer ul {
+    text-align: right
+}
+
+    .left-box-footer ul li {
+        margin: 20px 0;
+    }
+
+        .left-box-footer ul li:first-child {
+            margin-top: 0
+        }
+
+        .left-box-footer ul li span {
+            font-size: 13px;
+        }
+
+.service-footer ul {
+    text-align: right
+}
+
+footer .service-footer li.head-services a {
+    font-size: 13px;
+    opacity: .7;
+}
+
+    footer .service-footer li.head-services a:after {
+        content: none
+    }
+
+footer .service-footer li {
+    margin: 5px;
+}
+
+@media (max-width: 992px) {
+    .service-item {
+        margin: 15px 10px;
+    }
+}
