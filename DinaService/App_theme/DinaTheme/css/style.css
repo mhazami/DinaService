@@ -3,6 +3,10 @@ body {
     color: #627792;
 }
 
+label, span {
+    text-align: right
+}
+
 .logo-company img {
     width: 150px;
 }
@@ -14,6 +18,7 @@ body {
 .navbar-panel {
     text-align: center;
     padding-top: 20px;
+    padding-right: 8%;
 }
 
 .logo-company, .support-box {
@@ -48,7 +53,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     text-align: right;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .support-box img {
@@ -134,6 +139,7 @@ a {
         color: #ef685a;
     }
 
+.header-info
 .study-item-body span {
     overflow: hidden;
     font-size: 16px;
@@ -191,36 +197,37 @@ footer .service-footer a {
         -o-transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
         transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
     }
+
 .content-navigation-menu .list-nav > li:after {
     -webkit-opacity: 0.6;
     -khtml-opacity: 0.6;
     -moz-opacity: 0.6;
     opacity: 0.6;
-
 }
-    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after {
-        bottom: auto;
-        top: 0;
-        border-top: 3px solid
-    }
 
-    footer .service-footer a:after {
-        bottom: 1px;
-        top: auto;
-        opacity: .7;
-        border-top: 1px solid #ff220b;
-    }
+footer .service-footer a:after, .content-navigation-menu .list-nav > li:after {
+    bottom: auto;
+    top: 0;
+    border-top: 3px solid
+}
 
-    footer .service-footer a:hover:after, .content-navigation-menu .list-nav > li:hover:after {
-        width: 100%;
-        right: auto;
-        left: 0;
-    }
+footer .service-footer a:after {
+    bottom: 1px;
+    top: auto;
+    opacity: .7;
+    border-top: 1px solid #ff220b;
+}
 
-    footer .service-footer a:hover {
-        color: #ff220b;
-        opacity: .7;
-    }
+footer .service-footer a:hover:after, .content-navigation-menu .list-nav > li:hover:after, .content-navigation-menu .list-nav > li.active:after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+footer .service-footer a:hover {
+    color: #ff220b;
+    opacity: .7;
+}
 
 .content-navigation-menu .list-nav > li {
     color: #0e2b5c;
@@ -228,7 +235,7 @@ footer .service-footer a {
 }
 
 .service-item img {
-    width: 50px;
+    width: 70px;
     margin: 25px 0;
 }
 
@@ -572,6 +579,7 @@ footer .service-footer a {
 }
 
 .our-services-item-text {
+    text-align: right;
     font-size: 12px;
     line-height: 1.7;
     margin-top: -10px;
@@ -580,6 +588,7 @@ footer .service-footer a {
 .branch-map img {
     max-width: 100%
 }
+
 .branch-map {
     float: right;
     position: relative;
@@ -804,8 +813,32 @@ footer .service-footer li {
     margin: 5px;
 }
 
+
+.list-nav > li {
+    min-width: 157px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .list-nav > li {
+        padding: 21px 35px;
+    }
+}
+
 @media (max-width: 992px) {
     .service-item {
         margin: 15px 10px;
     }
 }
+.search-box .search-element {
+    width: 113px;
+    float: right;
+    position: absolute;
+    overflow: hidden;
+}
+    .search-box .search-element.open {
+        width: auto
+    }
+    .search-box .search-element svg {
+        position: absolute;
+        left: 0;
+    }
