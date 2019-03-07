@@ -78,10 +78,18 @@
                 }
             }
         });
-    $('.search-box > a ').click(function() {
-        $('.search-element').addClass('open');
+    $('body').click(function (event) {
+        if (!$('.search-element').is(event.target) && $('.search-element').has(event.target).length === 0) {
+            $('.search-element').removeClass('open');
+            $('.search-box > a').removeClass('open');
+        }
     });
-
+    $('.search-box > a').click(function (event) {
+        event.stopPropagation();
+        $(this).toggleClass('open');
+        $(".search-element").toggleClass('open');
+    });
+ 
     $(document).scroll(function () {
         navbar();
     });
