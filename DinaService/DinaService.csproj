@@ -139,6 +139,7 @@
     <Content Include="Content\Images\haed-item-list.png" />
     <Content Include="Content\Images\head-item-menu.svg" />
     <Content Include="Content\Images\health.svg" />
+    <Content Include="Content\Images\image-01.png" />
     <Content Include="Content\Images\image-kitchen-4.png" />
     <Content Include="Content\Images\image-kitchen-5.png" />
     <Content Include="Content\Images\image-kitchen-6.png" />
@@ -187,6 +188,7 @@
     <Content Include="Content\Images\vacuum-cleaner.png" />
     <Content Include="Content\Images\washing-machine.png" />
     <Content Include="Content\Images\washing-machine.svg" />
+    <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
     <Content Include="index.html" />
     <Content Include="App_theme\DinaTheme\js\all.js" />
@@ -196,6 +198,7 @@
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
     <Content Include="Global.asax" />
+    <Content Include="internal-page.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

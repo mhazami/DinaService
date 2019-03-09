@@ -514,10 +514,13 @@ ul {
 .r-collapse {
     display: block;
     float: left;
-    width: 50px;
+    width: 60px;
     height: 20px;
-    position: fixed;
-    left: 48px;
+    position: absolute;
+    left: 0;
+    z-index: 9999999;
+    top: -61px;
+    margin: auto;
 }
 
 
@@ -574,6 +577,7 @@ ul {
     font-size: 15px;
     font-weight: 800;
 }
+
 .mega-menu .dropdown-container {
     opacity: 1 !important;
     transform: translateX(0) translateY(2px) !important;
@@ -808,14 +812,16 @@ ul {
         filter: alpha(opacity=0);
         transition: all .3s ease-in-out;
     }
+
     #accordian ul ul li.head-item-mega a:before {
         content: none
     }
-        #accordian ul ul li:hover > a:before {
-            right: 22px;
-            opacity: 1;
-            left: auto;
-        }
+
+    #accordian ul ul li:hover > a:before {
+        right: 22px;
+        opacity: 1;
+        left: auto;
+    }
 
     #accordian ul ul.mega-menu li a:before {
         right: -10px;
@@ -957,6 +963,62 @@ ul {
             width: 100%;
             left: 30px;
         }
+
+    .container-nav {
+        transition: all .4s ease-in-out
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: rgba(255, 255, 255, 0.97);
+        animation: sticky .2s ease-in-out;
+        height: 90px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+        -ms-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+        -o-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+    }
+
+        .sticky .navbar-panel > ul > li:first-child {
+            padding: 20px 0 0px 0;
+        }
+
+        .sticky .r-nav, .sticky .content-navigation-menu {
+            background: transparent;
+        }
+
+        .sticky .content-navigation-menu {
+            border-top: none
+        }
+
+        .sticky .logo-company, .sticky .support-box {
+            padding: 25px 15px;
+        }
+
+    @keyframes sticky {
+        from {
+            height: 0
+        }
+
+
+        to {
+            height: 90px;
+        }
+    }
+
+
+
+    .sticky ~ main {
+        padding-top: 107px;
+    }
+
+    .sticky .navbar-panel {
+        padding-top: 0;
+    }
 }
 
 #accordian li.active > ul.mega-menu {
@@ -982,16 +1044,19 @@ ul {
         min-width: 770px;
     }
 }
+
 @media (min-width: 1000px) {
     #accordian li.active > ul.mega-menu {
         min-width: 750px;
     }
 }
+
 @media (min-width: 1200px) {
     #accordian li.active > ul.mega-menu {
         min-width: 900px;
     }
 }
+
 @media (min-width: 1400px) {
     #accordian li.active > ul.mega-menu {
         min-width: 1140px;
