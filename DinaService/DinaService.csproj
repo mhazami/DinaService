@@ -134,6 +134,7 @@
     <Content Include="Content\Images\computer-network.svg" />
     <Content Include="Content\Images\content-bottom-bg.jpg" />
     <Content Include="Content\Images\data-app.svg" />
+    <Content Include="Content\Images\dinaservice.png" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
     <Content Include="Content\Images\haed-item-list.png" />
@@ -145,6 +146,7 @@
     <Content Include="Content\Images\image-kitchen-6.png" />
     <Content Include="Content\Images\image-kitchen-7.png" />
     <Content Include="Content\Images\image-kitchen-8.jpg" />
+    <Content Include="Content\Images\image-kitchen-8.png" />
     <Content Include="Content\Images\image-message.svg" />
     <Content Include="Content\Images\image-post1.jpg" />
     <Content Include="Content\Images\image-slider\1-15.jpg" />

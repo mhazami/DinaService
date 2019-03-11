@@ -8,7 +8,7 @@ label, span {
 }
 
 .logo-company img {
-    width: 150px;
+    width: 170px;
 }
 
 .header-nav-panel {
@@ -27,7 +27,7 @@ label, span {
 }
 
 .navbar-panel > ul > li:first-child {
-    padding: 15px 0 0px 0;
+    padding: 30px 0 0px 0;
 }
 
 .navbar-panel > ul > li > span {
@@ -212,29 +212,29 @@ footer .service-footer a {
     opacity: 0.6;
 }
 
-    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after, a.detail-box:after {
-        bottom: auto;
-        top: 0;
-        border-top: 3px solid
-    }
+footer .service-footer a:after, .content-navigation-menu .list-nav > li:after, a.detail-box:after {
+    bottom: auto;
+    top: 0;
+    border-top: 3px solid
+}
 
-    footer .service-footer a:after, a.detail-box:after {
-        bottom: 1px;
-        top: auto;
-        opacity: .7;
-        border-top: 1px solid #ff220b;
-    }
+footer .service-footer a:after, a.detail-box:after {
+    bottom: 1px;
+    top: auto;
+    opacity: .7;
+    border-top: 1px solid #ff220b;
+}
 
-    footer .service-footer a:hover:after, .content-navigation-menu .list-nav > li:hover:after, .content-navigation-menu .list-nav > li.active:after, a.detail-box:hover:after {
-        width: 100%;
-        right: auto;
-        left: 0;
-    }
+footer .service-footer a:hover:after, .content-navigation-menu .list-nav > li:hover:after, .content-navigation-menu .list-nav > li.active:after, a.detail-box:hover:after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
 
-    footer .service-footer a:hover, a.detail-box:hover:after{
-        color: #ff220b;
-        opacity: .7;
-    }
+footer .service-footer a:hover, a.detail-box:hover:after {
+    color: #ff220b;
+    opacity: .7;
+}
 
 .content-navigation-menu .list-nav > li {
     color: #0e2b5c;
@@ -502,11 +502,11 @@ footer .service-footer a {
     background-color: #fff;
     padding-top: 3%;
     padding-right: 5%;
-    padding-bottom: 17%;
+    padding-bottom: 16%;
     padding-left: 5%;
-    background-image: url('../../../Content/Images/image-kitchen-6.png');
+    background-image: url(../../../Content/Images/image-kitchen-8.png);
     background-repeat: no-repeat !important;
-    background-size: 116%;
+    background-size: 122%;
     background-position: bottom !important;
 }
 
@@ -600,12 +600,13 @@ footer .service-footer a {
 .contact-right-box-body .our-services-item img {
     width: 45px;
     margin-left: 27px;
+    margin-top: -5px;
 }
 
 .our-services-item-text label {
     color: #0e2b5c;
     display: block;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -677,9 +678,11 @@ a.detail-box, a.detail-box:hover {
     color: #0e2b5c;
     font-size: 13px;
 }
+
     a.detail-box:hover {
         color: #ff220b;
     }
+
 .detail-box {
     position: relative;
     transition: all .3s ease-in-out;
@@ -984,6 +987,10 @@ a.detail-box, a.detail-box:hover {
 
         .left-box-footer ul li span {
             font-size: 13px;
+        }
+
+        .left-box-footer ul li img {
+            width: 90%
         }
 
 footer {
@@ -1409,8 +1416,8 @@ footer .service-footer li {
 
 @media(min-width: 768px) {
 
-   main {
-       padding-top: 108px;
+    main {
+        padding-top: 108px;
     }
 
     .full-screen .slider-fullscreen-image, .full-screen .carousel-item .container.container-slide {

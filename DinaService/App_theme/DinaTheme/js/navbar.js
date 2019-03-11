@@ -77,18 +77,6 @@
             }
         });
 
-    $('body').click(function (event) {
-        if (!$('.r-nav').is(event.target) && $('.r-nav').has(event.target).length === 0) {
-
-            $('.r-nav .list-nav li ').removeClass('active');
-            //$('.r-nav .list-nav ul').slideUp();
-        }
-    });
-
-
-
-
-
 
 
 
