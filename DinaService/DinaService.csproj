@@ -173,7 +173,7 @@
     <Content Include="Content\Images\left-arrow.svg" />
     <Content Include="Content\Images\lifebelt.svg" />
     <Content Include="Content\Images\map-1.svg" />
-    <Content Include="Content\Images\messaging-app.svg" />
+    <Content Include="Content\Images\messaging-app.png" />
     <Content Include="Content\Images\mixer.png" />
     <Content Include="Content\Images\nanosoft.png" />
     <Content Include="Content\Images\pause-symbol.svg" />

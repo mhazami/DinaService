@@ -84,7 +84,6 @@ ul {
     width: 100%;
     position: relative;
     height: auto;
-    background: #ffffff;
     border: none;
     text-align: right;
     box-shadow: none;
@@ -103,7 +102,29 @@ ul {
 
 /*----------------Navbar---------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+    .image-mega-menu {
+        display: none
+    }
+
+    .navigation-menu .list-nav > li > a {
+        position: relative;
+    }
+
+    .btn-menu {
+        position: absolute;
+        top: 0;
+        left: 0 !important;
+        bottom: auto;
+        top: 26%;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+
+
+
+
     .r-nav, .list-nav {
         height: auto;
         line-height: normal;
@@ -278,7 +299,7 @@ ul {
     .list-nav span {
         margin-right: 10px;
         font-size: 13px;
-        color: #919191;
+        color: #253858;
     }
 
     .list-nav li, .list-nav > li {
@@ -392,8 +413,8 @@ ul {
     .bar1, .bar2, .bar3 {
         width: 18px;
         height: 2px;
-        background-color: #dedede;
-        margin: 4px 0;
+        background-color: #ffffff;
+        margin: 4px 2px;
         transition: all 0.4s;
     }
 
@@ -413,7 +434,15 @@ ul {
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    .r-collapse .icon-nav-change .bar1 {
+        -webkit-transform: rotate(-51deg) translate(-5px, 3px);
+        transform: rotate(-51deg) translate(-5px, 3px);
+    }
 
+    .r-collapse .icon-nav-change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -4px);
+        transform: rotate(45deg) translate(-5px, -4px);
+    }
 
 
 
@@ -445,12 +474,37 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .r-collapse {
+        cursor: pointer;
+        display: block;
+        float: left;
+        width: 43px;
+        box-shadow: 1px 1px 4px #9e9e9e;
+        text-align: center;
+        background: #00aafc;
+        /* height: 20px; */
+        position: fixed;
+        border-radius: 50%;
+        padding: 10px;
+        left: 17px;
+        z-index: 9999999;
+        top: 69px;
+        transition: all .3s ease-in-out;
+        margin: auto;
+    }
+
+        .r-collapse:hover {
+            box-shadow: none;
+        }
 
     .dropdown-btn {
         position: relative;
     }
 
+    .btn-menu {
+        display: block !important;
+    }
 
     .icon-upper {
         position: absolute;
@@ -469,10 +523,11 @@ ul {
         position: fixed;
         z-index: 5;
         top: 0;
+        background: #fff !important;
         left: 0;
         overflow-x: hidden;
         transition: all 0.4s;
-        box-shadow: -1px 1px 4px #ddd;
+        box-shadow: -1px 1px 0px #ddd;
     }
 
         .sidenav.mask {
@@ -511,17 +566,6 @@ ul {
     }
 }
 
-.r-collapse {
-    display: block;
-    float: left;
-    width: 60px;
-    height: 20px;
-    position: absolute;
-    left: 0;
-    z-index: 9999999;
-    top: -61px;
-    margin: auto;
-}
 
 
 /*----------------Navbar---------------------*/
@@ -615,7 +659,10 @@ ul {
     padding-right: 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+
+
+
 
 
     .container-custom {
@@ -643,7 +690,7 @@ ul {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .open-nav ~ .container-custom {
         transition: all .5s;
         padding-right: 270px;
@@ -652,7 +699,7 @@ ul {
 
 
 /*------------Navbar-----------*/
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .icon-upper {
         display: none;
@@ -857,39 +904,8 @@ ul {
         overflow: visible !important;
     }
 
-        .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
-            width: 8px;
-            height: 1px;
-            background-color: #2f5ead;
-            margin: 4px 0;
-            transition: all 0.4s;
-        }
 
-        .btn-menu .bar1 {
-            transform: rotate(136deg);
-            right: -33px;
-            position: absolute;
-            bottom: -14px;
-        }
 
-        .btn-menu .bar3 {
-            transform: rotate(-138deg);
-            position: absolute;
-            left: 20px;
-            bottom: -14px;
-        }
-
-        .btn-menu.icon-nav-change .bar1 {
-            transform: rotate(38deg) translate(-9px, 6px);
-            right: -42px;
-            bottom: -15px;
-        }
-
-        .btn-menu.icon-nav-change .bar3 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-            bottom: -4px;
-        }
 
     .list-nav > li.active > .dropdown-container:after {
         content: "";
@@ -963,24 +979,70 @@ ul {
             width: 100%;
             left: 30px;
         }
+}
 
+.btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
+    width: 8px;
+    height: 1px;
+    background-color: #2f5ead;
+    margin: 4px 0;
+    transition: all 0.4s;
+}
+
+.btn-menu .bar1 {
+    transform: rotate(136deg);
+    right: -33px;
+    position: absolute;
+    bottom: -14px;
+}
+
+.btn-menu .bar3 {
+    transform: rotate(-138deg);
+    position: absolute;
+    left: 20px;
+    bottom: -14px;
+}
+
+.btn-menu.icon-nav-change .bar1 {
+    transform: rotate(38deg) translate(-9px, 6px);
+    right: -42px;
+    bottom: -15px;
+}
+
+.btn-menu.icon-nav-change .bar3 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    bottom: -4px;
+}
+
+#accordian li.active > ul.mega-menu {
+    padding: 15px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
     .container-nav {
-        transition: all .4s ease-in-out
-    }
-
-    .sticky {
         position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 99;
-        background-color: rgba(255, 255, 255, 0.97);
-        animation: sticky .2s ease-in-out;
-        height: 90px;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -moz-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -ms-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -o-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.97);
+        width: 100%;
+        z-index: 99999;
+    }
+
+    #accordian li.active > ul.mega-menu {
+        min-width: 720px;
+    }
+
+    .sticky {
+        height: 90px;
+     
+        animation: sticky .2s ease-in-out;
+
     }
 
         .sticky .navbar-panel > ul > li:first-child {
@@ -1001,34 +1063,23 @@ ul {
 
     @keyframes sticky {
         from {
-            height: 0
+            height: 0;
+            overflow: hidden
         }
 
 
         to {
+            overflow: visible;
             height: 90px;
         }
     }
 
 
 
-    .sticky ~ main {
-        padding-top: 107px;
-    }
+
 
     .sticky .navbar-panel {
         padding-top: 0;
-    }
-}
-
-#accordian li.active > ul.mega-menu {
-    padding: 15px;
-    overflow: hidden;
-}
-
-@media (min-width: 768px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 720px;
     }
 }
 
