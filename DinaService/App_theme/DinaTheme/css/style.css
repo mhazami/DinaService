@@ -248,13 +248,13 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 
 .section-study {
     background-color: #ECEFF3;
-    margin-top: 250px;
+    margin-top: 310px;
     margin-bottom: 0;
 }
 
     .section-study > .container {
         height: 460px;
-        transform: translateY(-165px);
+        transform: translateY(-240px);
     }
 
 .service-item ul li span {
@@ -272,11 +272,15 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 5px;
-    padding: 0 20px 40px 20px;
+    padding: 0 15px 37px 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all .3s ease-in-out
 }
-
+.section-content .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 19.666667%;
+    max-width: 19.666667%;
+}
 @media(max-width: 1200px) {
     .service-item {
         padding: 0 10px 40px 10px;
@@ -516,6 +520,10 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     width: 100%;
     padding-top: 8%;
     padding-bottom: 0;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5 {
+    font-family: Vazir
 }
 
 .contact-right-box-head h3 {
@@ -1282,6 +1290,7 @@ footer .service-footer li {
     }
 
     .sticky .logo-company {
+        padding: 18px 0;
         max-width: 18%;
     }
 
@@ -1372,7 +1381,8 @@ footer .service-footer li {
     }
 
     .support-box {
-        max-width: 54% !important;
+        max-width: 66% !important;
+        text-align: left;
     }
 
     .list-nav {
@@ -1421,8 +1431,35 @@ footer .service-footer li {
     }
 
     .full-screen .slider-fullscreen-image, .full-screen .carousel-item .container.container-slide {
-        min-height: 52vh !important;
+        min-height: 55vh !important;
     }
+}
+
+@media(max-width: 410px) {
+    .support-box img {
+        display: none
+    }
+
+    .logo-company img {
+        width: 109px;
+    }
+
+    .logo-company, .support-box {
+        max-width: 40%;
+        padding-right: 5px;
+    }
+
+        .support-box > ul > li.header-info {
+            padding-left: 5px;
+        }
+
+    .support-box {
+        padding-right: 9px;
+    }
+
+        .support-box > ul {
+            border-right: 1px solid #ddd;
+        }
 }
 
 @media(max-width: 575px) {
@@ -1590,3 +1627,152 @@ footer .service-footer li {
             text-align: justify
         }
 }
+
+
+
+/*loading*/
+
+/* You can use this code for whatever you want but I don´t recommend it. It is an exsercise and the code is not clean and could be better */
+
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg,#363257 0%,#0B1734);
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    animation: animate 1s linear infinite;
+}
+
+    .loader span {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        animation: rotate 1s linear infinite;
+    }
+
+        .loader span:nth-child(1) {
+            top: 0;
+            left: 0;
+            background: #55DDB9;
+        }
+
+        .loader span:nth-child(2) {
+            top: 0;
+            right: 0;
+            background: #FD6C64;
+        }
+
+        .loader span:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            background: #FCEBA7;
+        }
+
+        .loader span:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background: #1F78B0;
+        }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(90deg);
+    }
+
+    90% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    10% {
+        width: 100px;
+        height: 100px;
+    }
+
+    50% {
+        width: 150px;
+        height: 150px;
+    }
+
+    90% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*loading*/

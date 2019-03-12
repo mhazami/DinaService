@@ -98,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_theme\DinaTheme\css\all.css" />
+    <Content Include="App_theme\DinaTheme\css\aos.css" />
+    <Content Include="App_theme\DinaTheme\css\Cool\cool-style.css" />
+    <Content Include="App_theme\DinaTheme\js\aos.js" />
     <Content Include="App_theme\DinaTheme\css\bootstrap-theme.css" />
     <Content Include="App_theme\DinaTheme\css\bootstrap-theme.min.css" />
     <Content Include="App_theme\DinaTheme\css\bootstrap.css" />
@@ -141,32 +144,16 @@
     <Content Include="Content\Images\head-item-menu.svg" />
     <Content Include="Content\Images\health.svg" />
     <Content Include="Content\Images\image-01.png" />
-    <Content Include="Content\Images\image-kitchen-4.png" />
-    <Content Include="Content\Images\image-kitchen-5.png" />
-    <Content Include="Content\Images\image-kitchen-6.png" />
     <Content Include="Content\Images\image-kitchen-7.png" />
-    <Content Include="Content\Images\image-kitchen-8.jpg" />
     <Content Include="Content\Images\image-kitchen-8.png" />
     <Content Include="Content\Images\image-message.svg" />
     <Content Include="Content\Images\image-post1.jpg" />
-    <Content Include="Content\Images\image-slider\1-15.jpg" />
-    <Content Include="Content\Images\image-kitchen-3.png" />
     <Content Include="Content\Images\image-kitchen.jpg" />
-    <Content Include="Content\Images\image-slider\img1.jpg" />
-    <Content Include="Content\Images\image-slider\img10.jpg" />
-    <Content Include="Content\Images\image-slider\img11.jpg" />
-    <Content Include="Content\Images\image-slider\img12.jpg" />
-    <Content Include="Content\Images\image-slider\img13.jpg" />
-    <Content Include="Content\Images\image-slider\img14.jpg" />
-    <Content Include="Content\Images\image-slider\img15.jpg" />
-    <Content Include="Content\Images\image-slider\img16.jpg" />
-    <Content Include="Content\Images\image-slider\img2.jpg" />
-    <Content Include="Content\Images\image-slider\img3.jpg" />
-    <Content Include="Content\Images\image-slider\img4.jpg" />
-    <Content Include="Content\Images\image-slider\img6.jpg" />
-    <Content Include="Content\Images\image-slider\img7.jpg" />
-    <Content Include="Content\Images\image-slider\img8.jpg" />
-    <Content Include="Content\Images\image-slider\img9.jpg" />
+    <Content Include="Content\Images\image-slider\image-slider-1.jpg" />
+    <Content Include="Content\Images\image-slider\image-slider-2.jpg" />
+    <Content Include="Content\Images\image-slider\image-slider-3.jpg" />
+    <Content Include="Content\Images\image-slider\image-slider-5.png" />
+    <Content Include="Content\Images\image-slider\image-slider-6.jpg" />
     <Content Include="Content\Images\image-work.jpg" />
     <Content Include="Content\Images\imgix1.jpg" />
     <Content Include="Content\Images\imgix2.jpg" />
@@ -192,6 +179,7 @@
     <Content Include="Content\Images\washing-machine.svg" />
     <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
+    <Content Include="Cool.DinaService.html" />
     <Content Include="index.html" />
     <Content Include="App_theme\DinaTheme\js\all.js" />
     <Content Include="App_theme\DinaTheme\js\bootstrap.js" />
