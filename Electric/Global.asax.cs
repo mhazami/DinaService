@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace DinaService
+namespace Electric
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -15,6 +15,7 @@ namespace DinaService
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
         }
     }
 }

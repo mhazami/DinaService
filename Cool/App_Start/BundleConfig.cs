@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace DinaService
+namespace Cool
 {
     public class BundleConfig
     {
