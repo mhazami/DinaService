@@ -1,45 +1,176 @@
 .section-header h3, .service-item ul li span, .study-item-body h2, .contact-right-box-head h3, .our-services-item-text label, .item-contact-form, .item-other-texts-content a h5, .item-other-texts-content a h5:hover {
-    color: #3E78B2;
+    color: #2D2D2D;
 }
 
+
     .item-contact-form input[type="button"] {
-        background: #3E78B2
+        background: #F5D355
     }
 
+        .item-contact-form input[type="button"]:hover {
+            background: #2D2D2D;
+        }
+
 .container-nav, .list-nav > li > ul > li, #accordian li.active > ul.mega-menu {
-    background-color: #33b5e5
+    background-color: #F5D355
 }
 
 .dropdown-container {
-    background: #33b5e5
+    background: #2D2D2D
+}
+
+.header-info li {
+    color: #2D2D2D;
+}
+
+.support-box > ul > li svg {
+    color: #2D2D2D;
+}
+
+#accordian ul.mega-menu ul {
+    margin: -2px -7px;
+    background: #F5D355;
 }
 
 .list-nav > li a span {
-    color: #fff;
+    color: #2D2D2D;
     opacity: 1
 }
 
 .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
-    background-color: #fff
+    background-color: #2D2D2D
 }
+
+
+.content-navigation-menu {
+    border-top: 1px solid #2D2D2D;
+}
+
+    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after, a.detail-box:after {
+        border-top: 3px solid #2D2D2D;
+        opacity: 1;
+    }
+
 .list-nav > li.active > .dropdown-container:after {
-    background: #1e7696
+    background: #F5D355
 }
+
+.list-nav > li:hover > a span, .list-nav > li:hover > a svg {
+    color: #2D2D2D;
+}
+
 body {
-    color: #3e78b2;
+    color: #717171;
 }
-    .mini-header span, .section-header-content span, .mini-footer span {
-    color: #0E1133
+
+#accordian li.active > ul.mega-menu:after {
+    background: #2D2D2D;
+}
+
+.mini-header span, .section-header-content span, .mini-footer span {
+    color: #2D2D2D
+}
+
+.button-c {
+    color: #F5D355
 }
 
 .section-info {
-    background-color: #0E1133 !important
+    background-image: linear-gradient(135deg,#F5D355 0%,#fde58c);
 }
 
 .background {
-    background-image: linear-gradient(135deg,#0b9ed0 0%,#0182ae);
+    background-image: linear-gradient(135deg,#F5D355 0%,#fde58c);
 }
 
 .service-item ul li a {
     color: #0E1133
+}
+
+.main-items-list-info span, .main-items-list-info label {
+    color: #2D2D2D;
+}
+
+.main-items-list-info > li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.52) !important;
+}
+
+.active > .dropdown-container {
+    background: #F5D355;
+}
+
+.button-c:hover {
+    border-color: #F5D355;
+}
+
+    .button-c:hover:after, .button-c:after {
+        background-color: #F5D355;
+    }
+
+footer .service-footer a {
+    color: #2D2D2D;
+    opacity: .8;
+}
+
+    footer .service-footer a:hover, a.detail-box:hover:after {
+        color: #f5d355;
+        opacity: .9;
+    }
+
+    footer .service-footer a:after, a.detail-box:after {
+        border-top: 1px solid #f5d355;
+    }
+
+.item-other-texts-image {
+    background-color: #f5d355;
+}
+
+a:hover {
+    color: #F5D355;
+}
+
+a {
+    color: #013870;
+}
+
+@media only screen and (max-width: 992px) {
+    .navigation-menu .list-nav li a {
+        background: #F5D355;
+        transition: all .3s ease-in-out;
+    }
+
+    .navigation-menu .list-nav li:hover > a {
+        background: #1f1e1e !important;
+    }
+
+        .navigation-menu .list-nav li:hover > a span {
+            color: #F5D355 !important;
+            transition: all .3s ease-in-out;
+        }
+
+
+    .content-navigation-menu {
+        background: #F5D355;
+        border-color: #F5D355;
+        transition: all .3s ease-in-out;
+    }
+
+    .r-collapse {
+        background: #2D2D2D;
+        box-shadow: 1px 1px 4px #2D2D2D;
+    }
+
+    .list-nav > li.active > a, .list-nav > li.active > .dropdown-container li a {
+        background: #2D2D2D;
+        background-color: #2D2D2D
+    }
+
+    .list-nav > li.active span {
+        color: #F5D355 !important;
+        transition: all .3s ease-in-out;
+    }
+
+    .list-nav > li.active .btn-menu .bar1, .list-nav > li.active .btn-menu .bar2, .list-nav > li.active .btn-menu .bar3, .list-nav > li:hover .btn-menu .bar1, .list-nav > li:hover .btn-menu .bar2, .list-nav > li:hover .btn-menu .bar3 {
+        background: #F5D355
+    }
 }

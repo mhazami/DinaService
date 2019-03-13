@@ -100,6 +100,9 @@
     <Content Include="App_theme\DinaTheme\css\all.css" />
     <Content Include="App_theme\DinaTheme\css\aos.css" />
     <Content Include="App_theme\DinaTheme\css\Cool\cool-style.css" />
+    <Content Include="App_theme\DinaTheme\css\Electric\electric-style.css" />
+    <Content Include="App_theme\DinaTheme\css\Kitchen\kitchen-style.css" />
+    <Content Include="App_theme\DinaTheme\css\Wash\wash-style.css" />
     <Content Include="App_theme\DinaTheme\js\aos.js" />
     <Content Include="App_theme\DinaTheme\css\bootstrap-theme.css" />
     <Content Include="App_theme\DinaTheme\css\bootstrap-theme.min.css" />
@@ -154,11 +157,13 @@
     <Content Include="Content\Images\image-slider\image-slider-3.jpg" />
     <Content Include="Content\Images\image-slider\image-slider-5.png" />
     <Content Include="Content\Images\image-slider\image-slider-6.jpg" />
+    <Content Include="Content\Images\left-arrow-white.png" />
     <Content Include="Content\Images\image-work.jpg" />
     <Content Include="Content\Images\imgix1.jpg" />
     <Content Include="Content\Images\imgix2.jpg" />
     <Content Include="Content\Images\imgix3.jpg" />
     <Content Include="Content\Images\imgix4.jpg" />
+    <Content Include="Content\Images\left-arrow-white-1.png" />
     <Content Include="Content\Images\left-arrow.svg" />
     <Content Include="Content\Images\lifebelt.svg" />
     <Content Include="Content\Images\map-1.svg" />
@@ -179,7 +184,6 @@
     <Content Include="Content\Images\washing-machine.svg" />
     <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
-    <Content Include="Cool.DinaService.html" />
     <Content Include="index.html" />
     <Content Include="App_theme\DinaTheme\js\all.js" />
     <Content Include="App_theme\DinaTheme\js\bootstrap.js" />
