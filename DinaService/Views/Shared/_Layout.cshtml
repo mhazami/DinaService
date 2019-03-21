@@ -1,33 +1,26 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta content="width=device-width" name="viewport">
-
-    <script src="App_theme/DinaTheme/js/jquery-3.1.1.min.js"></script>
-    <link rel="stylesheet" href="App_theme/DinaTheme/css/bootstrap.css">
-    <script src="App_theme/DinaTheme/js/bootstrap.js"></script>
-    <link href="App_theme/DinaTheme/css/all.css" rel="stylesheet" />
-    <link href="App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.css" rel="stylesheet" />
-    <link href="App_theme/DinaTheme/slider/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="App_theme/DinaTheme/slider/assets/mobirise/css/mbr-additional.css" rel="stylesheet" />
-    <link rel="stylesheet" href="App_theme/DinaTheme/css/NavMenu.css">
-    <link rel="stylesheet" href="App_theme/DinaTheme/css/nav-style.css">
-    <link href="App_theme/DinaTheme/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="App_theme/DinaTheme/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="App_theme/DinaTheme/css/aos.css" rel="stylesheet" />
-
-    <script src="App_theme/DinaTheme/js/all.js"></script>
-    <link rel="stylesheet" href="App_theme/DinaTheme/css/r-slider.css">
-
-    <link href="App_theme/DinaTheme/css/style.css" rel="stylesheet" />
-    <script src="App_theme/DinaTheme/js/LoadPage.js"></script>
- 
+    <meta name="viewport" content="width=device-width" />
+    @*<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />*@
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.Des" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bootstrap/css")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/site/css")
+    @Scripts.Render("~/bundles/all")
+    @Styles.Render("~/slider/css")
+    @Styles.Render("~/style/css")
+    
+    
 </head>
 <body onload="myFunction()">
     <div id="atomo">
-
+        @RenderBody()
 
         <i class="background"></i>
         <div class="loader">
@@ -46,7 +39,7 @@
             <div class="row header-nav-panel ordinal-box">
                 <div class="col-lg-1 col-md-6 col-sm-6 col-xs-4 logo-company item-first">
                     <a href="index.html">
-                        <img src="Content/Images/dinaservice.png" alt="دینا سرویس" />
+                        <img src="/Content/Images/dinaservice.png" alt="دینا سرویس" />
                     </a>
                 </div>
 
@@ -66,7 +59,7 @@
                                     <ul class="list-nav">
                                         <li>
                                             <a class="dropdown-btn">
-                                                <span> خانه و آشپز خانه</span>
+                                                <span> لوازم آشپز خانه</span>
 
                                                 <ul class="btn-menu">
                                                     <li class="bar1"></li>
@@ -304,7 +297,7 @@
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image-mega-menu">
-                                                            <img src="Content/Images/1637.png" />
+                                                            <img src="/Content/Images/1637.png" />
                                                         </div>
                                                     </div>
                                                 </li>
@@ -314,169 +307,19 @@
 
                                         <li>
                                             <a href="#">
-                                                <span> قالب ها</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span> قالب ها</span>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a class="dropdown-btn">
-                                                <span> تماس با ما</span>
-
-                                                <ul class="btn-menu">
-                                                    <li class="bar1"></li>
-                                                    <li class="bar3"></li>
-                                                </ul>
-
-                                            </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#about">
-                                                        <span> قالب ها</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#about">
-                                                        <span> قالب ها</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#about">
-                                                        <span> قالب ها</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#about">
-                                                        <span> قالب ها</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-btn">
-
-                                                        <span>محصولات</span>
-
-                                                        <!--<i class="icon-upper fa fa-chevron-left"></i>-->
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span>قالب ها</span>
-
-                                                            </a>
-                                                        </li>
-
-                                                        <li>
-                                                            <a class="dropdown-btn">
-
-                                                                <span>خرید ها</span>
-
-                                                                <!--<i class="icon-upper fa fa-chevron-left"></i>-->
-                                                            </a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <span>قالب ها</span>
-
-                                                                    </a>
-                                                                </li>
-
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <span> سبد خرید</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <span>سوالات متداول</span>
-
-                                                                    </a>
-                                                                </li>
-
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span>سوالات متداول</span>
-
-                                                            </a>
-                                                        </li>
-
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">
                                                 <span>سوالات متداول</span>
                                             </a>
                                         </li>
+
                                         <li>
                                             <a class="dropdown-btn">
                                                 <span> تماس با ما</span>
 
-                                                <ul class="btn-menu">
-                                                    <li class="bar1"></li>
-                                                    <li class="bar3"></li>
-                                                </ul>
-
                                             </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#about">
 
-                                                        <span> قالب ها</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-btn">
-
-                                                        <span>محصولات</span>
-
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span>قالب ها</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <span> سبد خرید</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="dropdown-btn">
-                                                                <span>محصولات</span>
-                                                            </a>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <span>قالب ها</span>
-
-                                                                    </a>
-                                                                </li>
-
-
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <span>سوالات متداول</span>
-
-                                                                    </a>
-                                                                </li>
-
-                                                            </ul>
-                                                        </li>
-
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
                                         </li>
+
+
                                     </ul>
                                 </div>
 
@@ -487,12 +330,12 @@
                 <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6 support-box item-second">
                     <ul>
                         <li>
-                            <img src="Content/Images/image-message.svg" />
+                            <img src="/Content/Images/image-message.svg" />
                         </li>
                         <li class="header-info">
                             <ul>
                                 <li>آیا از ما سوالی دارید</li>
-                                <li> مشاوره رایگان : <a href="#">02155598974</a></li>
+                                <li> مشاوره رایگان : <a href="#">02177478564</a></li>
                             </ul>
                         </li>
                         <li>
@@ -523,50 +366,50 @@
                             <li data-app-prevent-settings="" data-target="#slider1-8" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(Content/Images/image-slider/image-slider-6.jpg);">
+                            <div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(/Content/Images/image-slider/image-slider-6.jpg);">
                                 <div class="container container-slide">
                                     <div class="image_wrapper">
-                                        <div class="mbr-overlay"></div><img src="Content/Images/image-slider/image-slider-6.jpg" />
+                                        <div class="mbr-overlay"></div><img src="/Content/Images/image-slider/image-slider-6.jpg" />
 
                                         <div class="carousel-caption justify-content-center">
                                             <div class="col-8 align-left">
                                                 <h2 class="mbr-fonts-style display-1">قطعات و لوازم اصلی</h2>
                                                 <p class="lead mbr-text mbr-fonts-style display-5">پس از بررسی های لازم تکنسین طی گزارشی کامل شما را از تعداد قطعات معیوب و علت خرابی مطلع خواهند کرد که با توجه به صلاحدید شما قطعات مربوطه تعمیر یا تعویض خواهند شد و درصورت تعویض قطعه فقط از قطعات اصلی استفاده میگردد</p>
                                                 <div class="mbr-section-btn" buttons="0">
-                                                    <a class="btn btn-success display-4" href="https://mobirise.com">ادامه </a>
+                                                    <a class="btn btn-success display-4" href="#">ادامه </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(Content/Images/image-slider/image-slider-2.jpg);">
+                            <div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(/Content/Images/image-slider/image-slider-2.jpg);">
                                 <div class="container container-slide">
                                     <div class="image_wrapper">
                                         <div class="mbr-overlay"></div>
-                                        <img src="Content/Images/image-slider/image-slider-2.jpg">
+                                        <img src="/Content/Images/image-slider/image-slider-2.jpg">
                                         <div class="carousel-caption justify-content-center">
                                             <div class="col-8 align-left">
                                                 <h2 class="mbr-fonts-style display-1">تعمیرلوازم خانگی با کمترین هزینه</h2>
                                                 <p class="lead mbr-text mbr-fonts-style display-5">به این دلیل که ما به تمام نقاط قوت و ضعف تعمیر لوازم خانگی آشنایی کامل داریم در صورت بروز هرگونه مشکل در کمترین زمان ممکن به مشکل پی خواهیم برد و تمامی سعی خود را نسبت به تعمیر قطعات و نه تعویض آن به کار خواهیم بست.</p>
                                                 <div class="mbr-section-btn" buttons="0">
-                                                    <a class="btn btn-primary display-4" href="internal-page.html">اطلاعات بیشتر</a>
+                                                    <a class="btn btn-primary display-4" href="#">اطلاعات بیشتر</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(Content/Images/image-slider/image-slider-3.jpg);">
+                            <div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(/Content/Images/image-slider/image-slider-3.jpg);">
                                 <div class="container container-slide">
                                     <div class="image_wrapper">
-                                        <div class="mbr-overlay"></div><img src="Content/Images/image-slider/image-slider-3.jpg">
+                                        <div class="mbr-overlay"></div><img src="/Content/Images/image-slider/image-slider-3.jpg">
                                         <div class="carousel-caption justify-content-center">
                                             <div class="col-8 align-left">
                                                 <h2 class="mbr-fonts-style display-1">تکنسین های مجرب</h2>
                                                 <p class="lead mbr-text mbr-fonts-style display-5">ما با داشتن متخصص ترین تعمیرکاران لوازم خانگی و بهره گیری از بهترین و با تجربه ترین تکنسین ها و تعمیرکاران آموزش دیده تعمیرات لوازم خانگی شما را به بهترین شکل به انجام میرسانیم</p>
                                                 <div class="mbr-section-btn" buttons="0">
-                                                    <a class="btn  btn-white-outline display-4" href="https://mobirise.com">بیشتر</a>
+                                                    <a class="btn  btn-white-outline display-4" href="#">بیشتر</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -594,38 +437,25 @@
                             <span>چه کاری انجام می دهیم</span>
                         </div>
                         <div class="section-header">
-                            <h3>سرویس های منحصربه فرد برای کسب وکار شما</h3>
+                            <h3>تعمیر لوازم خانگی خود را به متخصصان ما بسپارید</h3>
                         </div>
                         <div class="section-header-content">
                             <span>ما می توانیم همه بخش های سیستم های IT خود را از زیرساخت های پشت صحنه تا بهره وری شخصی در فضای باز درک کنیم و از آنها حمایت کنیم. هدف ما ایجاد راه حل های فناوری اطلاعات نوآورانه است که کسب و کار شما را قادر به تحرک و رقابتی تر است.</span>
                         </div>
                         <div class="section-content">
+
                             <div class="col-lg-2 col-md-5 col-sm-5 col-xs-12">
                                 <div class="service-item">
 
                                     <ul>
                                         <li>
-                                            <img src="Content/Images/messaging-app.png" />
-                                        </li>
-                                        <li>
-                                            <span>خدمات مشاوره</span>
-                                        </li>
-                                        <li>
-                                            <a href="#">بیشتر بخوانید</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-5 col-sm-5 col-xs-12">
-                                <div class="service-item">
-
-                                    <ul>
-                                        <li>
-                                            <img src="Content/Images/washing-machine.png" />
+                                            <img src="/Content/Images/washing-machine.png" />
 
                                         </li>
                                         <li>
-                                            <span> لباس شویی و ظرف شویی</span>
+                                            <span>
+                                                <strong> تعمیر لباس شویی و ظرف شویی</strong>
+                                            </span>
                                         </li>
                                         <li>
                                             <a href="#">بیشتر بخوانید</a>
@@ -639,26 +469,12 @@
 
                                     <ul>
                                         <li>
-                                            <img src="Content/Images/vacuum-cleaner.png" />
+                                            <img src="/Content/Images/vacuum-cleaner.png" />
                                         </li>
                                         <li>
-                                            <span>جارو برقی و مایکروفر</span>
-                                        </li>
-                                        <li>
-                                            <a href="#">بیشتر بخوانید</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-5 col-sm-5 col-xs-12">
-                                <div class="service-item">
-
-                                    <ul>
-                                        <li>
-                                            <img src="Content/Images/refrigerator.png" />
-                                        </li>
-                                        <li>
-                                            <span>برودتی</span>
+                                            <span>
+                                                <strong>تعمیر جارو برقی و مایکروفر</strong>
+                                            </span>
                                         </li>
                                         <li>
                                             <a href="#">بیشتر بخوانید</a>
@@ -671,10 +487,14 @@
 
                                     <ul>
                                         <li>
-                                            <img src="Content/Images/mixer.png" />
+                                            <img src="/Content/Images/refrigerator.png" />
                                         </li>
                                         <li>
-                                            <span>لوازم ریز آشپزخانه</span>
+                                            <span>
+                                                <strong>
+                                                    تعمیر یخچال و کولر
+                                                </strong>
+                                            </span>
                                         </li>
                                         <li>
                                             <a href="#">بیشتر بخوانید</a>
@@ -682,7 +502,44 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="col-lg-2 col-md-5 col-sm-5 col-xs-12">
+                                <div class="service-item">
 
+                                    <ul>
+                                        <li>
+                                            <img src="/Content/Images/mixer.png" />
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>
+                                                    تعمیر لوازم ریز آشپزخانه
+                                                </strong>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#">بیشتر بخوانید</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-5 col-sm-5 col-xs-12">
+                                <div class="service-item">
+
+                                    <ul>
+                                        <li>
+                                            <img src="/Content/Images/messaging-app.png" />
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>خدمات مشاوره</strong>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#">بیشتر بخوانید</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -696,7 +553,7 @@
                         </div>
                         <div class="section-header">
                             <h3>
-                                از بین بردن چالش های فناوری اطلاعات کسب و کار شما هنر ماست
+                                از بین بردن چالش های تعمیر لوازم خانگی شما هنر ماست
                             </h3>
                         </div>
 
@@ -704,15 +561,15 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="study-item">
                                     <div style="">
-                                        <img src="Content/Images/washing.jpg" />
+                                        <img src="/Content/Images/washing.jpg" />
                                     </div>
                                     <div class="study-item-head">
-                                        <a href="internal-page.html"> سرویس پردازش ابری</a>
+                                        <a href="#register">ثبت درخواست</a>
                                     </div>
                                     <div class="study-item-body">
                                         <h2>تعمیر ماشین لباسشویی</h2>
-                                        <span>تعمیرات تخصصی ماشین لباسشویی در برندهای مختلف آمریکایی ،اسیایی ،اروپایی و ایرانی با بهترین کیفیت و با قطعات اصلی</span>
-                                        <a href="internal-page.html">
+                                        <span>تعمیر ماشین لباسشویی به طور تخصصی در برندهای مختلف آمریکایی ،اسیایی ،اروپایی و ایرانی با بهترین کیفیت و با قطعات اصلی</span>
+                                        <a href="#">
                                             <span class="button-c">اظلاعات بیشتر را مشاهده کنید</span>
                                         </a>
                                     </div>
@@ -721,15 +578,15 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="study-item">
                                     <div style="">
-                                        <img src="Content/Images/image-01.png" />
+                                        <img src="/Content/Images/image-01.png" />
                                     </div>
                                     <div class="study-item-head">
-                                        <a href="internal-page.html"> سرویس پردازش ابری</a>
+                                        <a href="#register">ثبت درخواست</a>
                                     </div>
                                     <div class="study-item-body">
-                                        <h2>کمک ناب وردپرس به شرکت های دانش بنیان</h2>
-                                        <span>نگاه اجمالی این یک نوشته آزمایشی است تا ما بتوانیم ب</span>
-                                        <a href="internal-page.html">
+                                        <h2>تعمیر کولر گازی</h2>
+                                        <span>تعمیر کولر به طور تخصصی در برندهای مختلف آمریکایی ،اسیایی ،اروپایی و ایرانی با بهترین کیفیت و با قطعات اصلی</span>
+                                        <a href="#">
                                             <span class="button-c">مطالعه موردی را مشاهده کنید</span>
                                         </a>
                                     </div>
@@ -738,15 +595,15 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="study-item">
                                     <div style="background-color: #71cbcc;">
-                                        <img src="Content/Images/image-post1.jpg" />
+                                        <img src="/Content/Images/image-post1.jpg" />
                                     </div>
                                     <div class="study-item-head">
-                                        <a href="internal-page.html"> صنعت بهداشت و درمان</a>
+                                        <a href="#register">ثبت درخواست</a>
                                     </div>
                                     <div class="study-item-body">
-                                        <h2>نانو سافت برترین قالب ارجینال دنیا که توسط ناب وردپرس ارائه شد!</h2>
-                                        <span>نگاه اجمالی این یک نوشته آزمایشی است تا ما بتوانیم ب</span>
-                                        <a href="internal-page.html">
+                                        <h2>تعمیر یخچال</h2>
+                                        <span>تعمیر یخچال به طور تخصصی در برندهای مختلف آمریکایی ،اسیایی ،اروپایی و ایرانی با بهترین کیفیت و با قطعات اصلی</span>
+                                        <a href="#">
                                             <span class="button-c">مطالعه موردی را مشاهده کنید</span>
                                         </a>
                                     </div>
@@ -755,8 +612,8 @@
                         </div>
                         <div class="mini-footer">
                             <span>
-                                مدیریت سرویس های آی تی برای شما موفقیت به همراه دارد.
-                                <a href="#">اجازه بدید شروع کنیم</a>
+                                <strong>تعمیر لوازم خانگی</strong> <b>تخصص ماست</b>
+                                <a href="#register">اجازه بدید شروع کنیم</a>
 
                                 .
                             </span>
@@ -774,13 +631,13 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
 
-                                    <label>نگرانی های خود را درباره ی سیستم های متوقف کنید؟</label>
+                                    <label>نگرانی های خود را درباره ی تعمیر لوازم خانگی متوقف کنید؟</label>
 
 
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0">
 
-                                    <span>آیا شما نگران این هستید که کسب و کار شما توسط تکنولوژی منسوخ متوقف شده است؟ آیا شما احساس می کنید که بهره وری رشد کرده است؟ آیا شما در رفع یک باگ سیستم مشگل دارید؟</span>
+                                    <span>آیا در تعمیر و نگهداری لوازم خانگی خود مشکل دارید؟ آیا از تامین هزینه های بالای تعمیر لوازم خانگی خسته شده اید؟ آیا به دلیل خرابی لوازم خانگی قصد تعویض آنها را دارید؟ دیگر نیاز به تعویض لوازم خانگی خود و یا صرف هزینه های بالا برای تعمیرلوازم خانگی خود ندارید ، کافیست با دینا سرویس و متخصصان ما در تماس باشید </span>
 
 
 
@@ -794,13 +651,13 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
 
-                                    <label>بر روی کسبوکار خود متمرکز شوید!</label>
+                                    <label>بر روی نگهداری از لوازم خانگی خود متمرکز شوید!</label>
 
 
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0">
 
-                                    <span>شاید زمان آن فرا رسیده است که با تلفن تماس بگیرید ما IT شما را به صورت شلاق می کشیم و با بازدید منظم برنامه های منظم برنامه ها را تنظیم می کنیم و هزینه های پنهانی را برای انجام این کار هزینه نمی کنیم. یک مشاوره رایگان امروز را برنامه ریزی کنید.</span>
+                                    <span>شاید زمان آن رسیده است که با تماس با مشاوران و متخصصان دینا سرویس نحوه ی نگهداری از لوازم خانگی خود را بپرسید،درست است که استفاده از لوازم خانگی، زندگی ما را بسیار ساده تر کرده است، اما باید این را هم در نظر گرفت که استفاده نامناسب و بدون مراقبت از آنها می تواند باعث سخت تر شدن روند زندگی گردد</span>
 
 
 
@@ -813,13 +670,13 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
 
-                                    <label>ما مواظب تکنولوژیهای شما هستیم!</label>
+                                    <label>ما مواظب لوازم خانگی شما هستیم!</label>
 
 
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0">
 
-                                    <span>شاید زمان آن فرا رسیده است که با تلفن تماس بگیرید ما IT شما را به صورت شلاق می کشیم و با بازدید منظم برنامه های منظم برنامه ها را تنظیم می کنیم و هزینه های پنهانی را برای انجام این کار هزینه نمی کنیم. یک مشاوره رایگان امروز را برنامه ریزی کنید.</span>
+                                    <span>متخصصان و تعمیرکاران لوازم خانگی دینا سرویس ، با بهره مندی از ابزارآلات و تجهیزات پیشرفته و تجارب بالای خود در کمترین  زمان  و نازل ترین قیمت ها در محل شما اقدام به تعمیر لوازم خانگی شما و ارائه مشاوره های تخصصی جهت نگهداری از لوازم خانگی مینمایند . کافیست با ما تماس بگیرید</span>
 
 
 
@@ -830,47 +687,48 @@
                 </ul>
 
             </section>
-            <div class="container contact-form-box">
+            <div class="container contact-form-box" id="register">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 contact-right-box">
                         <div class="contact-right-box-head">
                             <h3>چرا باید ما را انتخاب کنید؟</h3>
-                            <span>در راحل های تکنولوژی محور نانو سافتُ ما امنیت را به شما هدیه میدهیم :</span>
+                            <span>در امر تعمیر لوازم خانگی ،ما اطمینان و آرامش خاطر را به شما هدیه میدهیم :</span>
                         </div>
                         <ul class="contact-right-box-body">
                             <li>
                                 <div class="our-services-item">
                                     <div>
-                                        <img src="Content/Images/health.svg" />
+                                        <img src="/Content/Images/health.svg" />
                                     </div>
                                     <div class="our-services-item-text">
-                                        <label>از کسب و کار خود مواظبت کنید.</label>
-                                        <span>ریسک را از طریق جلوگیری از نقض امنیت (یا بهبودی) کاهش می دهد.</span>
+                                        <label>از لوازم خانگی خود مواظبت کنید.</label>
+                                        <span>هزینه های خود را با روش نگهداری مناسب کاهش دهید</span>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="our-services-item">
                                     <div>
-                                        <img src="Content/Images/computer-network.svg" />
+                                        <img src="/Content/Images/computer-network.svg" />
                                     </div>
                                     <div class="our-services-item-text">
                                         <label>
-                                            بهینه سازی سیستم های اطلاعاتی
-                                            بهبود کارایی، صرفه جویی هزینه از فرایندهای.
+                                            زمان را از دست ندهید.
                                         </label>
+                                        <span>دینا سرویس با دارا بودن شعبات متعدد در سطح شهر در کمترین زمان در محل شما خواهد بود</span>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="our-services-item">
                                     <div>
-                                        <img src="Content/Images/telephone-operator.svg" />
+                                        <img src="/Content/Images/telephone-operator.svg" />
                                     </div>
                                     <div class="our-services-item-text">
                                         <label>
-                                            توانمندسازی کارمندان شما
-                                        </label> <span>اجازه دهید کارکنان خود را به انجام بیشتر و رفتن بیشتر.</span>
+                                            مشاوره 24 ساعته
+                                        </label>
+                                        <span>مشاوران دینا سرویس در هر ساعت از شبانه روز آماده ی خدمت رسانی و ارائه مشاوره های تخصصی به شما مردم عزیز خواهد بود</span>
                                     </div>
                                 </div>
                             </li>
@@ -884,8 +742,8 @@
                                 <input type="text" name="name" value="" placeholder="نمونه: سید علی میرزایی" />
                             </div>
                             <div class="item-contact-form">
-                                <span> * آدرس ایمیل </span>
-                                <input type="text" name="name" value="" placeholder="name@company.com" />
+                                <span> * آدرس </span>
+                                <input type="text" name="name" value="" placeholder="" />
                             </div>
                             <div class="item-contact-form">
                                 <span>* پرس و جو شما در مورد چیست؟ </span>
@@ -908,14 +766,14 @@
             <section class="section-info-company">
                 <div class="container">
                     <div class="mini-header">
-                        <span>فناوری و همکاران</span>
+                        @*<span>همکاران</span>*@
                     </div>
                     <div class="section-header">
-                        <h3>کمک به کسب و کار در سراسر جهان</h3>
+                        <h3>برند های لوازم خانگی</h3>
                     </div>
                     <div class="section-header-content">
                         <span>
-                            امروزه کسب و کارها از مرزها و مناطق عبور می کنند، بنابراین شما نیاز به ارائه دهنده خدماتی دارید که در آن می روید. با یک شبکه بزرگ از U.S. و مراکز سرویس و مکان های مبتنی بر جهان، ما زیرساخت هایی را برای ارائه خدمات مورد نیاز خود در زمان و مکان مورد نیاز خود داریم.
+                          دینا سرویس با دارا بودن مجرب ترین متخصصین در امر تعمیر لوازم خانگی ، اقدام به ارائه خدمت در زمینه ی نگهداری و تعمیر لوازم خانگی برند های ایرانی ، اروپایی ، آسیایی و آمریکایی می نماید
                         </span>
                     </div>
                 </div>
@@ -923,40 +781,40 @@
                     <div class="section-content">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/AEG.png" />
+                                <img src="/Content/Images/Companys-logo/AEG.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/Bloomberg.png" />
+                                <img src="/Content/Images/Companys-logo/Bloomberg.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/General.png" />
+                                <img src="/Content/Images/Companys-logo/General.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/siemens.png" />
+                                <img src="/Content/Images/Companys-logo/siemens.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/Frigidaire.png" />
+                                <img src="/Content/Images/Companys-logo/Frigidaire.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/bosch-logo-png-transparent.png" />
+                                <img src="/Content/Images/Companys-logo/bosch-logo-png-transparent.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/admiral-16-logo-png-transparent.png" />
+                                <img src="/Content/Images/Companys-logo/admiral-16-logo-png-transparent.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/mabe.png" />
+                                <img src="/Content/Images/Companys-logo/mabe.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/westinghouse-electric-logo.png" />
+                                <img src="/Content/Images/Companys-logo/westinghouse-electric-logo.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/westport.png" />
+                                <img src="/Content/Images/Companys-logo/westport.png" />
                             </div>
                             <div class="item">
-                                <img src="Content/Images/Companys-logo/Whirlpool.png" />
+                                <img src="/Content/Images/Companys-logo/Whirlpool.png" />
                             </div>
                             <div class="item">
-                                <img src="../Content/Images/Companys-logo/c1.svg" />
+                                <img src="..//Content/Images/Companys-logo/c1.svg" />
                             </div>
 
                         </div>
@@ -967,10 +825,10 @@
                         <div class="loaction-branch detail-box">
                             <div class="dots-animation"></div>
                             <div class="loaction-branch-img">
-                                <img src="Content/Images/Profile.jpg" />
+                                <img src="~//Content/Images/Companys-logo/bosch-logo-png-transparent.png" />
                             </div>
                             <div class="loaction-branch-text detail-box-text">
-                                <span>بهترین شرکت سئو و بهینه سازی وب سایت در ایران هست که به معنی واقعی حسشون کردم</span>
+                                <span>بوش</span>
                             </div>
                         </div>
 
@@ -981,13 +839,13 @@
 
                             <div class="dots-animation"></div>
                             <div class="loaction-branch-img ">
-                                <img src="Content/Images/Profile.jpg" />
+                                <img src="~//Content/Images/Companys-logo/Bloomberg.png" />
                             </div>
                             <div class="loaction-branch-text detail-box-text">
-                                <span>بهترین شرکت سئو و بهینه سازی وب سایت در ایران هست که به معنی واقعی حسشون کردم</span>
+                                <span>سامسونگ</span>
                             </div>
                         </div>
-                        <img src="../Content/Images/map-1.svg" />
+                        <img src="..//Content/Images/map-1.svg" />
                     </div>
 
                 </div>
@@ -997,7 +855,7 @@
 
             <section class="section-other-texts">
                 <div class="container">
-                    <div class="mini-header">
+                    @*<div class="mini-header">
                         <span>
                             از بخش وبلاگ
                         </span>
@@ -1011,9 +869,9 @@
                                 <article class="item-other-texts">
                                     <div class="item-other-texts-image">
                                         <a href="#">
-                                            <img src="../Content/Images/imgix1.jpg" />
+                                            <img src="..//Content/Images/imgix1.jpg" />
                                             <div class="detail-writer">
-                                                <img src="../Content/Images/img-profile.png" />
+                                                <img src="..//Content/Images/img-profile.png" />
                                                 <span> توسط مدیر سایت</span>
                                             </div>
                                         </a>
@@ -1028,9 +886,9 @@
                                 <article class="item-other-texts">
                                     <div class="item-other-texts-image">
                                         <a href="#">
-                                            <img src="../Content/Images/imgix2.jpg" />
+                                            <img src="..//Content/Images/imgix2.jpg" />
                                             <div class="detail-writer">
-                                                <img src="../Content/Images/img-profile.png" />
+                                                <img src="..//Content/Images/img-profile.png" />
                                                 <span> توسط مدیر سایت</span>
                                             </div>
                                         </a>
@@ -1045,9 +903,9 @@
                                 <article class="item-other-texts">
                                     <div class="item-other-texts-image">
                                         <a href="#">
-                                            <img src="../Content/Images/imgix3.jpg" />
+                                            <img src="..//Content/Images/imgix3.jpg" />
                                             <div class="detail-writer">
-                                                <img src="../Content/Images/img-profile.png" />
+                                                <img src="..//Content/Images/img-profile.png" />
                                                 <span> توسط مدیر سایت</span>
                                             </div>
                                         </a>
@@ -1062,9 +920,9 @@
                                 <article class="item-other-texts">
                                     <div class="item-other-texts-image">
                                         <a href="#">
-                                            <img src="../Content/Images/imgix4.jpg" />
+                                            <img src="..//Content/Images/imgix4.jpg" />
                                             <div class="detail-writer">
-                                                <img src="../Content/Images/img-profile.png" />
+                                                <img src="..//Content/Images/img-profile.png" />
                                                 <span> توسط مدیر سایت</span>
                                             </div>
                                         </a>
@@ -1076,131 +934,89 @@
                                 </article>
                             </div>
                         </div>
-                    </div>
+                    </div>*@
                 </div>
             </section>
+            <hr />
             <footer>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                             <div class="row service-footer">
-                                <div class="col-md-3 col-lg-3 col-xs-6 col-sm-3">
-                                    <ul>
-                                        <li class="head-services">
-                                            <a href="#">خدمات آی تی</a>
-                                        </li>
+                                
+                                
+                                <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
+                                    @*<ul>
+                                            <li class="head-services">
+                                                <a href="#">پشتیبانی</a>
+                                            </li>
 
-                                        <li>
-                                            <a href="#"> مدیریت آی تی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> پشتیبانی آی تی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> مشاوره آی تی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> سرویس پردازش ابری</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> امنیت سایبری</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> توسعه نرم افزار</a>
-                                        </li>
-                                    </ul>
+
+
+
+
+
+
+                                            <li>
+                                                <a href="#">سیستم پشتیبانی شرکت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">راهنما / پرسش و پاسخ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">تماس با ما</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">قیمت گذاری و پلن ها</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">سیاست کوکی ها</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">سیاست حفظ حریم خصوصی</a>
+                                            </li>
+
+                                        </ul>*@
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-xs-6 col-sm-3">
+                                <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
                                     <ul>
-
-
-
-
-
-
-
-
-                                        <li class="head-services">
-                                            <a href="#">صنایع</a>
-                                        </li>
-
                                         <li>
-                                            <a href="#"> بانکداری</a>
+                                            <span>
+                                                <h3>
+                                                    شعبات دینا سرویس
+                                                </h3>
+                                            </span>
                                         </li>
                                         <li>
-                                            <a href="#">مارکت ناب وردپرس</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">تکنولوژی های روز دنیا</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> ساخت</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">سلامتی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> تحصیلات عالی</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-xs-6 col-sm-3">
-                                    <ul>
-                                        <li class="head-services">
-                                            <a href="#">نانو سافت</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> درباره</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> اعضای تیم نانو سافت</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> وبلاگ آی تی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> مطالعات موردی بیشتر</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> لوکیشن ما</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> استخدام در نانو سافت</a>
-                                        </li>
+                                            <span>
+                                                <strong>آدرس دفتر شرق دینا سرویس:</strong>
+                                                ایـران، تهـران، خیـابان پیروزی، نبش چهارراه فرزانه، پلاک 43
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02177478565 | 02177151790 - 3
 
-                                    </ul>
-                                </div>
-                                <div class="col-md-3 col-lg-3 col-xs-6 col-sm-3">
-                                    <ul>
-                                        <li class="head-services">
-                                            <a href="#">پشتیبانی</a>
-                                        </li>
-
-
-
-
-
-
-
-                                        <li>
-                                            <a href="#">سیستم پشتیبانی شرکت</a>
+                                            </span>
                                         </li>
                                         <li>
-                                            <a href="#">راهنما / پرسش و پاسخ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">تماس با ما</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">قیمت گذاری و پلن ها</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">سیاست کوکی ها</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">سیاست حفظ حریم خصوصی</a>
-                                        </li>
+                                            <span>
+                                                <strong>آدرس دفتر غرب دینا سرویس:</strong>
+                                                ایـران، تهـران، خیـابان اشرفی اصفهانی، ساختمان هامون، واحد 48
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02144239870 - 1
 
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>آدرس دفتر شمال دینا سرویس:</strong>
+                                                ایـران، تهـران، اقدسیه، خیـابان سپند، کوچه کامران، پاساژ صاحب قرانیه، واحد 32
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02126100783 | 02126120917
+
+                                            </span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -1208,16 +1024,16 @@
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="left-box-footer">
                                 <ul>
-                                    <li> <img src="Content/Images/dinaservice.png" /></li>
+                                    <li> <img src="/Content/Images/dinaservice.png" /></li>
                                     <li>
                                         <span>
-                                            <strong>آدرس دفتر نانو سافت:</strong>
-                                            ایـران، تهـران، خیـابان جمهـوری شمالی، ساختمـان نانو سـافت، پلاک 152
+                                            <strong>آدرس دفتر مرکزی دینا سرویس:</strong>
+                                            ایـران، تهـران، خیـابان پیروزی، نبش چهارراه فرزانه، پلاک 43
                                             <br />
                                             <strong>تلفن:</strong>
-                                            09120123456 – 09127654321 |
+                                            02177478565 | 02177151790-3
                                             <strong>ایمیل : </strong>
-                                            example@nabwp.com
+                                            info@Dinaservice.com
                                         </span>
                                     </li>
                                     <li>
@@ -1233,15 +1049,7 @@
             </footer>
         </main>
     </div>
-    <script src="App_theme/DinaTheme/js/navbar.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/tether/tether.min.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/theme/js/script.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="App_theme/DinaTheme/slider/assets/slidervideo/script.js"></script>
-    <script src="App_theme/DinaTheme/js/owl.carousel.min.js"></script>
+    @Scripts.Render("~/bundles/body")
     <script>
         $('.owl-carousel').owlCarousel({
             rtl: true,
@@ -1261,14 +1069,14 @@
             }
         })
     </script>
-    <script src="App_theme/DinaTheme/js/aos.js"></script>
+    <script src="/App_theme/DinaTheme/js/aos.js"></script>
     <script>
         function aos() {
 
             AOS.init({
                 easing: "ease-in-out-sine",
                 once: true
-        });
+            });
         }
 
     </script>

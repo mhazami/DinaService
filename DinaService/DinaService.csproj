@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -50,6 +54,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -59,8 +66,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Optimization">
-      <HintPath>..\TParty\System.Web.Optimization.dll</HintPath>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -69,6 +76,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -116,8 +126,41 @@
     <Content Include="App_theme\DinaTheme\css\style.css" />
     <Content Include="App_theme\DinaTheme\fonts\fontawesome-webfont.svg" />
     <Content Include="App_theme\DinaTheme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="App_theme\DinaTheme\js\jquery-3.3.1.js" />
+    <Content Include="App_theme\DinaTheme\js\jquery.validate.js" />
+    <Content Include="App_theme\DinaTheme\js\jquery.validate.min.js" />
+    <Content Include="App_theme\DinaTheme\js\LoadPage.js" />
+    <Content Include="App_theme\DinaTheme\js\modernizr-2.8.3.js" />
     <Content Include="App_theme\DinaTheme\js\navbar.js" />
     <Content Include="App_theme\DinaTheme\js\owl.carousel.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrapcarouselswipe\bootstrap-carousel-swipe.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\dropdown\css\style.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\dropdown\js\script.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\background1.jpg" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\background2.jpg" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\background3.jpg" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\background4.jpg" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\logo2.png" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\logo4.png" />
+    <Content Include="App_theme\DinaTheme\slider\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\parallax\jarallax.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\popper\popper.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\slidervideo\script.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\smoothscroll\smooth-scroll.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\tether\tether.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\tether\tether.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\css\style.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\js\script.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\touchswipe\jquery.touch-swipe.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\vimeoplayer\jquery.mb.vimeo_player.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\jquery\jquery.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
+    <Content Include="App_theme\DinaTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -184,7 +227,6 @@
     <Content Include="Content\Images\washing-machine.svg" />
     <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
-    <Content Include="index.html" />
     <Content Include="App_theme\DinaTheme\js\all.js" />
     <Content Include="App_theme\DinaTheme\js\bootstrap.js" />
     <Content Include="App_theme\DinaTheme\js\bootstrap.min.js" />
@@ -192,13 +234,13 @@
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
     <Content Include="Global.asax" />
-    <Content Include="internal-page.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Routing.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,7 +282,15 @@
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff\Vazir-Medium-FD.woff" />
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff\Vazir-Thin-FD.woff" />
     <Content Include="Content\Images\Thumbs.db" />
+    <Content Include="App_theme\DinaTheme\slider\assets\images\Thumbs.db" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -250,7 +300,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -261,7 +261,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     font-weight: 500;
     color: #0e2b5c;
     text-transform: none;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .service-item {
@@ -488,7 +488,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 }
 
 .main-items-list-info label {
-    font-size: 26px;
+    font-size: 23px;
     color: #fff
 }
 
@@ -522,7 +522,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     padding-right: 5%;
     padding-bottom: 16%;
     padding-left: 5%;
-    background-image: url(../../../Content/Images/image-kitchen-8.png);
+    background-image: url(/Content/Images/image-kitchen-8.png);
     background-repeat: no-repeat !important;
     background-size: 122%;
     background-position: bottom !important;
@@ -720,13 +720,13 @@ a.detail-box, a.detail-box:hover {
 
 .loaction-branch {
     position: absolute;
-    left: 35%;
-    top: 20%
+    left: 53%;
+    top: 22%;
 }
 
 .loaction-branch-2 {
-    left: 60%;
-    top: 37%;
+    left: 77%;
+    top: 31%;
 }
 
 .dots-animation {
@@ -870,7 +870,7 @@ a.detail-box, a.detail-box:hover {
         }
 
         .footer-map .owl-carousel .item:before {
-            content: "“";
+            content: "ï¿½";
             position: absolute;
             left: -30px;
             top: -45px;
@@ -1661,7 +1661,7 @@ main {
 
 /*loading*/
 
-/* You can use this code for whatever you want but I don´t recommend it. It is an exsercise and the code is not clean and could be better */
+/* You can use this code for whatever you want but I donï¿½t recommend it. It is an exsercise and the code is not clean and could be better */
 
 
 .animate-bottom {
