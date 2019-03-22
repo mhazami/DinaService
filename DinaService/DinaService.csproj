@@ -186,6 +186,7 @@
     <Content Include="Content\Images\dinaservice.png" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
+    <Content Include="Content\Images\favicon.png" />
     <Content Include="Content\Images\haed-item-list.png" />
     <Content Include="Content\Images\head-item-menu.svg" />
     <Content Include="Content\Images\health.svg" />
@@ -240,6 +241,7 @@
     <Content Include="App_Code\Routing.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,11 +288,13 @@
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -300,6 +304,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

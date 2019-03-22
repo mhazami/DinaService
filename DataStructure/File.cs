@@ -10,7 +10,7 @@ namespace DataStructure
     public class File
     {
         [Key]
-        public Guid FileId { get; set; }
+        public int Id { get; set; }
         public byte[] Context { get; set; }
 
         [Required]

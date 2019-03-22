@@ -69,7 +69,13 @@ label, span {
     margin: 8px 0;
     line-height: 1.2em;
 }
-
+.section-header h1 {
+    font-weight: 500;
+    color: #0e2b5c;
+    font-size: 30px;
+    margin: 8px 0;
+    line-height: 1.2em;
+}
 .mini-header span, .section-header-content span, .mini-footer span {
     color: #627792;
 }
@@ -1804,5 +1810,7 @@ body {
         height: 100px;
     }
 }
-
+.main-div {
+    display: none;
+}
 /*loading*/
