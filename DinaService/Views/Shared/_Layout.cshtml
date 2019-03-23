@@ -3,11 +3,11 @@
 <html lang="fa-IR" dir="rtl">
 <head>
     <meta name="viewport" content="width=device-width" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <link href="~/Content/Images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <title>@ViewBag.Title | دینا سرویس</title>
     <meta name="description" content="@ViewBag.Des" />
-    <meta name="keywords" content="@ViewBag.Key"/>
+    <meta name="keywords" content="@ViewBag.Key" />
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/modernizr")
@@ -17,8 +17,8 @@
     @Scripts.Render("~/bundles/all")
     @Styles.Render("~/slider/css")
     @Styles.Render("~/style/css")
-    
-    
+
+
 </head>
 <body onload="myFunction()">
     <div id="atomo">
@@ -44,7 +44,7 @@
                         <img src="/Content/Images/dinaservice.png" alt="دینا سرویس" />
                     </a>
                 </div>
-                
+
 
                 <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
                     <div class="r-collapse">
@@ -59,6 +59,11 @@
                             <nav class="r-nav navigation-menu sidenav close-nav ">
                                 <div id="accordian" class="content-navigation-menu">
                                     <ul class="list-nav">
+                                        <li>
+                                            <a href="#">
+                                                <span>برندها ی لوازم خانگی</span>
+                                            </a>
+                                        </li>
                                         <li>
                                             <a class="dropdown-btn">
                                                 <span> لوازم آشپز خانه</span>
@@ -307,6 +312,9 @@
                                             </ul>
                                         </li>
 
+
+
+
                                         <li>
                                             <a href="#">
                                                 <span>سوالات متداول</span>
@@ -347,7 +355,7 @@
                                 </a>
                                 <div class="search-element">
                                     <input type="text" name="name" value="" placeholder="جستجو ..." />
-                                    <a> <i class="fas fa-search"></i></a>
+                                    <a><i class="fas fa-search"></i></a>
                                 </div>
                             </div>
                         </li>
@@ -471,7 +479,7 @@
 
                                     <ul>
                                         <li>
-                                            <img src="/Content/Images/vacuum-cleaner.png" alt="تعمیر جارو برقی -تعمیر مایکروفر"/>
+                                            <img src="/Content/Images/vacuum-cleaner.png" alt="تعمیر جارو برقی -تعمیر مایکروفر" />
                                         </li>
                                         <li>
                                             <span>
@@ -489,7 +497,7 @@
 
                                     <ul>
                                         <li>
-                                            <img src="/Content/Images/refrigerator.png" alt="تعمیر یخچال -تعمیر کولر"/>
+                                            <img src="/Content/Images/refrigerator.png" alt="تعمیر یخچال -تعمیر کولر" />
                                         </li>
                                         <li>
                                             <span>
@@ -509,7 +517,7 @@
 
                                     <ul>
                                         <li>
-                                            <img src="/Content/Images/mixer.png" alt="تعمیر لوازم ریز آشپزخانه"/>
+                                            <img src="/Content/Images/mixer.png" alt="تعمیر لوازم ریز آشپزخانه" />
                                         </li>
                                         <li>
                                             <span>
@@ -529,7 +537,7 @@
 
                                     <ul>
                                         <li>
-                                            <img src="/Content/Images/messaging-app.png" alt="خدمات مشاوره تعمیر لوازم خانگی"/>
+                                            <img src="/Content/Images/messaging-app.png" alt="خدمات مشاوره تعمیر لوازم خانگی" />
                                         </li>
                                         <li>
                                             <span>
@@ -554,16 +562,16 @@
                             <span>مورد مطالعاتی</span>
                         </div>
                         <div class="section-header">
-                            <h1>
+                            <h3>
                                 از بین بردن چالش های تعمیر لوازم خانگی شما هنر ماست
-                            </h1>
+                            </h3>
                         </div>
 
                         <div class="section-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="study-item">
                                     <div>
-                                        <img src="/Content/Images/washing.jpg" alt="تعمیر ماشین لباسشویی"/>
+                                        <img src="/Content/Images/washing.jpg" alt="تعمیر ماشین لباسشویی" />
                                     </div>
                                     <div class="study-item-head">
                                         <a href="#register">ثبت درخواست</a>
@@ -597,7 +605,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="study-item">
                                     <div>
-                                        <img src="/Content/Images/image-post1.jpg" alt="تعمیر یخچال"/>
+                                        <img src="/Content/Images/image-post1.jpg" alt="تعمیر یخچال" />
                                     </div>
                                     <div class="study-item-head">
                                         <a href="#register">ثبت درخواست</a>
@@ -617,7 +625,7 @@
                                 <strong>تعمیر لوازم خانگی</strong> <b>تخصص ماست</b>
                                 <a href="#register">اجازه بدید شروع کنیم</a>
 
-                                
+
                             </span>
                         </div>
 
@@ -691,9 +699,15 @@
             </section>
             <div class="container contact-form-box" id="register">
                 <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 head-center">
+                        <h2>ثبت درخواست تعمیرات لوازم خانگی</h2>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 contact-right-box">
+
                         <div class="contact-right-box-head">
-                            <h3>چرا باید ما را انتخاب کنید؟</h3>
+                            <h6>چرا باید ما را انتخاب کنید؟</h6>
                             <span>در امر تعمیر لوازم خانگی ،ما اطمینان و آرامش خاطر را به شما هدیه میدهیم :</span>
                         </div>
                         <ul class="contact-right-box-body">
@@ -711,7 +725,7 @@
                             <li>
                                 <div class="our-services-item">
                                     <div>
-                                        <img src="/Content/Images/computer-network.svg" alt="شعبات دینا سرویس"/>
+                                        <img src="/Content/Images/computer-network.svg" alt="شعبات دینا سرویس" />
                                     </div>
                                     <div class="our-services-item-text">
                                         <label>
@@ -724,7 +738,7 @@
                             <li>
                                 <div class="our-services-item">
                                     <div>
-                                        <img src="/Content/Images/telephone-operator.svg" alt="مشاوره تعمیر لوازم خانگی"/>
+                                        <img src="/Content/Images/telephone-operator.svg" alt="مشاوره تعمیر لوازم خانگی" />
                                     </div>
                                     <div class="our-services-item-text">
                                         <label>
@@ -775,7 +789,7 @@
                     </div>
                     <div class="section-header-content">
                         <span>
-                          دینا سرویس با دارا بودن مجرب ترین متخصصین در امر تعمیر لوازم خانگی ، اقدام به ارائه خدمت در زمینه ی نگهداری و تعمیر لوازم خانگی برند های ایرانی ، اروپایی ، آسیایی و آمریکایی می نماید
+                            دینا سرویس با دارا بودن مجرب ترین متخصصین در امر تعمیر لوازم خانگی ، اقدام به ارائه خدمت در زمینه ی نگهداری و تعمیر لوازم خانگی برند های ایرانی ، اروپایی ، آسیایی و آمریکایی می نماید
                         </span>
                     </div>
                 </div>
@@ -783,40 +797,40 @@
                     <div class="section-content">
                         <div class="owl-carousel owl-theme">
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/AEG.png" alt="تعمیر لوازم خانگی AEG"/>
+                                <img src="/Content/Images/Companys-logo/AEG.png" alt="تعمیر لوازم خانگی AEG" />
                             </div>
                             <div class="item">
                                 <img src="/Content/Images/Companys-logo/Bloomberg.png" alt="تعمیر لوازم خانگی بلومبرگ" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/General.png" alt="تعمیر لوازم خانگی جنرال"/>
+                                <img src="/Content/Images/Companys-logo/General.png" alt="تعمیر لوازم خانگی جنرال" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/siemens.png" alt="تعمیر لوازم خانگی زیمنس"/>
+                                <img src="/Content/Images/Companys-logo/siemens.png" alt="تعمیر لوازم خانگی زیمنس" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/Frigidaire.png" alt="تعمیر لوازم خانگی Frigidaire "/>
+                                <img src="/Content/Images/Companys-logo/Frigidaire.png" alt="تعمیر لوازم خانگی Frigidaire " />
                             </div>
                             <div class="item">
                                 <img src="/Content/Images/Companys-logo/bosch-logo-png-transparent.png" alt="تعمیر لوازم خانگی بوش" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/admiral-16-logo-png-transparent.png" alt="تعمیر لوازم خانگی ادمیرال"/>
+                                <img src="/Content/Images/Companys-logo/admiral-16-logo-png-transparent.png" alt="تعمیر لوازم خانگی ادمیرال" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/mabe.png" alt="تعمیر لوازم خانگی وستینگ مابه"/>
+                                <img src="/Content/Images/Companys-logo/mabe.png" alt="تعمیر لوازم خانگی وستینگ مابه" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/westinghouse-electric-logo.png" alt="تعمیر لوازم خانگی وستینگ هاوز"/>
+                                <img src="/Content/Images/Companys-logo/westinghouse-electric-logo.png" alt="تعمیر لوازم خانگی وستینگ هاوز" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/westport.png" alt="تعمیر لوازم خانگی وست پورت"/>
+                                <img src="/Content/Images/Companys-logo/westport.png" alt="تعمیر لوازم خانگی وست پورت" />
                             </div>
                             <div class="item">
-                                <img src="/Content/Images/Companys-logo/Whirlpool.png"  alt="تعمیر لوازم خانگی وایرپول"/>
+                                <img src="/Content/Images/Companys-logo/Whirlpool.png" alt="تعمیر لوازم خانگی وایرپول" />
                             </div>
                             <div class="item">
-                                <img src="..//Content/Images/Companys-logo/c1.svg" alt="تعمیر لوازم خانگی c1"/>
+                                <img src="..//Content/Images/Companys-logo/c1.svg" alt="تعمیر لوازم خانگی c1" />
                             </div>
 
                         </div>
@@ -827,7 +841,7 @@
                         <div class="loaction-branch detail-box">
                             <div class="dots-animation"></div>
                             <div class="loaction-branch-img">
-                                <img src="~//Content/Images/Companys-logo/bosch-logo-png-transparent.png" alt="تعمیر لوازم خانگی بوش"/>
+                                <img src="~//Content/Images/Companys-logo/bosch-logo-png-transparent.png" alt="تعمیر لوازم خانگی بوش" />
                             </div>
                             <div class="loaction-branch-text detail-box-text">
                                 <span>بوش</span>
@@ -841,13 +855,13 @@
 
                             <div class="dots-animation"></div>
                             <div class="loaction-branch-img ">
-                                <img src="~//Content/Images/Companys-logo/Bloomberg.png" alt="تعمیر لوازم خانگی بولمبرگ"/>
+                                <img src="~//Content/Images/Companys-logo/Bloomberg.png" alt="تعمیر لوازم خانگی بولمبرگ" />
                             </div>
                             <div class="loaction-branch-text detail-box-text">
                                 <span>سامسونگ</span>
                             </div>
                         </div>
-                        <img src="..//Content/Images/map-1.svg" alt="نقشه جهان"/>
+                        <img src="..//Content/Images/map-1.svg" alt="نقشه جهان" />
                     </div>
 
                 </div>
@@ -857,7 +871,7 @@
 
             <section class="section-other-texts">
                 <div class="container">
-           
+
                 </div>
             </section>
             <hr />
@@ -866,10 +880,10 @@
                     <div class="row">
                         <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                             <div class="row service-footer">
-                                
-                                
+
+
                                 <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
-                        
+
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
                                     <ul>

@@ -24,5 +24,15 @@ namespace DataStructure.Tools
             Electric = 4,
 
         }
+
+        public enum MessageType
+        {
+            Error,
+            Success,
+            Warning,
+            Primary,
+            Defualt,
+            Info
+        }
     }
 }

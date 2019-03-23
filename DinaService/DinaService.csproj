@@ -130,6 +130,7 @@
     <Content Include="App_theme\DinaTheme\js\jquery.validate.js" />
     <Content Include="App_theme\DinaTheme\js\jquery.validate.min.js" />
     <Content Include="App_theme\DinaTheme\js\LoadPage.js" />
+    <Content Include="App_theme\DinaTheme\js\Message.js" />
     <Content Include="App_theme\DinaTheme\js\modernizr-2.8.3.js" />
     <Content Include="App_theme\DinaTheme\js\navbar.js" />
     <Content Include="App_theme\DinaTheme\js\owl.carousel.min.js" />
@@ -161,6 +162,11 @@
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="App_theme\DinaTheme\slider\assets\ytplayer\jquery.mb.ytplayer.min.js" />
+    <Content Include="Areas\Admin\css\bootstrap-theme.min.css" />
+    <Content Include="Areas\Admin\css\bootstrap.rtl.min.css" />
+    <Content Include="Areas\Admin\css\Login.css" />
+    <Content Include="Areas\Admin\css\style.css" />
+    <Content Include="Areas\Admin\js\bootstrap.rtl.min.js" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -239,9 +245,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Routing.cs" />
+    <Compile Include="AppCode\BaseController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SessionParameters.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\PanelController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -289,6 +299,9 @@
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_Layoutadmin.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Panel\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -304,9 +317,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

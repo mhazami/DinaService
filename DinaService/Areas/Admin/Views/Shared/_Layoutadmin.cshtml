@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>پنل مدیریت</title>
+    <link href="~/Content/Images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Areas/Admin/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="~/Areas/Admin/js/bootstrap.rtl.min.js"></script>
+    <link href="~/Areas/Admin/css/style.css" rel="stylesheet" />
+    @Html.Raw(ViewBag.Message)
+
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#">مطالب</a>
+        <a href="#">اسلایدر</a>
+        <a href="#">برندها</a>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="logo">
+                        <img src="/Content/Images/dinaservice.png" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-body">
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

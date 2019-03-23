@@ -553,6 +553,20 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     margin-bottom: 15px;
 }
 
+.contact-right-box-head h6 {
+    text-align: center;
+    color: #0e2b5c;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+.head-center h2 {
+    text-align: center;
+    color: #0e2b5c;
+    font-size: 27px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 .item-contact-form {
     padding: 8px 20px;
     color: #032a5f;

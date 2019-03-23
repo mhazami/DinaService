@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ورود به پنل مدیریت</title>
+    <script src="~/App_theme/DinaTheme/js/jquery-3.1.1.min.js"></script>
+    <link href="~/Areas/Admin/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="~/Areas/Admin/js/bootstrap.rtl.min.js"></script>
+    <link href="~/Areas/Admin/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/css/Login.css" rel="stylesheet" />
+    <script src="~/App_theme/DinaTheme/js/Message.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("Login","User",FormMethod.Post,new{onsubmit="return validate(this);"}))
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 login">
+                        <div class="row logo">
+                            <img src="/Content/Images/dinaservice.png"/>
+                        </div>
+                        <div class="row">
+                            <input type="text" id="Username" class="form-control" name="Username" placeholder="نام کاربری"/>
+                        </div>
+                        <div class="row">
+                            <input type="password" id="Password" class="form-control" name="Password" placeholder="رمز عبور"/>
+
+                        </div>
+                        <div class="row">
+                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control" placeholder=" تکرار رمز عبور"/>
+
+                        </div>
+                        
+                        <div class="row btn-login">
+                            <button type="submit" class="btn btn-primary btn-sm">
+                                ورود
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+        <div id="message"></div>
+    }
+<script>
+    
+    @Html.Raw(ViewBag.Message)
+    function validate() {
+        var pass = $('#Password').val();
+        var reppass = $('#ConfirmPassword').val();
+        var user = $('#Username').val();
+        if (pass !== reppass) {
+            ShowErrorMessage('خطا!', 'رمز عبور و تکرار رمز عبور مطابقت ندارند');
+            return false;
+        }
+        
+    }
+</script>
+</body>
+</html>
