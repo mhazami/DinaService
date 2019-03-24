@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+}
+
+
+<div class="container">
+    <h2>تعریف کاربر جدید</h2>
+    @using (Html.BeginForm("Create", "User", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">نام کاربری :</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Username" placeholder="نام کاربری" name="Username">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">نام :</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="FirstName" placeholder="نام" name="FirstName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">نام خانوادگی :</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="LastName" placeholder="نام خانوادگی" name="LastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">رمز عبور :</label>
+            <div class="col-sm-10">
+                <input type="Password" class="form-control" id="Password" placeholder="رمز عبور" name="Password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">تکرار رمز عبور :</label>
+            <div class="col-sm-10">
+                <input type="Password" class="form-control" id="ConfirmPassword" placeholder="تکرار رمز عبور" name="ConfirmPassword">
+            </div>
+        </div>
+       
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-info">ثبت</button>
+            </div>
+        </div>
+    }
+
+</div>
+
+@*<script>
+    function validate() {
+        var pass = $('#Password').val();
+        var reppass = $('#ConfirmPassword').val();
+        var user = $('#Username').val();
+        if (pass !== reppass) {
+            ShowErrorMessage('خطا!', 'رمز عبور و تکرار رمز عبور مطابقت ندارند');
+            return false;
+        }
+
+    }
+</script>*@

@@ -12,8 +12,8 @@ namespace DinaService.Areas.Admin.Controllers
         // GET: Admin/Panel
         public ActionResult Index()
         {
-            if (SessionParameters.User == null)
-                return Redirect("~/Admin/User/Login");
+            //if (SessionParameters.User == null)
+            //    return Redirect("~/Admin/User/Login");
             return View();
         }
     }

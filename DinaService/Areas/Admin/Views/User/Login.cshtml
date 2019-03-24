@@ -18,7 +18,7 @@
     <script src="~/App_theme/DinaTheme/js/Message.js"></script>
 </head>
 <body>
-    @using (Html.BeginForm("Login","User",FormMethod.Post,new{onsubmit="return validate(this);"}))
+    @using (Html.BeginForm("Login","User",FormMethod.Post))
     {
         <div class="container">
             <div class="row">
@@ -35,10 +35,7 @@
                             <input type="password" id="Password" class="form-control" name="Password" placeholder="رمز عبور"/>
 
                         </div>
-                        <div class="row">
-                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control" placeholder=" تکرار رمز عبور"/>
-
-                        </div>
+                      
                         
                         <div class="row btn-login">
                             <button type="submit" class="btn btn-primary btn-sm">
@@ -55,16 +52,7 @@
 <script>
     
     @Html.Raw(ViewBag.Message)
-    function validate() {
-        var pass = $('#Password').val();
-        var reppass = $('#ConfirmPassword').val();
-        var user = $('#Username').val();
-        if (pass !== reppass) {
-            ShowErrorMessage('خطا!', 'رمز عبور و تکرار رمز عبور مطابقت ندارند');
-            return false;
-        }
-        
-    }
+  
 </script>
 </body>
 </html>

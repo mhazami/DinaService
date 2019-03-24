@@ -302,6 +302,7 @@
     <Content Include="Areas\Admin\Views\Shared\_Layoutadmin.cshtml" />
     <Content Include="Areas\Admin\Views\User\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Panel\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -324,6 +325,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{32b059f2-c7e5-470b-8f49-d9d9089d4f89}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6F7C7180-4812-4210-9C86-6EEB999D2C09}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
       <Project>{8df442b7-ced3-463a-9cae-4eed63e2241b}</Project>
