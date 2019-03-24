@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'MobiriseIcons';
-  src:  url('mobirise-icons.eot?spat4u');
-  src:  url('mobirise-icons.eot?spat4u#iefix') format('embedded-opentype'),
-    url('mobirise-icons.ttf?spat4u') format('truetype'),
-    url('mobirise-icons.woff?spat4u') format('woff'),
-    url('mobirise-icons.svg?spat4u#MobiriseIcons') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MobiriseIcons';
+    src: url('/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.eot?spat4u');
+    src: url('/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.eot?spat4u#iefix') format('embedded-opentype'),
+        url('/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.ttf?spat4u') format('truetype'), 
+        url('/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.woff?spat4u') format('woff'), 
+        url('/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.svg?spat4u#MobiriseIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 [class^="mbri-"], [class*=" mbri-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
