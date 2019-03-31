@@ -147,4 +147,28 @@
         }
     }
 
+});
+function aos() {
+
+    AOS.init({
+        easing: "ease-in-out-sine",
+        once: true
     });
+}
+$('.owl-carousel').owlCarousel({
+    rtl: true,
+    loop: false,
+    margin: 40,
+
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
