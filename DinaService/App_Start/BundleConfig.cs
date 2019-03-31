@@ -28,6 +28,9 @@ namespace DinaService
                       "~/App_theme/DinaTheme/slider/assets/theme/js/script.js",
                       "~/App_theme/DinaTheme/slider/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js",
                       "~/App_theme/DinaTheme/js/owl.carousel.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/aos").Include(
+                    "~/App_theme/DinaTheme/js/aos.js"));
             //style
             bundles.Add(new StyleBundle("~/bootstrap/css").Include(
                       "~/App_theme/DinaTheme/css/bootstrap.css"));
