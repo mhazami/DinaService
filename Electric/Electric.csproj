@@ -126,6 +126,19 @@
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\owl.carousel.min.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrapcarouselswipe\bootstrap-carousel-swipe.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\slidervideo\script.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\smoothscroll\smooth-scroll.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\css\style.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\js\script.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\vimeoplayer\jquery.mb.vimeo_player.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\messaging-app.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
@@ -241,6 +254,9 @@
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Light-FD.woff2" />
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Medium-FD.woff2" />
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Thin-FD.woff2" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
