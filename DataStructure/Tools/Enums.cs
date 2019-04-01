@@ -7,21 +7,24 @@ namespace DataStructure.Tools
     {
         public enum SliderProject : byte
         {
+            [Display(Name = "")]
+            [Description("")]
+            None = 0,
             [Display(Name = "سایت اصلی")]
             [Description("سایت اصلی")]
-            Orgin = 0,
+            Orgin = 1,
             [Display(Name = "برودتی")]
             [Description("برودتی")]
-            Cool = 1,
+            Cool = 2,
             [Display(Name = "آشپزخانه")]
             [Description("آشپزخانه")]
-            kitchen = 2,
+            kitchen = 3,
             [Display(Name = "لباسشویی - ظرفشویی")]
             [Description("لباسشویی - ظرفشویی")]
-            Wash = 3,
+            Wash = 4,
             [Display(Name = "جاروبرقی - ماکروفر")]
             [Description("جاروبرقی - ماکروفر")]
-            Electric = 4,
+            Electric = 5,
 
         }
 

@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using static DataStructure.Tools.Enums;
 
 namespace DataStructure
 {
@@ -21,6 +24,14 @@ namespace DataStructure
 
         public string KeyWords { get; set; }
 
+        public string Slug { get; set; }
+
+        public SliderProject Place { get; set; }
+
+        public DateTime PublicDate { get; set; }
+
+        [NotMapped]
+        public string Link { get; set; }
 
     }
 }

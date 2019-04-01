@@ -15,5 +15,7 @@ namespace DAL
         public virtual DbSet<File> Files { get; set; }
 
         public virtual DbSet<User> Users { get; set; }
+
+        public virtual DbSet<Content> Contents { get; set; }
     }
 }
