@@ -7,7 +7,7 @@ namespace DataStructure.Tools
     {
         public enum SliderProject : byte
         {
-            [Display(Name = "")]
+            [Display(Name = "انتخاب کنید")]
             [Description("")]
             None = 0,
             [Display(Name = "سایت اصلی")]

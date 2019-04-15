@@ -10,14 +10,16 @@ using static DataStructure.Tools.Enums;
 
 namespace DinaService.Areas.Admin.Controllers
 {
-    public class ContentController : BaseController
+    public class AdminContentController : BaseController
     {
-        // GET: Admin/Content
+        // GET: Admin/AdminContent
         public ActionResult Index()
         {
             var list = new ContentBO().Where(c => c.Place == SliderProject.Orgin);
             return View(list);
         }
+
+        
 
         public ActionResult Create()
         {
@@ -35,7 +37,7 @@ namespace DinaService.Areas.Admin.Controllers
                     return View(content);
                 }
                 ShowMessage("ثبت مطلب با موفقیت انجام شد", MessageType.Success);
-                return RedirectToAction("Index");
+                return View(new Content());
 
             }
             catch (Exception ex)
@@ -62,7 +64,7 @@ namespace DinaService.Areas.Admin.Controllers
                     return View(content);
                 }
                 ShowMessage("ویرایش مطلب با موفقیت انجام شد", MessageType.Success);
-                return RedirectToAction("Index");
+                return View(content);
 
             }
             catch (Exception ex)

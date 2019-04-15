@@ -15,13 +15,17 @@
     <link href="~/Areas/Admin/css/style.css" rel="stylesheet" />
     <script src="~/App_theme/DinaTheme/js/Message.js"></script>
 
-
+    <link href="~/Scripts/summernote/summernote.css" rel="stylesheet" />
+    <script src="~/Scripts/summernote/summernote.min.js"></script>
 </head>
 <body>
     <div class="sidenav">
         <a href="#">مطالب</a>
         <a href="#">اسلایدر</a>
         <a href="#">برندها</a>
+        <a href="/XML/GetSiteMap">بروزرسانی نقشه سایت</a>
+        <a href="/XML/GetRSS">بروز رسانی فایل فید</a>
+        <a href="#">خروج</a>
     </div>
 
     <div class="main">
@@ -45,7 +49,13 @@
     <script>
 
     @Html.Raw(ViewBag.Message)
-
+        $(function () {
+            $('.editor').summernote({
+                placeholder: '',
+                tabsize: 2,
+                height: 250
+            });
+        })
     </script>
 </body>
 </html>
