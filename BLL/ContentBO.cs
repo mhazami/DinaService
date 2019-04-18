@@ -3,8 +3,6 @@ using DataStructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using static DataStructure.Tools.Enums;
 
@@ -14,15 +12,18 @@ namespace BLL
     {
         public List<Content> GetSiteMapContent()
         {
-            var list = base.GetAll();
+            List<Content> list = base.GetAll();
             string url = string.Empty;
-            foreach (var item in list)
+            foreach (Content item in list)
             {
                 switch (item.Place)
                 {
                     case SliderProject.Orgin:
-                        url = "http://dinaservice.com";
-                        item.Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}";
+                        if (string.IsNullOrEmpty(item.Link))
+                        {
+                            url = "http://dinaservice.com";
+                            item.Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}";
+                        }
                         break;
                     case SliderProject.Cool:
                         url = "http://cool.dinaservice.com";
@@ -49,8 +50,11 @@ namespace BLL
         public bool Update(Content content, HttpPostedFileBase image)
         {
             if (image == null)
+            {
                 throw new Exception("لطفا عکس مطلب را انتخاب کنید");
-            var file = new FileBO().Get(content.FileId);
+            }
+
+            File file = new FileBO().Get(content.FileId);
             file.Context = new byte[image.ContentLength];
             image.InputStream.Read(file.Context, 0, image.ContentLength);
             file.ContextType = image.ContentType;
@@ -58,23 +62,34 @@ namespace BLL
             file.FileSize = image.ContentLength / 1024;
 
             if (!new FileBO().Update(file))
+            {
                 throw new Exception("خطا در ویرایش تصویر");
+            }
+
             return base.Update(content);
         }
 
         public bool Insert(Content content, HttpPostedFileBase image)
         {
             if (image == null)
+            {
                 throw new Exception("لطفا عکس مطلب را انتخاب کنید");
-            var file = new File();
-            file.Context = new byte[image.ContentLength];
+            }
+
+            File file = new File
+            {
+                Context = new byte[image.ContentLength]
+            };
             image.InputStream.Read(file.Context, 0, image.ContentLength);
             file.ContextType = image.ContentType;
             file.Title = image.FileName;
             file.FileSize = image.ContentLength / 1024;
 
             if (!new FileBO().Insert(file))
+            {
                 throw new Exception("خطا در ثبت تصویر");
+            }
+
             content.FileId = file.Id;
             return base.Insert(content);
 
@@ -82,15 +97,23 @@ namespace BLL
 
         public List<Content> GetSiteMapContent(SliderProject place)
         {
-            var list = base.Where(c => c.Place == place);
+            List<Content> list = base.Where(c => c.Place == place);
             string url = string.Empty;
             if (place != SliderProject.Orgin)
-                url = $"http://{place.ToString().ToLower()}.dinaservice.com";
-            else
-                url = $"http://dinaservice.com";
-            foreach (var item in list)
             {
-                item.Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}";
+                url = $"http://{place.ToString().ToLower()}.dinaservice.com";
+            }
+            else
+            {
+                url = $"http://dinaservice.com";
+            }
+
+            foreach (Content item in list)
+            {
+                if (string.IsNullOrEmpty(item.Link))
+                {
+                    item.Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}";
+                }
             }
             return list;
         }
@@ -103,25 +126,70 @@ namespace BLL
 
         public override bool Insert(Content obj)
         {
+            string url = string.Empty;
             obj.PublicDate = DateTime.Now;
+            if (string.IsNullOrEmpty(obj.Link))
+            {
+                switch (obj.Place)
+                {
+                    case SliderProject.Orgin:
+                        url = "http://dinaservice.com";
+                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                        break;
+                    case SliderProject.Cool:
+                        url = "http://cool.dinaservice.com";
+                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                        break;
+                    case SliderProject.kitchen:
+                        url = "http://kitchen.dinaservice.com";
+                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                        break;
+                    case SliderProject.Wash:
+                        url = "http://Wash.dinaservice.com";
+                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                        break;
+                    case SliderProject.Electric:
+                        url = "http://electric.dinaservice.com";
+                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                        break;
+
+                }
+
+            }
             return base.Insert(obj);
         }
 
         public override void CheckConstraint(Content obj)
         {
             if (string.IsNullOrEmpty(obj.Title))
+            {
                 throw new Exception("لطفا عنوان مطلب را وارد کنید");
+            }
+
             if (string.IsNullOrEmpty(obj.KeyWords))
+            {
                 throw new Exception("لطفا کلمات کلیدی مطلب را وارد کنید");
+            }
+
             if (string.IsNullOrEmpty(obj.Slug))
+            {
                 throw new Exception("لطفا توصیحات آدرس مطلب را وارد کنید");
+            }
+
             if (string.IsNullOrEmpty(obj.Description))
+            {
                 throw new Exception("لطفا توضیحات مطلب را وارد کنید");
+            }
+
             if (string.IsNullOrEmpty(obj.Alt))
+            {
                 throw new Exception("لطفا توضیحات تصویر مطلب را وارد کنید");
+            }
+
             if (obj.Place == SliderProject.None)
+            {
                 throw new Exception("لطفا عنوان مطلب را وارد کنید");
-            
+            }
         }
 
         public List<string> GetKeyWord(string keywords)

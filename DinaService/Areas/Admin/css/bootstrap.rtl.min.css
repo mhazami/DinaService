@@ -1,10 +1,4 @@
-/* 20/06/1394 */
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyleft 2011-2015 Twitter, Inc.
- * Edit for RTL by Mahdi Gherekhloo (http://gherekhloo.ir)(mailto:m.gherekhloo@gmail.com)
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */ /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('/Content/font-awesome.min.css');
 html { direction: rtl; font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 body { margin: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
@@ -67,7 +61,7 @@ td, th { padding: 0; }
  .table-bordered td, .table-bordered th { border: 1px solid #ddd !important; }
 }
 
-@font-face { font-family: 'Glyphicons Halflings'; src: url(../fonts/glyphicons-halflings-regular.eot); src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg'); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url(/fonts/glyphicons-halflings-regular.eot); src: url(/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(/fonts/glyphicons-halflings-regular.woff) format('woff'),url(/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg'); }
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 400; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .glyphicon-asterisk:before { content: "\2a"; }
 .glyphicon-plus:before { content: "\2b"; }
