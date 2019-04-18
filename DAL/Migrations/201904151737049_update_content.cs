@@ -3,10 +3,11 @@ namespace DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Add_content : DbMigration
+    public partial class update_content : DbMigration
     {
         public override void Up()
         {
+            DropPrimaryKey("dbo.Files");
             CreateTable(
                 "dbo.Contents",
                 c => new
@@ -19,18 +20,22 @@ namespace DAL.Migrations
                         KeyWords = c.String(),
                         Slug = c.String(),
                         Place = c.Byte(nullable: false),
+                        PublicDate = c.DateTime(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Files", t => t.FileId, cascadeDelete: true)
-                .Index(t => t.FileId);
+                .PrimaryKey(t => t.Id);
             
+            AddColumn("dbo.Files", "Id", c => c.Int(nullable: false, identity: true));
+            AddPrimaryKey("dbo.Files", "Id");
+            DropColumn("dbo.Files", "FileId");
         }
         
         public override void Down()
         {
-            DropForeignKey("dbo.Contents", "FileId", "dbo.Files");
-            DropIndex("dbo.Contents", new[] { "FileId" });
+            AddColumn("dbo.Files", "FileId", c => c.Guid(nullable: false));
+            DropPrimaryKey("dbo.Files");
+            DropColumn("dbo.Files", "Id");
             DropTable("dbo.Contents");
+            AddPrimaryKey("dbo.Files", "FileId");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace DataStructure
 
         public virtual int FileId { get; set; }
 
-        public virtual File File { get; set; }
+        //public virtual File File { get; set; }
 
         [Required(ErrorMessage = "لطفا عنوان مطلب را وارد کنید"), MaxLength(150)]
         public string Title { get; set; }

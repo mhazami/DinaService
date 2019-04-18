@@ -148,6 +148,8 @@
     <Content Include="Areas\Admin\css\Login.css" />
     <Content Include="Areas\Admin\css\style.css" />
     <Content Include="Areas\Admin\js\bootstrap.rtl.min.js" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -222,8 +224,15 @@
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
     <Content Include="feed.xml" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="internal-page.html" />
+    <Content Include="Scripts\summernote\plugin\summernote-ext-hello.js" />
+    <Content Include="Scripts\summernote\plugin\summernote-ext-hint.js" />
+    <Content Include="Scripts\summernote\plugin\summernote-ext-video.js" />
+    <Content Include="Scripts\summernote\summernote.css" />
+    <Content Include="Scripts\summernote\summernote.js" />
+    <Content Include="Scripts\summernote\summernote.min.js" />
     <Content Include="Sitemap.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -294,6 +303,10 @@
     <Content Include="Areas\Admin\Views\Panel\Index.cshtml" />
     <Content Include="Areas\Admin\Views\User\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Index.cshtml" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
