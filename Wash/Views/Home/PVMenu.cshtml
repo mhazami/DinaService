@@ -1,0 +1,167 @@
+﻿@using DataStructure;
+@model List<Brands>
+
+
+@{
+    /**/
+
+    var row = 0;
+
+    if (Model.Count() <= 15)
+    {
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @foreach (var item in Model)
+            {
+                <ul>
+                    <li>
+                        <a href="@item.Link">
+                            <span>@item.Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+    }
+    else if (Model.Count() > 15 && Model.Count() <= 30)
+    {
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 0; i <= 15; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 16; i <= 30; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+    }
+    else if (Model.Count() > 30 && Model.Count() <= 45)
+    {
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 0; i <= 15; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 16; i <= 30; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 31; i <= 45; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        </div>
+    }
+    else if (Model.Count() > 45 && Model.Count() <= 60)
+    {
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 0; i <= 15; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 16; i <= 30; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 31; i <= 45; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+        <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+            @for (int i = 46; i <= 60; i++)
+            {
+                <ul>
+                    <li>
+                        <a href="@Model[i].Link">
+                            <span>@Model[i].Title</span>
+                        </a>
+                    </li>
+
+                </ul>
+            }
+        </div>
+    }
+
+}
+
+

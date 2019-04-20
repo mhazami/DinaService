@@ -54,9 +54,9 @@
     <Compile Include="Migrations\201903041916090_Create_DB.Designer.cs">
       <DependentUpon>201903041916090_Create_DB.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904151737049_update_content.cs" />
-    <Compile Include="Migrations\201904151737049_update_content.Designer.cs">
-      <DependentUpon>201904151737049_update_content.cs</DependentUpon>
+    <Compile Include="Migrations\201904190800000_add_brands.cs" />
+    <Compile Include="Migrations\201904190800000_add_brands.Designer.cs">
+      <DependentUpon>201904190800000_add_brands.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,8 +77,8 @@
     <EmbeddedResource Include="Migrations\201903041916090_Create_DB.resx">
       <DependentUpon>201903041916090_Create_DB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904151737049_update_content.resx">
-      <DependentUpon>201904151737049_update_content.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904190800000_add_brands.resx">
+      <DependentUpon>201904190800000_add_brands.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

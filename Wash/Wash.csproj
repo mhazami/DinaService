@@ -127,11 +127,26 @@
     <Content Include="App_theme\DinaTheme\js\bootstrap.js" />
     <Content Include="App_theme\DinaTheme\js\bootstrap.min.js" />
     <Content Include="App_theme\DinaTheme\js\jquery-3.1.1.min.js" />
+    <Content Include="App_theme\DinaTheme\js\jquery-3.3.1.js" />
+    <Content Include="App_theme\DinaTheme\js\jquery.validate.js" />
+    <Content Include="App_theme\DinaTheme\js\jquery.validate.min.js" />
+    <Content Include="App_theme\DinaTheme\js\LoadPage.js" />
+    <Content Include="App_theme\DinaTheme\js\Message.js" />
     <Content Include="App_theme\DinaTheme\js\modernizr-2.8.3.js" />
     <Content Include="App_theme\DinaTheme\js\navbar.js" />
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\owl.carousel.min.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrapcarouselswipe\bootstrap-carousel-swipe.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\mobirise\css\mbr-additional.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\css\style.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\theme\js\script.js" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -210,6 +225,9 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\XMLController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -251,7 +269,15 @@
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Light-FD.woff2" />
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Medium-FD.woff2" />
     <Content Include="App_theme\DinaTheme\fonts\Vazir\woff2\Vazir-Thin-FD.woff2" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.eot" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
+    <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\PVMenu.cshtml" />
+    <Content Include="Views\Content\PVIndex.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -261,13 +287,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\XML\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{32b059f2-c7e5-470b-8f49-d9d9089d4f89}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6F7C7180-4812-4210-9C86-6EEB999D2C09}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataStructure\DataStructure.csproj">
       <Project>{8df442b7-ced3-463a-9cae-4eed63e2241b}</Project>

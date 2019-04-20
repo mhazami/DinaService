@@ -70,6 +70,14 @@ label, span {
     line-height: 1.2em;
 }
 
+.section-header h1 {
+    font-weight: 500;
+    color: #0e2b5c;
+    font-size: 30px;
+    margin: 8px 0;
+    line-height: 1.2em;
+}
+
 .mini-header span, .section-header-content span, .mini-footer span {
     color: #627792;
 }
@@ -261,7 +269,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     font-weight: 500;
     color: #0e2b5c;
     text-transform: none;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .service-item {
@@ -309,12 +317,8 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 
     .section-content .owl-carousel .item img {
         max-width: 100%;
-        -webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
-        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
-        -webkit-filter: grayscale(100%);
-        -khtml-opacity: 0.3;
-        -moz-opacity: 0.3;
-        opacity: 0.3;
+        -webkit-filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+        filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
         height: 49px;
         object-fit: contain;
     }
@@ -488,7 +492,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 }
 
 .main-items-list-info label {
-    font-size: 26px;
+    font-size: 23px;
     color: #fff
 }
 
@@ -522,7 +526,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     padding-right: 5%;
     padding-bottom: 16%;
     padding-left: 5%;
-    background-image: url(../../../Content/Images/image-kitchen-8.png);
+    background-image: url(/Content/Images/image-kitchen-8.png);
     background-repeat: no-repeat !important;
     background-size: 122%;
     background-position: bottom !important;
@@ -545,6 +549,21 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     color: #0e2b5c;
     font-size: 27px;
     margin-bottom: 15px;
+}
+
+.contact-right-box-head h6 {
+    text-align: center;
+    color: #0e2b5c;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.head-center h2 {
+    text-align: center;
+    color: #0e2b5c;
+    font-size: 27px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .item-contact-form {
@@ -720,13 +739,13 @@ a.detail-box, a.detail-box:hover {
 
 .loaction-branch {
     position: absolute;
-    left: 35%;
-    top: 20%
+    left: 53%;
+    top: 22%;
 }
 
 .loaction-branch-2 {
-    left: 60%;
-    top: 37%;
+    left: 77%;
+    top: 31%;
 }
 
 .dots-animation {
@@ -870,7 +889,7 @@ a.detail-box, a.detail-box:hover {
         }
 
         .footer-map .owl-carousel .item:before {
-            content: "“";
+            content: "ï¿½";
             position: absolute;
             left: -30px;
             top: -45px;
@@ -1638,8 +1657,9 @@ main {
 
 @media(max-width: 768px) {
     main {
-        padding-top:0!important
+        padding-top: 0 !important
     }
+
     .head-post-content, .head-post-title {
         width: 100%;
     }
@@ -1661,7 +1681,7 @@ main {
 
 /*loading*/
 
-/* You can use this code for whatever you want but I don´t recommend it. It is an exsercise and the code is not clean and could be better */
+/* You can use this code for whatever you want but I donï¿½t recommend it. It is an exsercise and the code is not clean and could be better */
 
 
 .animate-bottom {
@@ -1805,4 +1825,7 @@ body {
     }
 }
 
+.main-div {
+    display: none;
+}
 /*loading*/

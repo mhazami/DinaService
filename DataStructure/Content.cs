@@ -33,5 +33,9 @@ namespace DataStructure
         [NotMapped]
         public string Link { get; set; }
 
+        public int BrandsId { get; set; }
+
+      
+
     }
 }

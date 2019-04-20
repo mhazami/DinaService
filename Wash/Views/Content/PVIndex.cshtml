@@ -1,0 +1,28 @@
+﻿@using DataStructure;
+@model IEnumerable<Content>
+
+@{
+    foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="study-item">
+                <div>
+                    <img src="@Url.Action("ShowImage","Home",new { id=item.FileId})" alt="@(string.IsNullOrEmpty(item.Alt)?item.Title:item.Alt)" />
+                </div>
+                <div class="study-item-head">
+                    <a href="#register">ثبت درخواست</a>
+                </div>
+                <div class="study-item-body">
+                    <h2>@item.Title</h2>
+                    <span>>@item.Description.Substring(0, 120) + ...</span>
+                    <a href="#">
+                        <span class="button-c">اظلاعات بیشتر را مشاهده کنید</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+
+

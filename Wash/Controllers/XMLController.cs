@@ -9,16 +9,17 @@ using System.Web.Mvc;
 using System.Xml.Linq;
 using static DataStructure.Tools.Enums;
 
-namespace DinaService.Controllers
+namespace Wash.Controllers
 {
     public class XMLController : Controller
     {
+        // GET: XML
         public ContentResult GetSiteMap()
         {
             StringBuilder builder = new StringBuilder();
             builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
             XNamespace ns = "http://www.sitemaps.org/schemas/sitemap/0.9";
-            List<Content> contents = new ContentBO().GetSiteMapContent(SliderProject.Orgin);
+            List<Content> contents = new ContentBO().GetSiteMapContent(SliderProject.Wash);
             XDocument sitemap = new XDocument(new XDeclaration("1.0", "utf-8", "yes"), new XElement(ns + "urlset", from item in contents
                                                                                                                    select new XElement("url",
          new XElement("loc", item.Link),
@@ -56,7 +57,7 @@ namespace DinaService.Controllers
             StringBuilder builder = new StringBuilder();
             builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
 
-            List<Content> contents = new ContentBO().GetSiteMapContent(SliderProject.Orgin);
+            List<Content> contents = new ContentBO().GetSiteMapContent(SliderProject.Wash);
             XDocument rss = new XDocument(new XDeclaration("1.0", "utf-8", "yes"),
              new XElement("rss",
                new XAttribute("version", "2.0"),
