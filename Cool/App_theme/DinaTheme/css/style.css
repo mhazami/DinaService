@@ -247,16 +247,34 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 }
 
 .section-study {
+    margin-bottom: -145px;
     background-color: #ECEFF3;
     margin-top: 310px;
     margin-bottom: 0;
 }
 
     .section-study > .container {
-        height: 460px;
         transform: translateY(-240px);
     }
 
+.pagination-box  {
+    float: right;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.pagination-box ul li a {
+    padding: 3px 15px;
+    background: #fff;
+    margin: 5px 3px;
+    border-radius: 3px;
+}
+.pagination-box ul li:hover a, .pagination-box ul li a:active, .pagination-box ul li a.active, .pagination-box ul li a:focus {
+    background: #1dc2ef !important;
+    color: #fff !important
+}
+.pagination-box ul li {
+    display: inline-block
+}
 .service-item ul li span {
     font-weight: 500;
     color: #0e2b5c;
@@ -460,7 +478,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
         transform-origin: 50% 100%;
         transition: -webkit-transform 0.3s ease-out;
         transition: transform 0.3s ease-out;
-        transition: transform 0.3s ease-out, -webkit-transfo
+        transition: transform 0.3s ease-out, -webkit-transform
     }
 
     .button-c:hover:after {
@@ -1067,6 +1085,7 @@ footer .service-footer li {
     }
 
     .section-study {
+        margin-bottom: -645px;
         background: transparent
     }
 
@@ -1373,6 +1392,7 @@ footer .service-footer li {
     .section-study {
         margin-top: 0;
         padding: 25px 0;
+        margin-bottom: 0;
     }
 
     .section-info .container {
@@ -1638,8 +1658,9 @@ main {
 
 @media(max-width: 768px) {
     main {
-        padding-top:0!important
+        padding-top: 0 !important
     }
+
     .head-post-content, .head-post-title {
         width: 100%;
     }
