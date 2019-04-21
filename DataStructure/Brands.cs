@@ -18,5 +18,9 @@ namespace DataStructure
 
         public bool Enable { get; set; }
 
+        public string Slug { get; set; }
+
+        public int FileId { get; set; }
+
     }
 }

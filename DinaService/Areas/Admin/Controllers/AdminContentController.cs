@@ -15,18 +15,19 @@ namespace DinaService.Areas.Admin.Controllers
         // GET: Admin/AdminContent
         public ActionResult Index()
         {
-            var list = new ContentBO().Where(c => c.Place == SliderProject.Orgin);
+            var list = new ContentBO().GetAll();
             return View(list);
         }
 
-        
+
 
         public ActionResult Create()
         {
+            ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "Id", "Title");
             return View(new Content());
         }
 
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult Create(Content content, HttpPostedFileBase image)
         {
             try
@@ -53,7 +54,7 @@ namespace DinaService.Areas.Admin.Controllers
             return View(content);
         }
 
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult Edit(Content content, HttpPostedFileBase image)
         {
             try
@@ -92,7 +93,7 @@ namespace DinaService.Areas.Admin.Controllers
             var id = int.Parse(collection["Id"]);
             try
             {
-                if(!new ContentBO().Delete(id))
+                if (!new ContentBO().Delete(id))
                 {
                     ShowMessage("خطا در حذف مطلب", MessageType.Error);
                     return View(id);

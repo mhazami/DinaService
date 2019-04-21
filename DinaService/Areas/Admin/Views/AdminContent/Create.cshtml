@@ -63,7 +63,21 @@
             </div>
         </div>
 
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">توضیحات آدرس بار :</label>
+            <div class="col-sm-10">
+                @Html.TextBoxFor(model => model.Slug, new { @class = "form-control" })
 
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">برند :</label>
+            <div class="col-sm-10">
+                @Html.DropDownListFor(model => model.BrandsId, (SelectList)ViewBag.BrandsId,"", new { @class = "form-control" })
+
+            </div>
+        </div>
 
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">توضیحات :</label>

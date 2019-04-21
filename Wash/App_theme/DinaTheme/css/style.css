@@ -1742,7 +1742,7 @@ main {
 }
 
 #myDiv {
-    display: none;
+    display: block;
     text-align: center;
 }
 
@@ -1851,6 +1851,7 @@ body {
 }
 
 .main-div {
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 /*loading*/

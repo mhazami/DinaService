@@ -19,8 +19,7 @@ namespace Wash
                       "~/App_theme/DinaTheme/js/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/all").Include(
-                      "~/App_theme/DinaTheme/js/all.js",
-                      "~/App_theme/DinaTheme/js/LoadPage.js"));
+                      "~/App_theme/DinaTheme/js/all.js","~/App_theme/DinaTheme/js/LoadPage.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/body").Include(
                       "~/App_theme/DinaTheme/js/navbar.js",

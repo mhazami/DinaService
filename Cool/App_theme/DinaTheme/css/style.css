@@ -888,7 +888,7 @@ a.detail-box, a.detail-box:hover {
         }
 
         .footer-map .owl-carousel .item:before {
-            content: "“";
+            content: "ï¿½";
             position: absolute;
             left: -30px;
             top: -45px;
@@ -1682,7 +1682,7 @@ main {
 
 /*loading*/
 
-/* You can use this code for whatever you want but I don´t recommend it. It is an exsercise and the code is not clean and could be better */
+/* You can use this code for whatever you want but I donï¿½t recommend it. It is an exsercise and the code is not clean and could be better */
 
 
 .animate-bottom {
@@ -1718,7 +1718,7 @@ main {
 }
 
 #myDiv {
-    display: none;
+    display: block;
     text-align: center;
 }
 

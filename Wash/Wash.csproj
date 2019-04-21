@@ -147,6 +147,8 @@
     <Content Include="App_theme\DinaTheme\slider\assets\theme\js\script.js" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -172,6 +174,7 @@
     <Content Include="Content\Images\dinaservice.png" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
+    <Content Include="Content\Images\favicon.png" />
     <Content Include="Content\Images\haed-item-list.png" />
     <Content Include="Content\Images\head-item-menu.svg" />
     <Content Include="Content\Images\health.svg" />
@@ -278,6 +281,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\PVMenu.cshtml" />
     <Content Include="Views\Content\PVIndex.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

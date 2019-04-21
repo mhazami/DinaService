@@ -237,6 +237,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Admin\Controllers\AdminBrandsController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminContentController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\XMLController.cs" />
@@ -309,6 +310,10 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Areas\Admin\Views\AdminContent\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminBrands\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminBrands\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminBrands\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminBrands\Delete.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -320,6 +325,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Views\Content\Category.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -331,7 +337,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Content\" />
     <Folder Include="Views\XML\" />
   </ItemGroup>
   <ItemGroup>

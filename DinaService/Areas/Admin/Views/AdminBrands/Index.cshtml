@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Brands>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<table class="table table-bordered table-responsive table-hover table-striped">
+    <thead>
+        <tr>
+            <th>عنوان</th>
+            <th>فعال است؟</th>
+            <th>تصویر</th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@(item.Enable ? "بله" : "خیر")</td>
+                    <td>
+                        <img src="@Url.Action("ShowImage", "Home", new {id = item.FileId})" alt="@item.Title" class="img-responsive thumbnail" width="50" height="50" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("ویرایش", "Edit", new { id = item.BrandsId }) |
+                        @Html.ActionLink("جزییات", "Details", new { id = item.BrandsId }) |
+                        @Html.ActionLink("حذف", "Delete", new { id = item.BrandsId })
+                    </td>
+
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+<div class="col-md-12">
+    <a href="@Url.Action("Create","AdminBrands",new {area="Admin"})" class="btn btn-info btn-sm">ایجاد برند جدید</a>
+</div>

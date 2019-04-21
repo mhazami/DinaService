@@ -21,19 +21,20 @@
 
 </head>
 <body onload="myFunction()">
-    <div id="atomo">
-        @RenderBody()
-
-        <i class="background"></i>
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    @*<div id="atomo">
 
 
-    </div>
+            <i class="background"></i>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+        </div>*@
+    @RenderBody()
     <div id="myDiv" class="animate-bottom main-div">
 
 
@@ -227,7 +228,7 @@
                             <h1>تعمیر لوازم خانگی خود را به متخصصان ما بسپارید</h1>
                         </div>
                         <div class="section-header-content">
-                            <span>ما می توانیم همه بخش های سیستم های IT خود را از زیرساخت های پشت صحنه تا بهره وری شخصی در فضای باز درک کنیم و از آنها حمایت کنیم. هدف ما ایجاد راه حل های فناوری اطلاعات نوآورانه است که کسب و کار شما را قادر به تحرک و رقابتی تر است.</span>
+                            <span></span>
                         </div>
                         <div class="section-content">
 
@@ -245,7 +246,7 @@
                                             </span>
                                         </li>
                                         <li>
-                                            <a href="#">بیشتر بخوانید</a>
+                                            <a href="#main-content">بیشتر بخوانید</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -322,7 +323,7 @@
                                             </span>
                                         </li>
                                         <li>
-                                            <a href="#">بیشتر بخوانید</a>
+                                            <a target="_blank" href="http://dinaservice.com">بیشتر بخوانید</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -332,46 +333,20 @@
                     </div>
                 </div>
             </section>
-            <section class="section-study">
+            <section  id="main-content" class="section-study">
                 <div class="container">
                     <div class="row aos-item">
                         <div class="mini-header">
-                            <span>مورد مطالعاتی</span>
+                            <span>مطالب</span>
                         </div>
                         <div class="section-header">
                             <h3>
                                 از بین بردن چالش های تعمیر لوازم خانگی شما هنر ماست
                             </h3>
                         </div>
+                        @Html.Action("Index", "Content", null)
 
-                        <div class="section-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                            @Html.Action("Index", "Content", null)
-                        </div>
-                        <div class="mini-footer">
-                            <div class="pagination-box">
-                                <ul>
-                                    <li>
-                                        <a class="active" href="#">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">4</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span>
-                                <strong>تعمیر لوازم خانگی</strong> <b>تخصص ماست</b>
-                                <a href="#register">اجازه بدید شروع کنیم</a>
-
-
-                            </span>
-                        </div>
-
+                      
                     </div>
                 </div>
             </section>

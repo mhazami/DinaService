@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,12 @@ namespace DinaService.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult Category(int? id,string slug)
+        {
+            var brand = new BrandsBO().Get(id.Value);
+            return View(brand);
         }
     }
 }
