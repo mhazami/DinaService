@@ -296,6 +296,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
         background: #fff;
         margin: 5px 3px;
         border-radius: 3px;
+        cursor: pointer;
     }
 
         .pagination-box ul li:hover a, .pagination-box ul li a:active, .pagination-box ul li a.active, .pagination-box ul li a:focus {

@@ -146,5 +146,9 @@
 
         }
     }
+    $(".pagination-box ul li a").click(function () {
+        $(".pagination-box ul li a").removeClass("active");
+        $(this).addClass("active");
+    }); 
 
-    });
+});

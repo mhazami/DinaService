@@ -146,29 +146,8 @@
 
         }
     }
-
-});
-function aos() {
-
-    AOS.init({
-        easing: "ease-in-out-sine",
-        once: true
+    $(".pagination-box ul li a").click(function () {
+        $(".pagination-box ul li a").removeClass("active");
+        $(this).addClass("active");
     });
-}
-$('.owl-carousel').owlCarousel({
-    rtl: true,
-    loop: false,
-    margin: 40,
-
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 5
-        }
-    }
 });
