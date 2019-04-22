@@ -16,5 +16,11 @@ namespace Wash.Controllers
             var list = new ContentBO().Where(c => c.Place == SliderProject.Wash);
             return PartialView("PVIndex", list);
         }
+
+        public ActionResult Category(int? id, string slug)
+        {
+            var brand = new BrandsBO().Get(id.Value);
+            return View(brand);
+        }
     }
 }

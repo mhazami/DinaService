@@ -15,7 +15,7 @@
                     <div class="study-item-body">
                         <h2>@item.Title</h2>
                         <span>>@item.Description.Substring(0, 120) + ...</span>
-                        <a href="#">
+                        <a href='/Content/Category/@item.Id/"نمایندگی-تعمیرات-@item.Title'>
                             <span class="button-c">اظلاعات بیشتر را مشاهده کنید</span>
                         </a>
                     </div>
@@ -29,17 +29,12 @@
     <div class="pagination-box">
         <ul>
             <li>
-                <a class="active" >1</a>
+                <a onclick="getItems(this)" class="active">1</a>
             </li>
             <li>
                 <a>2</a>
             </li>
-            <li>
-                <a>3</a>
-            </li>
-            <li>
-                <a></a>
-            </li>
+
         </ul>
     </div>
     <span>
@@ -49,3 +44,10 @@
 
     </span>
 </div>
+@*<script>
+    function getItems(currentPage) {
+        $.get('/Content/GetContent', { currentPage: currentPage }, function (data) {
+
+        })
+    }
+</script>*@

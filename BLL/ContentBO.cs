@@ -91,7 +91,7 @@ namespace BLL
             }
 
             content.FileId = file.Id;
-            return base.Insert(content);
+            return this.Insert(content);
 
         }
 
@@ -128,35 +128,39 @@ namespace BLL
         {
             string url = string.Empty;
             obj.PublicDate = DateTime.Now;
-            if (string.IsNullOrEmpty(obj.Link))
+            if (base.Insert(obj))
             {
-                switch (obj.Place)
+                if (string.IsNullOrEmpty(obj.Link))
                 {
-                    case SliderProject.Orgin:
-                        url = "http://dinaservice.com";
-                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                        break;
-                    case SliderProject.Cool:
-                        url = "http://cool.dinaservice.com";
-                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                        break;
-                    case SliderProject.kitchen:
-                        url = "http://kitchen.dinaservice.com";
-                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                        break;
-                    case SliderProject.Wash:
-                        url = "http://Wash.dinaservice.com";
-                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                        break;
-                    case SliderProject.Electric:
-                        url = "http://electric.dinaservice.com";
-                        obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                        break;
+                    switch (obj.Place)
+                    {
+                        case SliderProject.Orgin:
+                            url = "http://dinaservice.com";
+                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                            break;
+                        case SliderProject.Cool:
+                            url = "http://cool.dinaservice.com";
+                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                            break;
+                        case SliderProject.kitchen:
+                            url = "http://kitchen.dinaservice.com";
+                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                            break;
+                        case SliderProject.Wash:
+                            url = "http://Wash.dinaservice.com";
+                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                            break;
+                        case SliderProject.Electric:
+                            url = "http://electric.dinaservice.com";
+                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
+                            break;
 
+                    }
                 }
 
+                return base.Update(obj);
             }
-            return base.Insert(obj);
+            return false;
         }
 
         public override void CheckConstraint(Content obj)

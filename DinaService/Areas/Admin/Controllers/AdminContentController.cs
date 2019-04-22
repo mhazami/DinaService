@@ -23,13 +23,15 @@ namespace DinaService.Areas.Admin.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "Id", "Title");
+            ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "BrandsId", "Title");
             return View(new Content());
         }
 
         [HttpPost, ValidateInput(false)]
         public ActionResult Create(Content content, HttpPostedFileBase image)
         {
+            ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "BrandsId", "Title");
+
             try
             {
                 if (!new ContentBO().Insert(content, image))

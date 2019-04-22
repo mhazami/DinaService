@@ -30,12 +30,14 @@ namespace DataStructure
 
         public DateTime PublicDate { get; set; }
 
+        public int BId { get; set; }
+
+
         [NotMapped]
         public string Link { get; set; }
 
-        public int BrandsId { get; set; }
 
-      
+
 
     }
 }
