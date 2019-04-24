@@ -20,13 +20,12 @@ namespace Wash.Controllers
             builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
             XNamespace ns = "http://www.sitemaps.org/schemas/sitemap/0.9";
             List<Content> contents = new ContentBO().GetSiteMapContent(SliderProject.Wash);
-            XDocument sitemap = new XDocument(new XDeclaration("1.0", "utf-8", "yes"), new XElement(ns + "urlset", from item in contents
-                                                                                                                   select new XElement("url",
+            XDocument sitemap = new XDocument(new XDeclaration("1.0", "utf-8", "yes"), new XElement(ns + "urlset", from item in contents select new XElement("url",
          new XElement("loc", item.Link),
          new XElement("changefreq", "monthly"),
           new XElement("priority", "0.5"))));
 
-
+            
             builder.AppendLine(sitemap.ToString());
 
             string path = Server.MapPath("~/Sitemap.xml");
@@ -36,7 +35,6 @@ namespace Wash.Controllers
                 using (FileStream fs = System.IO.File.Create(path))
                 {
                     byte[] info = new UTF8Encoding(true).GetBytes(builder.ToString());
-                    // Add some information to the file.
                     fs.Write(info, 0, info.Length);
                 }
             }
