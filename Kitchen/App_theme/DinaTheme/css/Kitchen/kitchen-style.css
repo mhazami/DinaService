@@ -176,3 +176,12 @@ a {
         background: #F5D355
     }
 }
+.product-item a.button:hover {
+    background-color: #F5D355;
+    color: #2D2D2D;
+}
+
+.product-item a.button {
+    color: #F5D355;
+    border: 1px solid #F5D355;
+}

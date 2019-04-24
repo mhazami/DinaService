@@ -173,6 +173,7 @@
     <Content Include="Content\Images\content-bottom-bg.jpg" />
     <Content Include="Content\Images\data-app.svg" />
     <Content Include="Content\Images\dinaservice.png" />
+    <Content Include="Content\Images\Dishwasher-header.jpg" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
     <Content Include="Content\Images\favicon.png" />
@@ -190,6 +191,7 @@
     <Content Include="Content\Images\image-slider\image-slider-3.jpg" />
     <Content Include="Content\Images\image-slider\image-slider-5.png" />
     <Content Include="Content\Images\image-slider\image-slider-6.jpg" />
+    <Content Include="Content\Images\img-washing.jpg" />
     <Content Include="Content\Images\left-arrow-white.png" />
     <Content Include="Content\Images\image-work.jpg" />
     <Content Include="Content\Images\imgix1.jpg" />
@@ -227,6 +229,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="internal-page.html" />
+    <Content Include="product.html" />
     <Content Include="Scripts\summernote\plugin\summernote-ext-hello.js" />
     <Content Include="Scripts\summernote\plugin\summernote-ext-hint.js" />
     <Content Include="Scripts\summernote\plugin\summernote-ext-video.js" />

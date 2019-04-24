@@ -157,7 +157,7 @@ a {
 
 .study-item-body span {
     overflow: hidden;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .study-item div {
@@ -174,10 +174,11 @@ a {
 
 .study-item-body h2 {
     color: #0e2b5c;
-    font-size: 22px;
-    margin-top: 8px;
+    font-size: 19px;
+    margin-top: 27px;
     line-height: 1.4;
 }
+
 
 /*.section-study a*/
 footer .service-footer a, .content-navigation-menu .list-nav > li, a.detail-box {
@@ -256,13 +257,13 @@ footer .service-footer a:hover, a.detail-box:hover:after {
 
 .section-study {
     background-color: #ECEFF3;
-    margin-top: 310px;
+    margin-top: 390px;
     margin-bottom: -145px;
 }
 
     .section-study > .container {
         /*height: 460px;*/
-        transform: translateY(-240px);
+        transform: translateY(-290px);
     }
 
 .service-item ul li span {
@@ -1679,6 +1680,10 @@ main {
     .post-item .container {
         padding: 0 6%
     }
+
+    .product-page .container {
+        padding: 0
+    }
 }
 
 @media(max-width: 768px) {
@@ -1856,3 +1861,331 @@ body {
     display: block;
 }
 /*loading*/
+
+
+.product-item * {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    /* Prevent Padding Extending Width FIX */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    -o-box-sizing: border-box; /* Opera */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+
+
+.product-item h1 {
+    text-align: center;
+    font: 250% "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+.product-item a.button {
+    color: #1dc2ef;
+    border: 1px solid #1dc2ef;
+    padding: 5px 10px;
+    opacity: 1;
+    z-index: 1009;
+    font-size: 100%;
+    top: 76%;
+    position: absolute;
+    right: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 0.5s, color 0.75s;
+    left: 39%;
+}
+
+    .product-item a.button:hover {
+        background-color: #1dc2ef;
+        color: #fff;
+    }
+
+.product-item .grid {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 3em 0 0 0;
+    width: 100%;
+    max-width: 1200px;
+    list-style: none;
+    text-align: center;
+}
+
+    .product-item .grid .one-half {
+        width: 50%;
+        float: left;
+    }
+
+    .product-item .grid .one-forth {
+        width: 25%;
+    }
+
+    .product-item .grid .three-forth {
+        width: 75%;
+    }
+    /* Common style */
+    .product-item .grid figure {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        overflow: hidden;
+        margin: -0.135em 0;
+        height: 300px;
+        background: silver;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .product-item .grid .double-height {
+        height: 400px;
+    }
+
+    .product-item .grid figure img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: opacity 0.5s, -transform 1s;
+    }
+
+        .product-item .grid figure img:hover {
+            opacity: 0.3;
+        }
+
+    .product-item .grid figure figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #3c4a50;
+        background: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        backface-visibility: hidden;
+        transition: transform 0.35s;
+    }
+
+        .product-item .grid figure figcaption::after {
+            content: '';
+            border-style: solid;
+            border-width: 20px;
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+        }
+
+        .product-item .grid figure figcaption::before,
+        .product-item .grid figure figcaption::after {
+            pointer-events: none;
+        }
+
+        .product-item .grid figure figcaption > span::before {
+            display: inline-block;
+            padding: 8px 10px;
+            speak: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+    /* Anchor will cover the whole item by default */
+    /* For some effects it will show as a button */
+    .product-item .grid figure a.anchor {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+    }
+
+    .product-item .grid figure h2 {
+        font-size: 23px;
+        display: block;
+        z-index: 1002;
+        word-spacing: -0.15em;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        width: 100%;
+        top: 20%;
+    }
+
+    .product-item .grid figure.double-height h2 {
+        top: 40%;
+    }
+
+    .product-item .grid figure h2 span {
+        z-index: 1002;
+        font-weight: 800;
+    }
+
+    .product-item .grid figure p {
+        opacity: 0;
+        letter-spacing: 1px;
+        font-size: 68.5%;
+        text-align: center;
+        z-index: 1001;
+        position: absolute;
+        text-transform: none;
+        backface-visibility: hidden;
+        transition: opacity 0.35s;
+        margin: 5px auto;
+        top: 50%;
+        float: none;
+        width: 100%;
+        display: block;
+        right: auto;
+        left: auto;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .product-item .grid figure.double-height p {
+        top: 60%;
+    }
+
+    .product-item .grid figure:hover p {
+        opacity: 1;
+    }
+
+    .product-item .grid figure h2,
+    .product-item .grid figure figcaption > span {
+        transition: transform 0.35s;
+    }
+
+    .product-item .grid figure:hover h2 {
+        transition-delay: 0.15s;
+    }
+
+    .product-item .grid figure:hover figcaption > span:nth-child(4) {
+        transition-delay: 0.20s;
+    }
+
+    .product-item .grid figure:hover figcaption > span:nth-child(3) {
+        transition-delay: 0.25s;
+    }
+
+    .product-item .grid figure:hover figcaption > span:nth-child(2) {
+        transition-delay: 0.30s;
+    }
+
+    /* Individual Colors */
+
+    /* BLUE */
+    .product-item .grid figure figcaption.blue {
+        background-color: #50758b;
+    }
+
+        .product-item .grid figure figcaption.blue p,
+        .product-item .grid figure figcaption.gray p,
+        .product-item .grid figure figcaption.blue h2,
+        .product-item .grid figure figcaption.gray h2 {
+            color: #fff;
+        }
+
+
+.product-item figure.effect-slideleft figcaption.blue::after {
+    border-left-color: #50758b;
+}
+
+
+
+/* Individual effects */
+
+
+
+/*--------------------*/
+/***** Slide Left *****/
+/*--------------------*/
+
+.product-item figure.effect-slideleft figcaption {
+    width: 50%;
+    transform: translate3d(-200%,0,0);
+}
+
+    .product-item figure.effect-slideleft figcaption::after {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #ffffff;
+        right: -35px;
+        top: 45%;
+    }
+
+    .product-item figure.effect-slideleft figcaption > span {
+        float: right;
+    }
+
+    .product-item figure.effect-slideleft h2,
+    .product-item figure.effect-slideleft figcaption > span {
+        transform: translate3d(-200%,0,0);
+    }
+
+.product-item figure.effect-slideleft:hover figcaption,
+.product-item figure.effect-slideleft:hover h2,
+.product-item figure.effect-slideleft:hover figcaption > span {
+    transform: translate3d(0,0,0);
+}
+
+
+
+/* MEDIA SCREEN SIZES */
+@media screen and (max-width: 1200px) {
+    .product-item .grid figure {
+        width: auto;
+        float: left;
+    }
+
+        .product-item .grid figure img {
+        }
+
+        .product-item .grid figure figcaption {
+            font-size: 90%;
+        }
+}
+
+@media screen and (max-width: 900px) {
+
+    .product-item .grid figure {
+        width: 50%;
+    }
+
+        .product-item .grid figure img {
+            min-width: 100%;
+        }
+
+        .product-item .grid figure figcaption {
+            font-size: 90%;
+        }
+}
+
+@media screen and (max-width: 664px) {
+    .product-item .grid .one-half {
+        width: 100%;
+    }
+
+    .product-item .grid figure {
+        width: 100%;
+    }
+}
+
+.section-product {
+    margin: 55px 0;
+}
+
+    .section-product .mini-header, .section-product .mini-footer, .section-product .section-header {
+        text-align: center
+    }

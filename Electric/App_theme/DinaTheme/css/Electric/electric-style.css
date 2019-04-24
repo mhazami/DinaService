@@ -165,3 +165,12 @@ a {
         background-color: #9e0c0f
     }
 }
+.product-item a.button:hover {
+    background-color: #9e0c0f;
+    color: #fff;
+}
+
+.product-item a.button {
+    color: #9e0c0f;
+    border: 1px solid #9e0c0f;
+}

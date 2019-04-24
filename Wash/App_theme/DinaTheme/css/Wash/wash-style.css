@@ -180,3 +180,12 @@ a {
         background: #15caa5
     }
 }
+.product-item a.button:hover {
+    background-color: #013870;
+    color: #15caa5;
+}
+
+.product-item a.button {
+    color: #013870;
+    border: 1px solid #013870;
+}

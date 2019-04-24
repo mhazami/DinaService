@@ -172,6 +172,7 @@
     <Content Include="Content\Images\content-bottom-bg.jpg" />
     <Content Include="Content\Images\data-app.svg" />
     <Content Include="Content\Images\dinaservice.png" />
+    <Content Include="Content\Images\Dishwasher-header.jpg" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
     <Content Include="Content\Images\favicon.png" />
@@ -194,6 +195,7 @@
     <Content Include="Content\Images\image-slider\image-slider-wash-3.jpg" />
     <Content Include="Content\Images\image-slider\image-slider-wash-4.jpg" />
     <Content Include="Content\Images\image-work.jpg" />
+    <Content Include="Content\Images\img-washing.jpg" />
     <Content Include="Content\Images\imgix1.jpg" />
     <Content Include="Content\Images\imgix2.jpg" />
     <Content Include="Content\Images\imgix3.jpg" />
@@ -223,6 +225,7 @@
     <Content Include="Global.asax" />
     <Content Include="index-wash.html" />
     <Content Include="internal-page.html" />
+    <Content Include="product.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

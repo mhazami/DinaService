@@ -140,6 +140,8 @@
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
     <Content Include="Content\Images\1637.png" />
+    <Content Include="Content\Images\Dishwasher-header.jpg" />
+    <Content Include="Content\Images\img-washing.jpg" />
     <Content Include="Content\Images\messaging-app.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
@@ -208,6 +210,7 @@
     <Content Include="Global.asax" />
     <Content Include="index-electric.html" />
     <Content Include="internal-page.html" />
+    <Content Include="product.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
