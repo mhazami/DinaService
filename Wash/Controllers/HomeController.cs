@@ -27,5 +27,35 @@ namespace Wash.Controllers
             var list = new BrandsBO().GetAll();
             return PartialView("PVMenu", list);
         }
+
+        public ActionResult GetSlid()
+        {
+            return PartialView("PVSlider");
+        }
+
+        public ActionResult GetService()
+        {
+            return PartialView("PVService");
+        }
+
+        public ActionResult GetStudy()
+        {
+            return PartialView("PVStudy");
+        }
+
+        public ActionResult GetInfo()
+        {
+            return PartialView("PVInfo");
+        }
+
+        public ActionResult GetRegister()
+        {
+            return PartialView("PVRegister");
+        }
+
+        public ActionResult GetCompanyInfo()
+        {
+            return PartialView("PVConpanyInfo");
+        }
     }
 }

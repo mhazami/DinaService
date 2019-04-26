@@ -1,0 +1,51 @@
+﻿@using DataStructure
+@model Content
+@{
+    ViewBag.Title = "تعمیرات تخصصی لباسشویی و ظرفشویی-" + Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="post-item"
+
+
+    <div class="head-post" style="background-image: url('@Url.Action("ShowImage","Home",new { id=Model.FileId})');">
+        <div class="container">
+            <div class="head-post-title">
+                <label>@Model.Title</label>
+            </div>
+            <div class="head-post-content">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contnet-post">
+            <ul class="paragraph-item">
+                <li>
+                    <label>نگاه اجمالی</label>
+                </li>
+                <li>
+                    <p>
+                        @Model.Description
+                    </p>
+                </li>
+
+            </ul>
+
+            <div class="project-tags">
+                <span>برچسب ها : </span>
+                @{
+                    foreach (string item in (List<string>)ViewBag.KeyWord)
+                    {
+                        <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item})">#@item</a>
+                    }
+                }
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>

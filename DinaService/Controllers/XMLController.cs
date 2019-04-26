@@ -25,8 +25,9 @@ namespace DinaService.Controllers
          new XElement("changefreq", "monthly"),
           new XElement("priority", "0.5"))));
 
-
-            builder.AppendLine(sitemap.ToString());
+            var x = sitemap.ToString();
+            string res = x.Replace("<url xmlns=\"\">", "<url>");
+            builder.AppendLine(res);
 
             string path = Server.MapPath("~/Sitemap.xml");
 

@@ -19,8 +19,17 @@ namespace Wash.Controllers
 
         public ActionResult Category(int? id, string slug)
         {
-            var brand = new BrandsBO().Get(id.Value);
-            return View(brand);
+            var filter = slug.Replace('-', ' ');
+            ViewBag.PageTitle = $"{filter} تعمیرات تخصصی ماشین لباسشویی,تعمیرات تخصصی ماشین ظرفشویی,تعمیر ماشین لباسشویی,تعمیر ماشین ظرفشویی";
+            var list = new ContentBO().Where(c => c.Place == SliderProject.Wash && c.Title.Contains(filter));
+            return View(list);
+        }
+
+        public ActionResult Items(int id, string slug)
+        {
+            var content = new ContentBO().Get(id);
+            ViewBag.KeyWord = content.KeyWords.Split(',').ToList();
+            return View(content);
         }
     }
 }

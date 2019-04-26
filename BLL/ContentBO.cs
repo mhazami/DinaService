@@ -112,7 +112,7 @@ namespace BLL
             {
                 if (string.IsNullOrEmpty(item.Link))
                 {
-                    item.Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}";
+                    item.Link = $"{url}/Content/Items/{item.Id}/{GetSlug(item.Slug)}";
                 }
             }
             return list;

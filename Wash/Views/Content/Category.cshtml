@@ -1,0 +1,86 @@
+﻿@using DataStructure
+@model IEnumerable<Content>
+@{
+    ViewBag.Title = ViewBag.PageTitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="product-page">
+
+
+    <div class="head-post " style="background-image: url('/Content/Images/image-01.png');">
+        <div class="container">
+            <div class="head-post-title">
+                <label>دینا سرویس ارائه دهنده ی خدمات تعمیر لوازم خانگی در سراسر تهران</label>
+            </div>
+            <div class="head-post-content">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-product">
+            <div class="row aos-item">
+                <div class="mini-header">
+                    <span>موارد مطالعاتی</span>
+                </div>
+                <div class="section-header">
+                    <h3>
+                        ار بین بردن چالش های تعمیر لوازم خانگی تخصص ماست
+                    </h3>
+                </div>
+
+                <div class="section-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    @{
+                        foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="study-item">
+                                    <div>
+                                        <img alt="@item.Title" src="@Url.Action("ShowImage","Home",new { id=item.FileId})" />
+                                    </div>
+
+                                    <div class="study-item-body">
+                                        <h2>@item.Title</h2>
+                                        <span>@item.Description.Substring(0, 120) + ...</span>
+                                        <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug})">
+                                            <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+                @*<div class="mini-footer">
+                        <div class="pagination-box">
+                            <ul>
+                                <li>
+                                    <a class="active">1</a>
+                                </li>
+                                <li>
+                                    <a>2</a>
+                                </li>
+                                <li>
+                                    <a>3</a>
+                                </li>
+                                <li>
+                                    <a>4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>
+                            مدیریت سرویس های آی تی برای شما موفقیت به همراه دارد.
+                            <a href="#">اجازه بدید شروع کنیم</a>
+
+                            .
+                        </span>
+                    </div>*@
+
+            </div>
+        </div>
+    </div>
+
+</div>

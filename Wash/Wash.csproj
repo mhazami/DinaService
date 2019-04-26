@@ -288,6 +288,14 @@
     <Content Include="Views\Content\PVIndex.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <Content Include="Views\Content\Items.cshtml" />
+    <Content Include="Views\Home\PVSlider.cshtml" />
+    <Content Include="Views\Home\PVService.cshtml" />
+    <Content Include="Views\Home\PVStudy.cshtml" />
+    <Content Include="Views\Home\PVInfo.cshtml" />
+    <Content Include="Views\Home\PVRegister.cshtml" />
+    <Content Include="Views\Home\PVConpanyInfo.cshtml" />
+    <Content Include="Views\Content\Category.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

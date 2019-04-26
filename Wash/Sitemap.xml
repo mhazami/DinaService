@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url xmlns="">
-    <loc>http://wash.dinaservice.com/14/تعمیر-ماشین-لباسشویی-سامسونگ-مدل-B1242-</loc>
+  <url>
+    <loc>http://wash.dinaservice.com/Content/Items/14/تعمیر-ماشین-لباسشویی-سامسونگ-مدل-B1242-</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://wash.dinaservice.com/Content/Category/1/تعمیر-ماشین-لباسشویی</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://wash.dinaservice.com/Content/Category/2/تعمیر-ماشین-ظرفشویی</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
-
