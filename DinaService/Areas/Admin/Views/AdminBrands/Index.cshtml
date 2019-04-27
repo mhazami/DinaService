@@ -22,7 +22,7 @@
                     <td>@item.Title</td>
                     <td>@(item.Enable ? "بله" : "خیر")</td>
                     <td>
-                        <img src="@Url.Action("ShowImage", "Home", new {id = item.FileId})" alt="@item.Title" class="img-responsive thumbnail" width="50" height="50" />
+                        <img src="@Url.Action("ShowImage", "Home", new {area="",id = item.FileId})" alt="@item.Title" class="img-responsive thumbnail" width="50" height="50" />
                     </td>
                     <td>
                         @Html.ActionLink("ویرایش", "Edit", new { id = item.BrandsId }) |

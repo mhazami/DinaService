@@ -37,23 +37,43 @@ namespace BLL
         }
         public bool Update(Brands brands, HttpPostedFileBase image)
         {
+            bool isedit = true;
             if (image == null)
             {
                 throw new Exception("لطفا عکس مطلب را انتخاب کنید");
             }
 
             File file = new FileBO().Get(brands.FileId);
-            file.Context = new byte[image.ContentLength];
+            if (file == null)
+            {
+                file = new File
+                {
+                    Context = new byte[image.ContentLength]
+                };
+                isedit = false;
+            }
+            else
+                file.Context = new byte[image.ContentLength];
             image.InputStream.Read(file.Context, 0, image.ContentLength);
             file.ContextType = image.ContentType;
             file.Title = image.FileName;
             file.FileSize = image.ContentLength / 1024;
 
-            if (!new FileBO().Update(file))
+            if (isedit)
             {
-                throw new Exception("خطا در ویرایش تصویر");
+                if (!new FileBO().Update(file))
+                {
+                    throw new Exception("خطا در ویرایش تصویر");
+                }
             }
-
+            else
+            {
+                if (!new FileBO().Insert(file))
+                {
+                    throw new Exception("خطا در ویرایش تصویر");
+                }
+                brands.FileId = file.Id;
+            }
             return base.Update(brands);
         }
 
@@ -73,5 +93,5 @@ namespace BLL
 
     }
 
-    
+
 }

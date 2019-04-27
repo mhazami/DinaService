@@ -18,7 +18,7 @@ namespace DinaService.Controllers
         public ActionResult ShowImage(int id)
         {
             var model = new FileBO().Get(id);
-            return File(model.Context, "image/jpg"); ;
+            return File(model.Context, model.ContextType); 
         }
     }
 }

@@ -233,6 +233,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\XMLController.cs" />
@@ -296,6 +297,7 @@
     <Content Include="Views\Home\PVRegister.cshtml" />
     <Content Include="Views\Home\PVConpanyInfo.cshtml" />
     <Content Include="Views\Content\Category.cshtml" />
+    <Content Include="Views\Brands\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

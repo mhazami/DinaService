@@ -1,21 +1,20 @@
 ﻿@using DataStructure
 @model IEnumerable<Content>
 @{
-    ViewBag.Title = ViewBag.PageTitle;
+    ViewBag.Title = ViewBag.Des;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 
 <div class="product-page">
 
 
-    <div class="head-post " style="background-image: url('/Content/Images/image-01.png');">
+    <div class="head-post " style="background-image: url('@Url.Action("ShowImage","Home",new { id=ViewBag.FileId})');">
         <div class="container">
             <div class="head-post-title">
-                <label>دینا سرویس ارائه دهنده ی خدمات تعمیر لوازم خانگی در سراسر تهران</label>
+                <label>تعمیر لوازم خانگی @ViewBag.Brand</label>
             </div>
             <div class="head-post-content">
-                <span></span>
+                <span>دینا سرویس ارائه دهنده ی خدمات تعمیر لوازم خانگی در سراسر تهران</span>
             </div>
         </div>
     </div>
@@ -31,7 +30,7 @@
                     </h3>
                 </div>
 
-                <div class="section-content" >
+                <div class="section-content">
                     @{
                         foreach (var item in Model)
                         {
@@ -43,7 +42,7 @@
 
                                     <div class="study-item-body">
                                         <h2>@item.Title</h2>
-                                  
+
                                         <span>@Html.Raw(Server.HtmlDecode(item.Description))</span>
                                         <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug.Replace(' ','-')})">
                                             <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
@@ -55,30 +54,7 @@
                     }
 
                 </div>
-                @*<div class="mini-footer">
-                        <div class="pagination-box">
-                            <ul>
-                                <li>
-                                    <a class="active">1</a>
-                                </li>
-                                <li>
-                                    <a>2</a>
-                                </li>
-                                <li>
-                                    <a>3</a>
-                                </li>
-                                <li>
-                                    <a>4</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <span>
-                            مدیریت سرویس های آی تی برای شما موفقیت به همراه دارد.
-                            <a href="#">اجازه بدید شروع کنیم</a>
 
-                            .
-                        </span>
-                    </div>*@
 
             </div>
         </div>
