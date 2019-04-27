@@ -46,6 +46,7 @@
     <Compile Include="Content.cs" />
     <Compile Include="File.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMap.cs" />
     <Compile Include="Slider.cs" />
     <Compile Include="Tools\Enums.cs" />
     <Compile Include="User.cs" />

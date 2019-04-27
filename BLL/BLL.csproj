@@ -46,6 +46,7 @@
     <Compile Include="ContentBO.cs" />
     <Compile Include="FileBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMapBO.cs" />
     <Compile Include="UserBO.cs" />
   </ItemGroup>
   <ItemGroup>
