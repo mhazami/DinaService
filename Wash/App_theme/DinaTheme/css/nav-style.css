@@ -631,7 +631,7 @@ ul {
     display: block !important;
     position: unset;
     text-align: right;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 #accordian li.active > ul {
