@@ -155,12 +155,20 @@ a {
     border-bottom: 1px dotted
 }
 
+.study-item-body > span {
+    max-height: 190px;
+    margin-bottom: 80px;
+    display: block;
+}
+
 .study-item-body span {
     overflow: hidden;
     font-size: 15px;
 }
 
 .study-item div {
+    overflow: hidden;
+    max-height: 350px;
     overflow: hidden
 }
 
@@ -542,6 +550,10 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     -ms-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.post-item ~ .contact-form-box {
+    transform: translateY(0);
 }
 
 .contact-right-box, .contact-form {

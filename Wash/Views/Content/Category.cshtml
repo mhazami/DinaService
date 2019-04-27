@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <div class="section-product">
-            <div class="row aos-item">
+            <div class="row ">
                 <div class="mini-header">
                     <span>موارد مطالعاتی</span>
                 </div>
@@ -31,7 +31,7 @@
                     </h3>
                 </div>
 
-                <div class="section-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="section-content" >
                     @{
                         foreach (var item in Model)
                         {
@@ -43,8 +43,9 @@
 
                                     <div class="study-item-body">
                                         <h2>@item.Title</h2>
-                                        <span>@item.Description.Substring(0, 120) + ...</span>
-                                        <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug})">
+                                  
+                                        <span>@Html.Raw(Server.HtmlDecode(item.Description))</span>
+                                        <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug.Replace(' ','-')})">
                                             <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
                                         </a>
                                     </div>

@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="post-item"
+<div class="post-item">
 
 
     <div class="head-post" style="background-image: url('@Url.Action("ShowImage","Home",new { id=Model.FileId})');">
@@ -26,7 +26,7 @@
                 </li>
                 <li>
                     <p>
-                        @Model.Description
+                        @Html.Raw(Server.HtmlDecode(Model.Description))
                     </p>
                 </li>
 
@@ -37,7 +37,7 @@
                 @{
                     foreach (string item in (List<string>)ViewBag.KeyWord)
                     {
-                        <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item})">#@item</a>
+                        <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item.Replace(' ','-')})">#@item</a>
                     }
                 }
 
@@ -49,3 +49,6 @@
 
     </div>
 </div>
+
+
+@Html.Action("GetRegister", "Home", null)

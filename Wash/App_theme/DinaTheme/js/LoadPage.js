@@ -11,4 +11,4 @@ function showPage() {
     document.getElementById("atomo").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
 
-}
+}   
