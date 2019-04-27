@@ -19,16 +19,16 @@ namespace Wash.Controllers
             StringBuilder builder = new StringBuilder();
             builder.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
             XNamespace ns = "http://www.sitemaps.org/schemas/sitemap/0.9";
-            List<SiteMap> contents = new SiteMapBO().GetWashSiteMap();
-            XDocument sitemap = new XDocument(new XDeclaration("1.0", "utf-8", "yes"), new XElement(ns + "urlset", from item in contents select new XElement("url",
-         new XElement("loc", item.Link),
-         new XElement("changefreq", "monthly"),
-          new XElement("priority", "0.5"))));
+            //List<SiteMap> contents = new SiteMapBO().GetWashSiteMap();
+         //   XDocument sitemap = new XDocument(new XDeclaration("1.0", "utf-8", "yes"), new XElement(ns + "urlset", from item in contents select new XElement("url",
+         //new XElement("loc", item.Link),
+         //new XElement("changefreq", "monthly"),
+         // new XElement("priority", "0.5"))));
 
 
-            var x = sitemap.ToString();
-            string res = x.Replace("<url xmlns=\"\">", "<url>");
-            builder.AppendLine(res);
+         //   var x = sitemap.ToString();
+         //   string res = x.Replace("<url xmlns=\"\">", "<url>");
+         //   builder.AppendLine(res);
 
             string path = Server.MapPath("~/Sitemap.xml");
 
@@ -49,7 +49,7 @@ namespace Wash.Controllers
                 }
             }
 
-            return Content(sitemap.ToString(), "text/xml");
+            return Content("", "text/xml");
         }
 
         public ContentResult GetRSS()
