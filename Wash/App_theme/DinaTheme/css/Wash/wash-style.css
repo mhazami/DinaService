@@ -57,9 +57,6 @@ a.detail-box, a.detail-box:hover, .paragraph-item > li label, .service-item ul l
     color: #15caa5;
 }
 
-.list-nav > li.active > .dropdown-container:after {
-    background: #15caa5
-}
 
 .list-nav > li:hover > a span, .list-nav > li:hover > a svg {
     color: #013870;
@@ -102,7 +99,7 @@ body {
 }
 
 .active > .dropdown-container {
-    background: #15caa5;
+    background: #fff;
 }
 
 .button-c:hover {
@@ -141,7 +138,7 @@ a {
 
 @media only screen and (max-width: 992px) {
     .navigation-menu .list-nav li a {
-        background: #15caa5;
+        background: #ffffff;
         transition: all .3s ease-in-out;
     }
 
@@ -156,8 +153,8 @@ a {
 
 
     .content-navigation-menu {
-        background: #15caa5;
-        border-color: #15caa5;
+        background: #ffffff;
+        border-color: #ffffff;
         transition: all .3s ease-in-out;
     }
 
@@ -167,12 +164,12 @@ a {
     }
 
     .list-nav > li.active > a, .list-nav > li.active > .dropdown-container li a {
-        background: #013870;
-        background-color: #013870
+        background: #ffffff;
+        background-color: #ffffff
     }
 
     .list-nav > li.active span {
-        color: #15caa5 !important;
+        color: #013870 !important;
         transition: all .3s ease-in-out;
     }
 

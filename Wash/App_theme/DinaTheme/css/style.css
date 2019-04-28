@@ -2232,8 +2232,14 @@ footer .service-footer .social-media a {
     .social-media a.googleplus-button {
         background: #DB514F;
     }
+.instagram-button {
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
 .social-media a.telegram-button {
     background: #1C86BC
+}
+.social-media a.linkedin-button {
+    background: #43b5ef
 }
 .social-media a.facebook-button {
     background: #3B5998
