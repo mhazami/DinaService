@@ -128,39 +128,9 @@ namespace BLL
         {
             string url = string.Empty;
             obj.PublicDate = DateTime.Now;
-            if (base.Insert(obj))
-            {
-                if (string.IsNullOrEmpty(obj.Link))
-                {
-                    switch (obj.Place)
-                    {
-                        case SliderProject.Orgin:
-                            url = "http://dinaservice.com";
-                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                            break;
-                        case SliderProject.Cool:
-                            url = "http://cool.dinaservice.com";
-                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                            break;
-                        case SliderProject.kitchen:
-                            url = "http://kitchen.dinaservice.com";
-                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                            break;
-                        case SliderProject.Wash:
-                            url = "http://Wash.dinaservice.com";
-                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                            break;
-                        case SliderProject.Electric:
-                            url = "http://electric.dinaservice.com";
-                            obj.Link = $"{url}/{obj.Id}/{GetSlug(obj.Slug)}";
-                            break;
-
-                    }
-                }
-
-                return base.Update(obj);
-            }
-            return false;
+            
+          
+            return base.Insert(obj);
         }
 
         public override void CheckConstraint(Content obj)

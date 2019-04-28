@@ -227,6 +227,7 @@
     <Content Include="index-wash.html" />
     <Content Include="internal-page.html" />
     <Content Include="product.html" />
+    <Content Include="robots.txt" />
     <Content Include="Sitemap.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -299,6 +300,7 @@
     <Content Include="Views\Content\Category.cshtml" />
     <Content Include="Views\Brands\List.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
