@@ -11,7 +11,7 @@
         }
 
 .container-nav, .list-nav > li > ul > li, #accordian li.active > ul.mega-menu {
-    background-color: #15caa5
+    background-color: #ffffff
 }
 
 .dropdown-container {
@@ -27,7 +27,7 @@
 }
 
 #accordian ul.mega-menu ul {
-    background: #15caa5;
+    background: #ffffff;
 }
 
 .list-nav > li a span {

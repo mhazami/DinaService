@@ -631,7 +631,7 @@ ul {
     display: block !important;
     position: unset;
     text-align: right;
-    padding: 5px 10px;
+    padding: 4px 10px;
 }
 
 #accordian li.active > ul {
@@ -768,7 +768,7 @@ ul {
             .list-nav > li a span {
                 color: #0e2b5c;
                 margin: 5px;
-                font-size: 12px;
+                font-size: 13px;
                 opacity: .7;
                 transition: all .3s ease-in-out
             }
@@ -895,7 +895,7 @@ ul {
         display: block !important;
         position: absolute;
         top: 22px;
-        left: 0;
+        left: -7px;
         right: auto;
         width: auto;
         opacity: 1 !important;
