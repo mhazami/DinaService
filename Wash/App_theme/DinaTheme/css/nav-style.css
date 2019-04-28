@@ -37,39 +37,39 @@ ul {
     font-family: Vazir;
     font-style: normal;
     font-weight: bold;
-    src: url('../fonts/Vazir/eot/Vazir-Bold-FD.eot'), url('../fonts/Vazir/woff2/Vazir-Bold-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/Vazir/woff/Vazir-Bold-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/Vazir/ttf/Vazir-Bold-FD.ttf') format('truetype');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Bold-FD.eot'), url('/App_theme/DinaTheme/fonts/Vazir/woff2/Vazir-Bold-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('/App_theme/DinaTheme/fonts/Vazir/woff/Vazir-Bold-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/App_theme/DinaTheme/fonts/Vazir/ttf/Vazir-Bold-FD.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Vazir;
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/Vazir/eot/Vazir-Medium-FD.eot');
-    src: url('../fonts/Vazir/eot/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/Vazir/woff2/Vazir-Medium-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/Vazir/woff/Vazir-Medium-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/Vazir/ttf/Vazir-Medium-FD.ttf') format('truetype');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Medium-FD.eot');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('/App_theme/DinaTheme/fonts/Vazir/woff2/Vazir-Medium-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('/App_theme/DinaTheme/fonts/Vazir/woff/Vazir-Medium-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/App_theme/DinaTheme/fonts/Vazir/ttf/Vazir-Medium-FD.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Vazir;
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/Vazir/eot/Vazir-Light-FD.eot');
-    src: url('../fonts/Vazir/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/Vazir/woff2/Vazir-Light-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/Vazir/woff/Vazir-Light-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/Vazir/ttf/Vazir-Light-FD.ttf') format('truetype');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Light-FD.eot');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('/App_theme/DinaTheme/fonts/Vazir/woff2/Vazir-Light-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('/App_theme/DinaTheme/fonts/Vazir/woff/Vazir-Light-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/App_theme/DinaTheme/fonts/Vazir/ttf/Vazir-Light-FD.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Vazir;
     font-style: normal;
     font-weight: 200;
-    src: url('../fonts/Vazir/eot/Vazir-Thin-FD.eot');
-    src: url('../fonts/Vazir/eot/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/Vazir/woff2/Vazir-Thin-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/Vazir/woff/Vazir-Thin-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/Vazir/ttf/Vazir-Thin-FD.ttf') format('truetype');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Thin-FD.eot');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('/App_theme/DinaTheme/fonts/Vazir/woff2/Vazir-Thin-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('/App_theme/DinaTheme/fonts/Vazir/woff/Vazir-Thin-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/App_theme/DinaTheme/fonts/Vazir/ttf/Vazir-Thin-FD.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Vazir;
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/Vazir/eot/Vazir-FD.eot');
-    src: url('../fonts/Vazir/eot/Vazir-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/Vazir/woff2/Vazir-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/Vazir/woff/Vazir-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/Vazir/ttf/Vazir-FD.ttf') format('truetype');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-FD.eot');
+    src: url('/App_theme/DinaTheme/fonts/Vazir/eot/Vazir-FD.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('/App_theme/DinaTheme/fonts/Vazir/woff2/Vazir-FD.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('/App_theme/DinaTheme/fonts/Vazir/woff/Vazir-FD.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/App_theme/DinaTheme/fonts/Vazir/ttf/Vazir-FD.ttf') format('truetype');
 }
 
 
@@ -631,7 +631,7 @@ ul {
     display: block !important;
     position: unset;
     text-align: right;
-    padding: 5px 10px;
+    padding: 4px 10px;
 }
 
 #accordian li.active > ul {
@@ -768,7 +768,7 @@ ul {
             .list-nav > li a span {
                 color: #0e2b5c;
                 margin: 5px;
-                font-size: 12px;
+                font-size: 13px;
                 opacity: .7;
                 transition: all .3s ease-in-out
             }
@@ -895,7 +895,7 @@ ul {
         display: block !important;
         position: absolute;
         top: 22px;
-        left: 0;
+        left: -7px;
         right: auto;
         width: auto;
         opacity: 1 !important;
