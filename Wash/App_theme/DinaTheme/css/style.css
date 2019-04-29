@@ -552,14 +552,37 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 
-.post-item ~ .contact-form-box {
-    transform: translateY(0);
+    .contact-form-box .head-center > h2 {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+    }
+@media(min-width: 992px) {
+    .contact-form-box .head-center > h2 span{
+        margin-right: 5px;
+    }
+    .contact-form-box .head-center > h2 {
+        top: 0;
+        margin: 0;
+        text-align: center;
+        padding: 25px 67px 30px 0;
+        background: linear-gradient( to left, rgb(255, 255, 255) 0, rgb(240, 243, 246) 50%, rgb(240, 243, 246) 0, rgb(240, 243, 246) 100% ) left bottom #fff0 no-repeat;
+        background-size: 100% 5px;
+        background-color: #fff;
+    }
 }
+
+    .post-item ~ .contact-form-box {
+        transform: translateY(0);
+    }
 
 .contact-right-box, .contact-form {
     float: right;
     background-color: #fff;
-    padding-top: 3%;
+    padding-top: 13%;
     padding-right: 5%;
     padding-bottom: 16%;
     padding-left: 5%;
@@ -573,7 +596,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     background-color: transparent;
     background-image: none !important;
     width: 100%;
-    padding-top: 8%;
+    padding-top: 21%;
     padding-bottom: 0;
 }
 
