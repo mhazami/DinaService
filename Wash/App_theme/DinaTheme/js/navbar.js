@@ -150,4 +150,18 @@
         $(".pagination-box ul li a").removeClass("active");
         $(this).addClass("active");
     });
+
+    $(".myspan span").removeAttr("style");
+    $(".myspan p").removeAttr("style");
+    $(".study-item").each(function () {
+ 
+        if ($(".myspan", this).html().length > 350) {
+            var text = $(".myspan", this).html().substring(0, 350);
+            $(".myspan ", this).html(text + "...");
+           
+
+        }
+
+    });
+
 });

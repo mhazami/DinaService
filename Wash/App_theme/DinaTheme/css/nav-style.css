@@ -474,6 +474,8 @@ ul {
     }
 }
 
+
+
 @media (max-width: 992px) {
     .r-collapse {
         cursor: pointer;
@@ -1040,9 +1042,7 @@ ul {
 
     .sticky {
         height: 90px;
-     
         animation: sticky .2s ease-in-out;
-
     }
 
         .sticky .navbar-panel > ul > li:first-child {
@@ -1111,5 +1111,12 @@ ul {
 @media (min-width: 1400px) {
     #accordian li.active > ul.mega-menu {
         min-width: 1140px;
+    }
+}
+@media(max-width: 1200px) and (min-width:768px){
+    #accordian li.active > ul.mega-menu {
+        min-width: 750px;
+        height: 475px;
+        overflow: auto;
     }
 }

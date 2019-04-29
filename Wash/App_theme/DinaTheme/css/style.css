@@ -120,7 +120,7 @@ label, span {
     position: relative;
     text-align: right;
     padding: 5% 5% 10px 5%;
-    min-height: 440px;
+    min-height: 515px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -163,7 +163,8 @@ a {
 
 .study-item-body span {
     overflow: hidden;
-    font-size: 15px;
+    font-family: Vazir!important;
+    font-size: 15px!important;
 }
 
 .study-item div {
@@ -1133,7 +1134,7 @@ footer .service-footer li {
 
     .study-item-body h2 {
         font-size: 18px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .study-item-body {
