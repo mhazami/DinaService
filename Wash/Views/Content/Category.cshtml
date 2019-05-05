@@ -2,6 +2,8 @@
 @model IEnumerable<Content>
 @{
     ViewBag.Title = ViewBag.PageTitle;
+    ViewBag.Des = "تعمیر لوازم خانگی،تعمیر لباسشویی،تعمیر ماشین لباسشویی،تعمیر ماشین ظرفشویی،تعمیر ماشین لباسشویی در تهران، تعمیر ماشین ظرفشویی درتهران";
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,13 +11,13 @@
 <div class="product-page">
 
 
-    <div class="head-post " style="background-image: url('/Content/Images/image-01.png');">
+    <div class="head-post " style="background-image: url('@ViewBag.img');">
         <div class="container">
             <div class="head-post-title">
                 <label>دینا سرویس ارائه دهنده ی خدمات تعمیر لوازم خانگی در سراسر تهران</label>
             </div>
             <div class="head-post-content">
-                <span></span>
+                <span>@ViewBag.des</span>
             </div>
         </div>
     </div>

@@ -3,6 +3,11 @@ body {
     color: #627792;
 }
 
+.aboutus{
+    font-size:1.4em !important;
+    text-align:justify !important;
+}
+
 label, span {
     text-align: right
 }

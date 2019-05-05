@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DataStructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,13 @@ namespace DinaService.Controllers
 
         public ActionResult ShowImage(int id)
         {
-            var model = new FileBO().Get(id);
-            return File(model.Context, model.ContextType); 
+            File model = new FileBO().Get(id);
+            return File(model.Context, "image/jpg"); ;
+        }
+        public ActionResult GenerateMenu()
+        {
+            List<Brands> list = new BrandsBO().GetAll();
+            return PartialView("PVMenu", list);
         }
     }
 }

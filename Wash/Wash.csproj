@@ -173,6 +173,7 @@
     <Content Include="Content\Images\data-app.svg" />
     <Content Include="Content\Images\dinaservice.png" />
     <Content Include="Content\Images\Dishwasher-header.jpg" />
+    <Content Include="Content\Images\dwm.png" />
     <Content Include="Content\Images\EN.png" />
     <Content Include="Content\Images\FA.png" />
     <Content Include="Content\Images\favicon.png" />
@@ -222,6 +223,7 @@
     <Content Include="Content\Images\washing-machine.svg" />
     <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
+    <Content Include="Content\Images\wm.png" />
     <Content Include="feed.xml" />
     <Content Include="Global.asax" />
     <Content Include="index-wash.html" />
@@ -301,6 +303,9 @@
     <Content Include="Views\Brands\List.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

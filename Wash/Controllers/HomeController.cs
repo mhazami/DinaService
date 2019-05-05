@@ -1,9 +1,6 @@
 ﻿using BLL;
 using DataStructure;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Wash.Controllers
@@ -18,13 +15,13 @@ namespace Wash.Controllers
 
         public ActionResult ShowImage(int id)
         {
-            var model = new FileBO().Get(id);
+            File model = new FileBO().Get(id);
             return File(model.Context, "image/jpg"); ;
         }
 
         public ActionResult GenerateMenu()
         {
-            var list = new BrandsBO().GetAll();
+            List<Brands> list = new BrandsBO().GetAll();
             return PartialView("PVMenu", list);
         }
 
@@ -56,6 +53,16 @@ namespace Wash.Controllers
         public ActionResult GetCompanyInfo()
         {
             return PartialView("PVConpanyInfo");
+        }
+
+        public ActionResult ContactUs(int? id, string slug)
+        {
+            return View();
+        }
+
+        public ActionResult AboutUs(int? id, string slug)
+        {
+            return View();
         }
     }
 }
