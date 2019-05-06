@@ -897,7 +897,7 @@ ul {
         display: block !important;
         position: absolute;
         top: 22px;
-        left: -7px;
+        left: -15px;
         right: auto;
         width: auto;
         opacity: 1 !important;
@@ -981,6 +981,12 @@ ul {
             width: 100%;
             left: 30px;
         }
+}
+
+@media (min-width: 1199px) and (max-width: 1190px) {
+    .btn-menu {
+        left: -30px !important;
+    }
 }
 
 .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
@@ -1113,7 +1119,8 @@ ul {
         min-width: 1140px;
     }
 }
-@media(max-width: 1200px) and (min-width:768px){
+
+@media(max-width: 1550px) and (min-width:768px) {
     #accordian li.active > ul.mega-menu {
         min-width: 750px;
         height: 475px;

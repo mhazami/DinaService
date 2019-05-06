@@ -151,13 +151,13 @@
         $(this).addClass("active");
     });
 
-    $(".myspan span").removeAttr("style");
-    $(".myspan p").removeAttr("style");
+    $(".des-product span").removeAttr("style");
+    $(".des-product p").removeAttr("style");
     $(".study-item").each(function () {
  
-        if ($(".myspan", this).html().length > 350) {
-            var text = $(".myspan", this).html().substring(0, 350);
-            $(".myspan ", this).html(text + "...");
+        if ($(".des-product", this).html().length > 350) {
+            var text = $(".des-product", this).html().substring(0, 350);
+            $(".des-product ", this).html(text + "...");
            
 
         }
