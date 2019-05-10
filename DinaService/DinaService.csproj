@@ -317,6 +317,7 @@
     <Content Include="Areas\Admin\Views\AdminBrands\Create.cshtml" />
     <Content Include="Areas\Admin\Views\AdminBrands\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\AdminBrands\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminContent\Edit.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

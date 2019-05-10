@@ -49,22 +49,43 @@ namespace BLL
 
         public bool Update(Content content, HttpPostedFileBase image)
         {
-            if (image == null)
+            if (image != null)
             {
-                throw new Exception("لطفا عکس مطلب را انتخاب کنید");
+                File oldfile = new FileBO().Get(content.FileId);
+                File file = null;
+                if (oldfile == null)
+                {
+                    file = new File();
+                }
+                else
+                {
+                    file = oldfile;
+                }
+
+                file.Context = new byte[image.ContentLength];
+                image.InputStream.Read(file.Context, 0, image.ContentLength);
+                file.ContextType = image.ContentType;
+                file.Title = image.FileName;
+                file.FileSize = image.ContentLength / 1024;
+                if (oldfile == null)
+                {
+                    if (!new FileBO().Insert(file))
+                    {
+                        throw new Exception("خطا در ویرایش تصویر");
+                    }
+                    content.FileId = file.Id;
+                }
+                else
+                {
+                    if (!new FileBO().Update(file))
+                    {
+                        throw new Exception("خطا در ویرایش تصویر");
+                    }
+                }
+               
+
             }
 
-            File file = new FileBO().Get(content.FileId);
-            file.Context = new byte[image.ContentLength];
-            image.InputStream.Read(file.Context, 0, image.ContentLength);
-            file.ContextType = image.ContentType;
-            file.Title = image.FileName;
-            file.FileSize = image.ContentLength / 1024;
-
-            if (!new FileBO().Update(file))
-            {
-                throw new Exception("خطا در ویرایش تصویر");
-            }
 
             return base.Update(content);
         }
@@ -91,7 +112,7 @@ namespace BLL
             }
 
             content.FileId = file.Id;
-            return this.Insert(content);
+            return Insert(content);
 
         }
 
@@ -128,8 +149,8 @@ namespace BLL
         {
             string url = string.Empty;
             obj.PublicDate = DateTime.Now;
-            
-          
+
+
             return base.Insert(obj);
         }
 
@@ -164,6 +185,8 @@ namespace BLL
             {
                 throw new Exception("لطفا عنوان مطلب را وارد کنید");
             }
+            string url = string.Empty;
+            obj.PublicDate = DateTime.Now;
         }
 
         public List<string> GetKeyWord(string keywords)

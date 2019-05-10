@@ -52,6 +52,8 @@ namespace DinaService.Areas.Admin.Controllers
 
         public ActionResult Edit(int id)
         {
+            ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "BrandsId", "Title");
+
             var content = new ContentBO().Get(id);
             return View(content);
         }
@@ -61,6 +63,8 @@ namespace DinaService.Areas.Admin.Controllers
         {
             try
             {
+                ViewBag.BrandsId = new SelectList(new BrandsBO().GetAll(), "BrandsId", "Title");
+
                 if (!new ContentBO().Update(content, image))
                 {
                     ShowMessage("خطا دز ویرایش مطلب", MessageType.Error);
