@@ -151,8 +151,8 @@
         $(this).addClass("active");
     });
 
-    $(".des-product span").removeAttr("style");
-    $(".des-product p").removeAttr("style");
+    $(".study-item span").removeAttr("style");
+    $(".study-item p").removeAttr("style");
     $(".study-item").each(function () {
  
         if ($(".des-product", this).html().length > 350) {

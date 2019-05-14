@@ -44,7 +44,7 @@
 
                                     <div class="study-item-body">
                                         <h2>@item.Title</h2>
-                                        <span class="myspan">@Html.Raw(Server.HtmlDecode(item.Description))</span>
+                                        <span class="des-product">@Html.Raw(Server.HtmlDecode(item.Description))</span>
                                         <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug.Replace(' ','-')})">
                                             <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
                                         </a>
