@@ -36,13 +36,15 @@
 
             <div class="project-tags">
                 <span>برچسب ها : </span>
-                @{
-                    foreach (string item in (List<string>)ViewBag.KeyWord)
-                    {
-                        <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item.Replace(' ','-')})">#@item</a>
-                    }
-                }
-
+                @*@{
+                        foreach (string item in (List<string>)ViewBag.KeyWord)
+                        {
+                            <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item.Replace(' ','-')})">#@item</a>
+                        }
+                    }*@
+                <a href="@Url.Action("Category","Content",new { area="",id=0,slug=$"تعمیر-ماشین-لباسشویی"})">#تعمیر ماشین لباسشویی</a>
+                <a href="@Url.Action("Category","Content",new { area="",id=0,slug=$"تعمیر-ماشین-لباسشویی-{ViewBag.brand}"})">#تعمیر ماشین لباسشویی @ViewBag.brand</a>
+                <a href="@Url.Action("Category","Content",new { area="",id=0,slug=Model.Slug.Replace(' ','-')})">#@Model.Slug</a>
             </div>
 
 

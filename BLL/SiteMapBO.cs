@@ -63,15 +63,20 @@ namespace BLL
                     Link = $"{url}/Content/Items/{item.Id}/{GetSlug(item.Slug)}"
                 };
                 result.Add(obj);
-                List<string> keywords = item.KeyWords.Split(',').ToList();
-                foreach (string key in keywords)
-                {
-                    SiteMap obj2 = new SiteMap()
-                    {
-                        Link = $"{url}/Content/Category/{item.Id}/{GetSlug(key)}"
-                    };
-                    result.Add(obj2);
-                }
+                //List<string> keywords = item.KeyWords.Split(',').ToList();
+              
+
+                //foreach (string key in keywords)
+                //{
+                //    if (key.Contains()) {
+
+                //    }
+                //    SiteMap obj2 = new SiteMap()
+                //    {
+                //        Link = $"{url}/Content/Category/{item.Id}/{GetSlug(key)}"
+                //    };
+                //    result.Add(obj2);
+                //}
             }
             List<Brands> brands = new BrandsBO().GetAll();
             foreach (Brands item in brands)

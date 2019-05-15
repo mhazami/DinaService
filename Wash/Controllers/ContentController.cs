@@ -46,6 +46,7 @@ namespace Wash.Controllers
         public ActionResult Items(int id, string slug)
         {
             DataStructure.Content content = new ContentBO().Get(id);
+            ViewBag.brand = new BrandsBO().Get(content.BId).Title;
             ViewBag.KeyWord = content.KeyWords.Split(',').ToList();
             return View(content);
         }
