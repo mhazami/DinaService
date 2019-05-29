@@ -3,9 +3,9 @@ body {
     color: #627792;
 }
 
-.aboutus{
-    font-size:1.4em !important;
-    text-align:justify !important;
+.aboutus {
+    font-size: 1.4em !important;
+    text-align: justify !important;
 }
 
 label, span {
@@ -67,7 +67,7 @@ label, span {
     margin-left: 11px;
 }
 
-.section-header h3 {
+.section-header h2 {
     font-weight: 500;
     color: #0e2b5c;
     font-size: 30px;
@@ -167,8 +167,8 @@ a {
 }
 
 .study-item-body span {
-    font-family: Vazir!important;
-    font-size: 15px!important;
+    font-family: Vazir !important;
+    font-size: 15px !important;
 }
 
 .study-item div {
@@ -563,12 +563,13 @@ footer .service-footer a:hover, a.detail-box:hover:after {
         left: 0;
         right: 0;
         z-index: 1;
-
     }
+
 @media(min-width: 992px) {
-    .contact-form-box .head-center > h2 span{
+    .contact-form-box .head-center > h2 span {
         margin-right: 5px;
     }
+
     .contact-form-box .head-center > h2 {
         top: 0;
         margin: 0;
@@ -580,9 +581,9 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     }
 }
 
-    .post-item ~ .contact-form-box {
-        transform: translateY(0);
-    }
+.post-item ~ .contact-form-box {
+    transform: translateY(0);
+}
 
 .contact-right-box, .contact-form {
     float: right;
@@ -1519,7 +1520,7 @@ footer .service-footer li {
         font-size: 22px;
     }
 
-    .section-header h3 {
+    .section-header h2 {
         font-size: 23px;
     }
 
@@ -1628,7 +1629,7 @@ main {
         transform: translateY(-50%);
     }
 
-.head-post-content span {
+.head-post-content strong {
     font-size: 15px;
     line-height: 1.8;
     color: #fff;
@@ -1645,7 +1646,7 @@ main {
     text-align: center;
 }
 
-    .head-post-title label {
+    .head-post-title h1 {
         color: #fff;
         text-align: center;
         font-size: 44px;
@@ -2235,6 +2236,7 @@ body {
     display: block;
     width: 100%;
 }
+
 .social-media {
     margin-top: 15px;
 }
@@ -2251,24 +2253,89 @@ footer .service-footer .social-media a {
     padding: 3px 10px;
     opacity: 1;
 }
+
     footer .service-footer .social-media a:hover:after {
         display: none
     }
+
     footer .service-footer .social-media a svg {
         width: 1em !important
     }
-    .social-media a.googleplus-button {
-        background: #DB514F;
-    }
-.instagram-button {
-  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+
+.social-media a.googleplus-button {
+    background: #DB514F;
 }
+
+.instagram-button {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
 .social-media a.telegram-button {
     background: #1C86BC
 }
+
 .social-media a.linkedin-button {
     background: #43b5ef
 }
+
 .social-media a.facebook-button {
     background: #3B5998
+}
+
+.des-post {
+    overflow: hidden;
+    margin: 0
+}
+
+    .des-post > * {
+        padding: 0
+    }
+
+.des-post-image img {
+    float: right;
+    max-width: 100%;
+    -webkit-clip-path: polygon(8% 0, 100% 0%, 100% 99%, 0% 100%);
+    clip-path: polygon(8% 0, 100% 0%, 100% 99%, 0% 100%);
+}
+
+.des-post-content {
+    padding: 100px;
+}
+
+    .des-post-content h2 {
+        font-size: 33px;
+        color: #252525;
+        text-align: right;
+    }
+
+    .des-post-content > p {
+        text-align: right;
+        margin: 35px 0 45px 0;
+        font-size: 15px;
+    }
+
+.items-post img {
+    width: 7%;
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+    margin: 1px -4px 0px 0;
+}
+.items-post {
+    float: right;
+    margin: 15px 0;
+}
+.items-post div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #464646;
+}
+.items-post div p {
+    font-size: 14px;
+}
+    .items-post div {
+    width: 91%;
+    display: inline-block;
+    float: left;
+    text-align: right;
 }
