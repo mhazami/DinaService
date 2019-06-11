@@ -50,7 +50,7 @@ new XElement("priority", "0.5"))));
                 }
             }
 
-            return Content(sitemap.ToString(), "text/xml");
+            return Content(builder.ToString(), "text/xml");
         }
 
         public ContentResult GetRSS()
