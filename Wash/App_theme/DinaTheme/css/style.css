@@ -2309,7 +2309,7 @@ footer .service-footer .social-media a {
     }
 
     .des-post-content > p {
-        text-align: right;
+        text-align: justify;
         margin: 35px 0 45px 0;
         font-size: 15px;
     }
@@ -2321,21 +2321,22 @@ footer .service-footer .social-media a {
     float: right;
     margin: 1px -4px 0px 0;
 }
+
 .items-post {
     float: right;
     margin: 15px 0;
 }
-.items-post div h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #464646;
-}
-.items-post div p {
-    font-size: 14px;
-}
+
+    .items-post div h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #464646;
+    }
+
+    .items-post div p {
+        font-size: 14px;
+    }
+
     .items-post div {
-    width: 91%;
-    display: inline-block;
-    float: left;
-    text-align: right;
-}
+        text-align: justify;
+    }

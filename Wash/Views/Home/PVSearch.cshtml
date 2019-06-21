@@ -1,0 +1,33 @@
+﻿<div class="col-lg-3 col-md-6 col-xs-12 col-sm-6 support-box item-second">
+    <ul>
+        <li>
+            <img src="/Content/Images/image-message.svg" alt="ثبت درخواست تعمیر لوازم خانگی" />
+        </li>
+        <li class="header-info">
+            <ul>
+                <li>آیا از ما سوالی دارید</li>
+                <li> مشاوره رایگان : <a href="#">02126103606</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="search-box">
+                <a>
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="search-element">
+                    <input type="text" name="name" id="txtseach" value="" placeholder="جستجو ..." />
+                    <a onclick="Search()"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    function Search() {
+        var value = $('#txtseach').val();
+        var slug = value.replace(/\s+/g, '-');
+        var url = '/Content/Result/0/' + slug;
+        window.location.href = url; 
+    }
+</script>

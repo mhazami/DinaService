@@ -1,0 +1,87 @@
+﻿@using DataStructure
+@model IEnumerable<Content>
+@{
+    ViewBag.Title = ViewBag.PageTitle;
+    ViewBag.Des = "تعمیر لوازم خانگی،تعمیر لباسشویی،تعمیر ماشین لباسشویی،تعمیر ماشین ظرفشویی،تعمیر ماشین لباسشویی در تهران، تعمیر ماشین ظرفشویی درتهران";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="product-page">
+
+
+    <div class="head-post " style="background-image: url('@ViewBag.img');">
+        <div class="container">
+            <div class="head-post-title">
+                <h1>دینا سرویس ارائه دهنده ی خدمات تعمیر لوازم خانگی در سراسر تهران</h1>
+            </div>
+            <div class="head-post-content">
+                <strong>@ViewBag.des</strong>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-product">
+            <div class="row ">
+                <div class="mini-header">
+                    <span>موارد مطالعاتی</span>
+                </div>
+                <div class="section-header">
+                    <h2>
+                        از بین بردن چالش های تعمیر لوازم خانگی تخصص ماست
+                    </h2>
+                </div>
+
+                <div class="section-content">
+                    @{
+                        foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                <div class="study-item">
+                                    <div>
+                                        <img alt="@item.Title" src="@Url.Action("ShowImage","Home",new { id=item.FileId})" />
+                                    </div>
+
+                                    <div class="study-item-body">
+                                        <h2>@item.Title</h2>
+                                        <span class="des-product">@Html.Raw(Server.HtmlDecode(item.Description))</span>
+                                        <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug.Replace(' ','-')})">
+                                            <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+
+                </div>
+                @*<div class="mini-footer">
+                        <div class="pagination-box">
+                            <ul>
+                                <li>
+                                    <a class="active">1</a>
+                                </li>
+                                <li>
+                                    <a>2</a>
+                                </li>
+                                <li>
+                                    <a>3</a>
+                                </li>
+                                <li>
+                                    <a>4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>
+                            مدیریت سرویس های آی تی برای شما موفقیت به همراه دارد.
+                            <a href="#">اجازه بدید شروع کنیم</a>
+
+                            .
+                        </span>
+                    </div>*@
+
+            </div>
+        </div>
+    </div>
+
+</div>

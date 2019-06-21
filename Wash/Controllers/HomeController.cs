@@ -64,5 +64,10 @@ namespace Wash.Controllers
         {
             return View();
         }
+
+        public ActionResult Search()
+        {
+            return PartialView("PVSearch");
+        }
     }
 }

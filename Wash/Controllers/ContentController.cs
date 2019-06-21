@@ -50,5 +50,17 @@ namespace Wash.Controllers
             ViewBag.KeyWord = content.KeyWords.Split(',').ToList();
             return View(content);
         }
+
+        public ActionResult Result(int id, string slug)
+        {
+            
+                ViewBag.img = "/Content/Images/wm.png";
+                ViewBag.des = "تعمیر ماشین لباسشویی و تعمیر ماشین ظرفشویی خود را به متخصصان حرفه ای دینا سرویس بسپارید";
+           
+
+            string filter = slug.Replace('-', ' ');
+            List<DataStructure.Content> list = new ContentBO().Where(c => c.Place == SliderProject.Wash && c.Title.Contains(filter));
+            return View(list);
+        }
     }
 }
