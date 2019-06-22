@@ -43,6 +43,7 @@ namespace Wash.Controllers
             return View(list);
         }
 
+        [Route("{id:int}/{slug}")]
         public ActionResult Items(int id, string slug)
         {
             DataStructure.Content content = new ContentBO().Get(id);

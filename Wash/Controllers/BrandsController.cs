@@ -10,6 +10,7 @@ namespace Wash.Controllers
     public class BrandsController : Controller
     {
         // GET: Brands
+        [Route("تعمیر-لوازم-خانگی/{id:int}/{slug}")]
         public ActionResult List(int id, string slug)
         {
             var contents = new ContentBO().Where(c => c.BId == id);

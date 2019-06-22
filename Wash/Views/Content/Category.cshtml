@@ -33,7 +33,7 @@
                     </h2>
                 </div>
 
-                <div class="section-content" >
+                <div class="section-content">
                     @{
                         foreach (var item in Model)
                         {
@@ -46,7 +46,7 @@
                                     <div class="study-item-body">
                                         <h2>@item.Title</h2>
                                         <span class="des-product">@Html.Raw(Server.HtmlDecode(item.Description))</span>
-                                        <a href="@Url.Action("Items","Content",new { area="",id=item.Id,slug=item.Slug.Replace(' ','-')})">
+                                        <a href="/@item.Id/@item.Slug.Replace(' ','-')">
                                             <span class="button-c">اطلاعات بیشتر را مشاهده کنید</span>
                                         </a>
                                     </div>
@@ -54,7 +54,7 @@
                             </div>
                         }
                     }
-
+                    
                 </div>
                 @*<div class="mini-footer">
                         <div class="pagination-box">

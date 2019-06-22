@@ -14,6 +14,7 @@ namespace Wash
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //RouteTable.Routes.Add(new Route("/{slug}"))
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
         }
