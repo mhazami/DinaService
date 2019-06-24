@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #eaeaea;
     color: #627792;
 }
 
@@ -1395,7 +1395,7 @@ footer .service-footer li {
     }
 
     .sticky .logo-company {
-        padding: 18px 0;
+        padding: 0;
         max-width: 18%;
     }
 
@@ -1588,6 +1588,10 @@ main {
     .contact-right-box-body li > .our-services-item {
         margin: 43px 10px;
     }
+}
+
+.article-page .head-post {
+    background-size: 100%;
 }
 
 .head-post {
@@ -2302,17 +2306,23 @@ footer .service-footer .social-media a {
     padding: 100px;
 }
 
-    .des-post-content h2 {
-        font-size: 33px;
-        color: #252525;
-        text-align: right;
+@media(max-width:1000px) {
+    .des-post-content {
+        padding: 100px 50px;
     }
+}
 
-    .des-post-content > p {
-        text-align: justify;
-        margin: 35px 0 45px 0;
-        font-size: 15px;
-    }
+.des-post-content h2 {
+    font-size: 33px;
+    color: #252525;
+    text-align: right;
+}
+
+.des-post-content > p {
+    text-align: justify;
+    margin: 35px 0 45px 0;
+    font-size: 15px;
+}
 
 .items-post img {
     width: 7%;
@@ -2340,3 +2350,72 @@ footer .service-footer .social-media a {
     .items-post div {
         text-align: justify;
     }
+
+.des-page-content h2 {
+    text-align: center;
+    margin-bottom: 75px;
+    color: #253858;
+}
+
+.article-list-page h2 {
+    font-size: 30px;
+    margin: 48px 0;
+    color: #253858;
+}
+
+.article-list-page article p {
+    font-size: 15px;
+    color: #78797b;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.article-list-page article.des-product .button-c {
+    overflow: hidden;
+    bottom: 38px;
+}
+
+    .article-list-page article.des-product .button-c:hover {
+        color: #fff
+    }
+
+.article-list-page article h3 {
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+}
+
+    .article-list-page article h3:after {
+        content: "";
+        display: block;
+        width: 66px;
+        border-top: 2px solid #63d0df;
+        top: 0px;
+        right: 0;
+        margin: 30px auto 10px auto;
+        left: 0;
+    }
+
+.article-list-page article {
+    display: inline-block;
+    background: #fff;
+    text-align: center;
+    padding: 20px 20px 82px 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.08);
+    margin: 0 0 1.5em;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 3px;
+    transition: all .3s ease-in-out
+}
+
+    .article-list-page article:hover {
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.2);
+    }
+
+.article-list-page {
+    padding: 30px;
+}

@@ -328,6 +328,8 @@
     <Content Include="Views\Content\Result.cshtml" />
     <Content Include="Views\Home\PVSearch.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <Content Include="Views\Content\Article.cshtml" />
+    <Content Include="Views\Content\ArticleList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

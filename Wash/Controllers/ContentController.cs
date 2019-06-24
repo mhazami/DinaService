@@ -63,5 +63,15 @@ namespace Wash.Controllers
             List<DataStructure.Content> list = new ContentBO().Where(c => c.Place == SliderProject.Wash && c.Title.Contains(filter));
             return View(list);
         }
+
+        public ActionResult Article()
+        {
+            return View();
+        }
+
+        public ActionResult ArticleList()
+        {
+            return View();
+        }
     }
 }
