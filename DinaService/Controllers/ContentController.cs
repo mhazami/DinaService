@@ -20,5 +20,15 @@ namespace DinaService.Controllers
             var brand = new BrandsBO().Get(id.Value);
             return View(brand);
         }
+
+        public ActionResult Article()
+        {
+            return View();
+        }
+
+        public ActionResult ArticleList()
+        {
+            return View();
+        }
     }
 }

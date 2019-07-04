@@ -225,6 +225,7 @@
     <Content Include="App_theme\DinaTheme\js\jquery-3.1.1.min.js" />
     <Content Include="App_theme\DinaTheme\js\npm.js" />
     <Content Include="App_theme\DinaTheme\js\r-slider.js" />
+    <Content Include="Content\Video\SampleVideo_720x480_5mb.mp4" />
     <Content Include="feed.xml" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
@@ -333,6 +334,8 @@
     <Content Include="Views\Content\Category.cshtml" />
     <Content Include="Views\Home\PVConpanyInfo.cshtml" />
     <Content Include="Views\Home\PVMenu.cshtml" />
+    <Content Include="Views\Content\ArticleList.cshtml" />
+    <Content Include="Views\Content\Article.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

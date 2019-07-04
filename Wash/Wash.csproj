@@ -147,6 +147,9 @@
     <Content Include="App_theme\DinaTheme\slider\assets\theme\js\script.js" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.css" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.svg" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.svg" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.svg" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.svg" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
@@ -240,6 +243,7 @@
     <Content Include="Content\Images\washing.jpg" />
     <Content Include="Content\Images\Whirlpool.png" />
     <Content Include="Content\Images\wm.png" />
+    <Content Include="Content\Video\SampleVideo_720x480_5mb.mp4" />
     <Content Include="feed.xml" />
     <Content Include="Global.asax" />
     <Content Include="index-wash.html" />
@@ -301,6 +305,18 @@
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
     <Content Include="App_theme\DinaTheme\slider\assets\web\assets\mobirise-icons\mobirise-icons.woff" />
     <Content Include="Content\Images\construction-png\Thumbs.db" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.eot" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.ttf" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.woff" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.woff2" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.eot" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.ttf" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.woff" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.woff2" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.eot" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.ttf" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.woff" />
+    <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.woff2" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

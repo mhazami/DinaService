@@ -128,7 +128,7 @@
 
             $(window).bind('scroll', function () {
 
-                var navHeight = 50;
+                var navHeight = 130;
 
                 if ($(window).scrollTop() > navHeight) {
 

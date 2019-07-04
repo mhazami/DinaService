@@ -73,6 +73,8 @@ ul {
 }
 
 
+
+
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
     float: right;
 }
@@ -474,6 +476,8 @@ ul {
     }
 }
 
+
+
 @media (max-width: 992px) {
     .r-collapse {
         cursor: pointer;
@@ -631,7 +635,7 @@ ul {
     display: block !important;
     position: unset;
     text-align: right;
-    padding: 10px;
+    padding: 4px 10px;
 }
 
 #accordian li.active > ul {
@@ -768,7 +772,7 @@ ul {
             .list-nav > li a span {
                 color: #0e2b5c;
                 margin: 5px;
-                font-size: 12px;
+                font-size: 13px;
                 opacity: .7;
                 transition: all .3s ease-in-out
             }
@@ -895,7 +899,7 @@ ul {
         display: block !important;
         position: absolute;
         top: 22px;
-        left: 0;
+        left: -15px;
         right: auto;
         width: auto;
         opacity: 1 !important;
@@ -981,6 +985,12 @@ ul {
         }
 }
 
+@media (min-width: 1199px) and (max-width: 1190px) {
+    .btn-menu {
+        left: -30px !important;
+    }
+}
+
 .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
     width: 8px;
     height: 1px;
@@ -1022,7 +1032,7 @@ ul {
 
 @media (min-width: 768px) {
     .container-nav {
-        position: fixed;
+        position: relative;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -moz-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -ms-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
@@ -1039,10 +1049,8 @@ ul {
     }
 
     .sticky {
-        height: 90px;
-     
+        position: fixed;
         animation: sticky .2s ease-in-out;
-
     }
 
         .sticky .navbar-panel > ul > li:first-child {
@@ -1063,14 +1071,14 @@ ul {
 
     @keyframes sticky {
         from {
-            height: 0;
+            top: -200px;
             overflow: hidden
         }
 
 
         to {
+            top: 0;
             overflow: visible;
-            height: 90px;
         }
     }
 
@@ -1111,5 +1119,13 @@ ul {
 @media (min-width: 1400px) {
     #accordian li.active > ul.mega-menu {
         min-width: 1140px;
+    }
+}
+
+@media(max-width: 1550px) and (min-width:768px) {
+    #accordian li.active > ul.mega-menu {
+        min-width: 750px;
+        height: 475px;
+        overflow: auto;
     }
 }

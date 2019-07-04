@@ -1032,7 +1032,7 @@ ul {
 
 @media (min-width: 768px) {
     .container-nav {
-        position: fixed;
+        position: relative;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -moz-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
         -ms-box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
@@ -1049,7 +1049,7 @@ ul {
     }
 
     .sticky {
-        height: 90px;
+        position: fixed;
         animation: sticky .2s ease-in-out;
     }
 
@@ -1071,14 +1071,14 @@ ul {
 
     @keyframes sticky {
         from {
-            height: 0;
+            top: -200px;
             overflow: hidden
         }
 
 
         to {
+            top: 0;
             overflow: visible;
-            height: 90px;
         }
     }
 
