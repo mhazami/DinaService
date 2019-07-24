@@ -1,8 +1,4 @@
 ﻿using BLL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DinaService.Controllers
@@ -15,9 +11,9 @@ namespace DinaService.Controllers
             return View();
         }
 
-        public ActionResult Category(int? id,string slug)
+        public ActionResult Category(int? id, string slug)
         {
-            var brand = new BrandsBO().Get(id.Value);
+            DataStructure.Brands brand = new BrandsBO().Get(id.Value);
             return View(brand);
         }
 
@@ -26,6 +22,7 @@ namespace DinaService.Controllers
             return View();
         }
 
+        [Route("Articles")]
         public ActionResult ArticleList()
         {
             return View();
