@@ -327,6 +327,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -336,6 +337,14 @@
     <Content Include="Views\Home\PVMenu.cshtml" />
     <Content Include="Views\Content\ArticleList.cshtml" />
     <Content Include="Views\Content\Article.cshtml" />
+    <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Home\PVInfo.cshtml" />
+    <Content Include="Views\Home\PVRegister.cshtml" />
+    <Content Include="Views\Home\PVSearch.cshtml" />
+    <Content Include="Views\Home\PVService.cshtml" />
+    <Content Include="Views\Home\PVSlider.cshtml" />
+    <Content Include="Views\Home\PVStudy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

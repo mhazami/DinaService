@@ -19,5 +19,7 @@ namespace DAL
         public virtual DbSet<Content> Contents { get; set; }
 
         public virtual DbSet<Brands> Brands { get; set; }
+
+        public virtual DbSet<Article> Articles { get; set; }
     }
 }
