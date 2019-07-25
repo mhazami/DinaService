@@ -1,10 +1,5 @@
 ﻿using DataStructure;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -21,5 +16,7 @@ namespace DAL
         public virtual DbSet<Brands> Brands { get; set; }
 
         public virtual DbSet<Article> Articles { get; set; }
+
+        public virtual DbSet<Request> Requests { get; set; }
     }
 }

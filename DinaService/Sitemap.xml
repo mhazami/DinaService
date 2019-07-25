@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url xmlns="">
-    <loc>http://dinaservice.com/1/تعمیر-ماشین-لباسشویی</loc>
+  <url>
+    <loc>http://dinaservice.com</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -3,7 +3,7 @@ using DataStructure;
 
 namespace BLL
 {
-    public class ArticleBO : BusinessBase<Brands>
+    public class ArticleBO : BusinessBase<Article>
     {
     }
 }

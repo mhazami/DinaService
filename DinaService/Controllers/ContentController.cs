@@ -17,14 +17,17 @@ namespace DinaService.Controllers
             return View(brand);
         }
 
-        public ActionResult Article()
+        //[Route("Article/{id}")]
+        public ActionResult Article(string id)
         {
-            return View();
+            DataStructure.Article article = new ArticleBO().Get(id);
+            return View(article);
         }
 
         [Route("Articles")]
         public ActionResult ArticleList()
         {
+            var list = new ArticleBO().GetAll();
             return View();
         }
     }

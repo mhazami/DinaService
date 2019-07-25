@@ -2809,3 +2809,20 @@ footer .service-footer .social-media a {
         height: 500px;
         object-fit: cover;
     }
+
+    .section-video .desc {
+        font-size: 1.5em;
+    }
+
+.article-header {
+    text-align: center;
+    height: 150px;
+}
+
+    .article-header > h1 {
+        line-height: 150px;
+    }
+
+details {
+    font-size: 1.5em;
+}

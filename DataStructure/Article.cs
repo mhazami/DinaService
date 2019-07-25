@@ -22,5 +22,7 @@ namespace DataStructure
 
         public SliderProject Position{ get; set; }
 
+        public string VideoDesc { get; set; }
+
     }
 }

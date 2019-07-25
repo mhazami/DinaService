@@ -2,8 +2,6 @@
 using DataStructure;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DinaService.Controllers
@@ -72,5 +70,30 @@ namespace DinaService.Controllers
             return PartialView("PVSearch");
         }
 
+        public ActionResult RegisterRequest()
+        {
+            Request obj = new Request();
+            return View(obj);
+        }
+        [HttpPost]
+        public ActionResult RegisterRequest(Request request)
+        {
+            try
+            {
+                if (!new RequestBO().Insert(request))
+                {
+                    throw new Exception("خطایی در ثبت درخواست شما رخ داده است لطفا مجددا تلاش کنید");
+                }
+                ViewBag.Message = "درخواست شما با موفقیت صبت شد، همکاران ما در اسرع وقت با شما تماس خواهند گرفت";
+                ViewBag.Status = "green";
+                return View(request);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = ex.Message;
+                ViewBag.Status = "red";
+                return View(request);
+            }
+        }
     }
 }

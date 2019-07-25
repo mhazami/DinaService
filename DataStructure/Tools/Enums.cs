@@ -37,5 +37,49 @@ namespace DataStructure.Tools
             Defualt,
             Info
         }
+
+        public enum ApplicationType
+        {
+            [Display(Name = "انتخاب کنید")]
+            [Description("")]
+            None = 0,
+
+            [Display(Name = "لباسشویی")]
+            [Description("لباسشویی")]
+            MachinCloth = 1,
+
+            [Display(Name = "ظرفشویی")]
+            [Description("ظرفشویی")]
+            MachinDishe = 2,
+
+            [Display(Name = "یخچال")]
+            [Description("یخچال")]
+            Frizeer = 3,
+
+            [Display(Name = "ساید")]
+            [Description("ساید")]
+            Side = 4,
+
+            [Display(Name = "ماکروفر")]
+            [Description("ماکروفر")]
+            Microfer = 5,
+
+            [Display(Name = "جاروبرقی")]
+            [Description("جاروبرقی")]
+            JarooBarghi = 6,
+
+            [Display(Name = "اجاق گاز")]
+            [Description("اجاق گاز")]
+            Gaz = 7,
+
+            [Display(Name = "کولر")]
+            [Description("کولر")]
+            cooler = 8,
+
+            [Display(Name = "سایر موارد")]
+            [Description("سایر موارد")]
+            ect = 9
+
+        }
     }
 }
