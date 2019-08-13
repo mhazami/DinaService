@@ -2316,6 +2316,10 @@ footer .service-footer .social-media a {
     padding: 100px;
 }
 
+.des-post-content-article {
+    padding: 0 100px 100px 100px;
+}
+
 @media(max-width:1000px) {
     .des-post-content {
         padding: 100px 50px;
@@ -2323,6 +2327,24 @@ footer .service-footer .social-media a {
 }
 
 .des-post-content h2 {
+    font-size: 33px;
+    color: #252525;
+    text-align: right;
+}
+
+.des-post-content-article h2 {
+    font-size: 33px;
+    color: #252525;
+    text-align: right;
+}
+
+.des-post-content-article p {
+    text-align: justify;
+    margin: 35px 0 45px 0;
+    font-size: 15px;
+}
+
+.des-post-content-article h1 {
     font-size: 33px;
     color: #252525;
     text-align: right;
@@ -2379,6 +2401,12 @@ footer .service-footer .social-media a {
     padding: 0 15px;
     margin: 0;
 }
+
+article.des-product {
+    height: 671.22px;
+}
+
+  
 
 .article-list-page article.des-product .button-c {
     overflow: hidden;
@@ -2825,4 +2853,11 @@ footer .service-footer .social-media a {
 
 details {
     font-size: 1.5em;
+}
+
+.des-article h2, .des-article h3 {
+    text-align: right !important;
+    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom:50px !important;
 }

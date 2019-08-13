@@ -5,4 +5,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>http://dinaservice.com/Articles</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://dinaservice.com/گازهاي-مورد-استفاده-در-یخچال-سازی/تعمیر-یخچال</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://dinaservice.com/تعمیر-برد-یخچال/تعمیر-یخچال</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>http://dinaservice.com/عیب-یابی-و-تعمیر-یخچال/تعمیر-یخچال</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

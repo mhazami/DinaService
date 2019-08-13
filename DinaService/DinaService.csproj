@@ -148,6 +148,10 @@
     <Content Include="Areas\Admin\css\Login.css" />
     <Content Include="Areas\Admin\css\style.css" />
     <Content Include="Areas\Admin\js\bootstrap.rtl.min.js" />
+    <Content Include="ArticlesFiles\ArticleOne\ArticleOne.jpg" />
+    <Content Include="ArticlesFiles\ArticleThree\1.jpg" />
+    <Content Include="ArticlesFiles\ArticleThree\2.jpg" />
+    <Content Include="ArticlesFiles\ArticleTow\1.jpg" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
@@ -243,6 +247,7 @@
   <ItemGroup>
     <Compile Include="Areas\Admin\Controllers\AdminBrandsController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminContentController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\XMLController.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -330,6 +335,8 @@
     <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -337,7 +344,7 @@
     <Content Include="Views\Content\Category.cshtml" />
     <Content Include="Views\Home\PVConpanyInfo.cshtml" />
     <Content Include="Views\Home\PVMenu.cshtml" />
-    <Content Include="Views\Content\ArticleList.cshtml" />
+    <Content Include="Views\Article\ArticleList.cshtml" />
     <Content Include="Views\Content\Article.cshtml" />
     <Content Include="Views\Home\AboutUs.cshtml" />
     <Content Include="Views\Home\ContactUs.cshtml" />
@@ -348,6 +355,9 @@
     <Content Include="Views\Home\PVSlider.cshtml" />
     <Content Include="Views\Home\PVStudy.cshtml" />
     <Content Include="Views\Home\RegisterRequest.cshtml" />
+    <Content Include="Views\Article\ArticleOne.cshtml" />
+    <Content Include="Views\Article\ArticleTow.cshtml" />
+    <Content Include="Views\Article\ArticleThree.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -24,11 +24,5 @@ namespace DinaService.Controllers
             return View(article);
         }
 
-        [Route("Articles")]
-        public ActionResult ArticleList()
-        {
-            var list = new ArticleBO().GetAll();
-            return View();
-        }
     }
 }

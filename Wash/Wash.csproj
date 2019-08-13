@@ -346,6 +346,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
     <Content Include="Views\Content\Article.cshtml" />
     <Content Include="Views\Content\ArticleList.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
