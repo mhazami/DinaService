@@ -148,17 +148,23 @@
             }
         </div>
         <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
-            @for (int i = 45; i < Model.Count(); i++)
-            {
-                <ul>
-                    <li>
-                        <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
-                            <span>@Model[i].Title</span>
-                        </a>
-                    </li>
+            @{
+                if (Model != null)
+                {
+                    for (int i = 45; i < Model.Count(); i++)
+                    {
+                        <ul>
+                            <li>
+                                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                                    <span>@Model[i].Title</span>
+                                </a>
+                            </li>
 
-                </ul>
+                        </ul>
+                    }
+                }
             }
+
         </div>
     }
 

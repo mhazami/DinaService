@@ -55,12 +55,24 @@ namespace BLL
             {
                 Link = "http://wash.dinaservice.com/Content/Category/3/تعمیر-لوازم-خانگی"
             });
+            result.Add(new SiteMap()
+            {
+                Link = "http://wash.dinaservice.com/گازهاي-مورد-استفاده-در-یخچال-سازی/تعمیر-یخچال"
+            });
+            result.Add(new SiteMap()
+            {
+                Link = "http://wash.dinaservice.com/تعمیر-برد-یخچال/تعمیر-یخچال"
+            });
+            result.Add(new SiteMap()
+            {
+                Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-یخچال/تعمیر-یخچال"
+            });
             List<Content> contents = new ContentBO().Where(c => c.Place == SliderProject.Wash);
             foreach (Content item in contents)
             {
                 SiteMap obj = new SiteMap()
                 {
-                    Link = $"{url}/Content/Items/{item.Id}/{GetSlug(item.Slug)}"
+                    Link = $"{url}/{item.Id}/{GetSlug(item.Slug)}"
                 };
                 result.Add(obj);
                 //List<string> keywords = item.KeyWords.Split(',').ToList();
@@ -83,7 +95,7 @@ namespace BLL
             {
                 SiteMap obj = new SiteMap()
                 {
-                    Link = $"{url}/Brands/List/{item.BrandsId}/{GetSlug(item.Slug)}"
+                    Link = $"{url}/تعمیر-لوازم-خانگی/{item.BrandsId}/{GetSlug(item.Slug)}"
                 };
                 result.Add(obj);
             }

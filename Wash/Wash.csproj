@@ -150,6 +150,10 @@
     <Content Include="App_theme\DinaTheme\webfonts\fa-brands-400.svg" />
     <Content Include="App_theme\DinaTheme\webfonts\fa-regular-400.svg" />
     <Content Include="App_theme\DinaTheme\webfonts\fa-solid-900.svg" />
+    <Content Include="ArticlesFiles\ArticleOne\ArticleOne.jpg" />
+    <Content Include="ArticlesFiles\ArticleThree\1.jpg" />
+    <Content Include="ArticlesFiles\ArticleThree\2.jpg" />
+    <Content Include="ArticlesFiles\ArticleTow\1.jpg" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
@@ -256,6 +260,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -347,6 +352,12 @@
     <Content Include="Views\Content\Article.cshtml" />
     <Content Include="Views\Content\ArticleList.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile9.pubxml" />
+    <Content Include="Views\Article\ArticleList.cshtml" />
+    <Content Include="Views\Article\ArticleOne.cshtml" />
+    <Content Include="Views\Article\ArticleThree.cshtml" />
+    <Content Include="Views\Article\ArticleTow.cshtml" />
+    <Content Include="Views\Article\ArticleFour.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
