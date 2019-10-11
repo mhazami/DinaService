@@ -71,6 +71,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://wash.dinaservice.com/عیب-یابی-و-تعمیر-لباسشویی/تعمیر-لباسشویی</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://wash.dinaservice.com/14/تعمير-ماشين-لباسشويي-سامسونگ-مدل-B1242</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -936,7 +941,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://wash.dinaservice.com/تعمیر-لوازم-خانگی/26/نمایندگی-تعمیرات-سامسونگ</loc>
+    <loc>http://wash.dinaservice.com/تعمیر-لوازم-خانگی/26/نمایندگی-تعمیرات-کرال</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1076,18 +1081,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://wash.dinaservice.com/تعمیر-لوازم-خانگی/59/نمایندگی-تعمیرات-الگانس</loc>
+    <loc>http://wash.dinaservice.com/تعمیر-لوازم-خانگی/59/نمایندگی-تعمیرات-کنوود</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
-Brands/List/58/نمایندگی-تعمیرات-الگانس</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://wash.dinaservice.com/Brands/List/59/نمایندگی-تعمیرات-الگانس</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-</urlset>
+

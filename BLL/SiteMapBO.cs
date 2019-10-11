@@ -67,6 +67,10 @@ namespace BLL
             {
                 Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-یخچال/تعمیر-یخچال"
             });
+            result.Add(new SiteMap()
+            {
+                Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-لباسشویی/تعمیر-لباسشویی"
+            });
             List<Content> contents = new ContentBO().Where(c => c.Place == SliderProject.Wash);
             foreach (Content item in contents)
             {
