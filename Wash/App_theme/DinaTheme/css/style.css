@@ -2809,6 +2809,31 @@ article.des-product {
         .define > .company-defined > p {
             font-size: 1.5em;
         }
+.des-post {
+    padding: 15px;
+}
+
+    .des-post > p {
+        padding: 15px;
+        direction: rtl;
+        text-align: justify;
+        font-size: 1.4em;
+    }
+
+    .des-post ul {
+        text-align: right;
+        list-style: disc;
+        margin-right: 20px;
+        font-size: 1.4em;
+    }
+
+        .des-post ul li {
+            text-align: right;
+        }
+
+.des-article .row {
+    display: block;
+}
 @media (max-width:780px) {
     .define {
         border-bottom: 1px solid gainsboro;
@@ -2831,6 +2856,9 @@ article.des-product {
             .define > .company-defined > p {
                 font-size: 1.5em;
             }
+    .des-post-content-article{
+        padding:0;
+    }
 }
 
 @media (min-width: 576px) {

@@ -339,6 +339,8 @@
     <Content Include="Views\Home\PVConpanyInfo.cshtml" />
     <Content Include="Views\Content\Category.cshtml" />
     <Content Include="Views\Brands\List.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile10.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile11.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <Content Include="Views\Home\AboutUs.cshtml" />

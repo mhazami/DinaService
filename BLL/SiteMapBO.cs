@@ -13,6 +13,10 @@ namespace BLL
             string url = "http://wash.dinaservice.com";
             result.Add(new SiteMap()
             {
+                Link = "http://wash.dinaservice.com",
+            });
+            result.Add(new SiteMap()
+            {
                 Link = "http://wash.dinaservice.com/Content/Category/1/تعمیر-ماشین-لباسشویی",
             });
             result.Add(new SiteMap()
@@ -70,6 +74,10 @@ namespace BLL
             result.Add(new SiteMap()
             {
                 Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-لباسشویی/تعمیر-لباسشویی"
+            });
+            result.Add(new SiteMap()
+            {
+                Link = "http://wash.dinaservice.com/Articles"
             });
             List<Content> contents = new ContentBO().Where(c => c.Place == SliderProject.Wash);
             foreach (Content item in contents)

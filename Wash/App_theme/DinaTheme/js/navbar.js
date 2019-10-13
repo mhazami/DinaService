@@ -160,11 +160,10 @@
             $(".des-product ", this).html(text + "...");
            }
     });
-    $(".article-list-page").each(function () {
- 
-        if ($(".des-product p", this).html().length > 350) {
-            var text = $(".des-product p", this).html().substring(0, 350);
-            $(".des-product p", this).html(text + "...");
+    $(".article-box").each(function () {
+        if ($("p", this).html().length > 350) {
+            var text = $("p", this).html().substring(0, 350);
+            $("p", this).html(text + "...");
            }
     });
 
