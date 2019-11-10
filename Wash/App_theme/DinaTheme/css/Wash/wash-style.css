@@ -2,7 +2,7 @@
     color: #013870;
 }
 
-    .item-contact-form input[type="button"] {
+    .item-contact-form input[type="button"], .item-contact-form input[type="submit"] {
         background: #15caa5
     }
 
@@ -10,9 +10,13 @@
             background: #013870;
         }
 
-.container-nav, .list-nav > li > ul > li, #accordian li.active > ul.mega-menu {
-    background-color: #ffffff
-}
+        .item-contact-form input[type="submit"]:hover {
+            background: #013870;
+        }
+
+        .container-nav, .list-nav > li > ul > li, #accordian li.active > ul.mega-menu {
+            background-color: #ffffff
+        }
 
 .dropdown-container {
     background: #013870

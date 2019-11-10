@@ -637,7 +637,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
     color: #032a5f;
 }
 
-    .item-contact-form input[type="text"], .item-contact-form span, .item-contact-form input[type="button"] {
+    .item-contact-form input[type="text"], .item-contact-form span, .item-contact-form input[type="button"], .item-contact-form input[type="submit"] {
         display: block;
         font-size: 15px;
         transition: all .3s ease-in-out;
@@ -649,7 +649,7 @@ footer .service-footer a:hover, a.detail-box:hover:after {
             border: 1px solid #fc5546;
         }
 
-    .item-contact-form input[type="button"] {
+    .item-contact-form input[type="button"], .item-contact-form input[type="submit"] {
         border: none;
         background: #0E2B5C;
         color: #fff;
@@ -2939,3 +2939,5 @@ details {
         font-size: 24px;
         margin-bottom: 50px !important;
     }
+
+

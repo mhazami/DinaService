@@ -107,10 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_theme\DinaTheme\css\adminpanel.css" />
     <Content Include="App_theme\DinaTheme\css\all.css" />
     <Content Include="App_theme\DinaTheme\css\aos.css" />
     <Content Include="App_theme\DinaTheme\css\Cool\cool-style.css" />
     <Content Include="App_theme\DinaTheme\css\Electric\electric-style.css" />
+    <Content Include="App_theme\DinaTheme\css\font-awesome.min.css" />
     <Content Include="App_theme\DinaTheme\css\Kitchen\kitchen-style.css" />
     <Content Include="App_theme\DinaTheme\css\Wash\wash-style.css" />
     <Content Include="App_theme\DinaTheme\js\aos.js" />
@@ -358,6 +360,7 @@
     <Content Include="Views\Article\ArticleOne.cshtml" />
     <Content Include="Views\Article\ArticleTow.cshtml" />
     <Content Include="Views\Article\ArticleThree.cshtml" />
+    <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

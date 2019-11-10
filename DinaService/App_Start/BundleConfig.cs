@@ -51,7 +51,9 @@ namespace DinaService
             bundles.Add(new StyleBundle("~/style/css").Include(
                     "~/App_theme/DinaTheme/css/style.css"));
 
-
+            bundles.Add(new StyleBundle("~/Adminstyle/css").Include(
+                   "~/App_theme/DinaTheme/css/adminpanel.css",
+                   "~/App_theme/DinaTheme/css/font-awesome.min.css"));
         }
     }
 }

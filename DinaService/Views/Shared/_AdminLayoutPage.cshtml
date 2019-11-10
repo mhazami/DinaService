@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Adminstyle/css")
+    <script src="https://kit.fontawesome.com/a818112ba2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-2 logo">
+                <img src="/App_Themes/Atarbashi/images/atarbashi/logo.jpg" />
+            </div>
+            <div class="col-8 iran"></div>
+            <div class="col-2 user-info">
+                <ul>
+                    <li>
+                        <a>
+                            <i title="مدیریت حساب" class="fa fa-user-circle" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i title="کیف پول" class="fa fa-money" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <i title="خروج" class="fa fa-power-off" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+        <div class="row">
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-text">
+                        مدیریت محصولات
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="box-text">
+                        گزارشات
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="box-text">
+                        تخفیفات
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="box-text">
+                        نظر کاربران
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="far fa-newspaper"></i>
+                    </div>
+                    <div class="box-text">
+                        اخبار
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <div class="box-text">
+                        مشتریان
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="far fa-images"></i>
+                    </div>
+                    <div class="box-text">
+                        اسلایدر
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="box-text">
+                        بنر
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a>
+                    <div class="box-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="box-text">
+                        گروه محصولات
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        @*<div class="container">
+                <div class="row">
+                    <div class="box-entery">
+                        <div class="box-lable">
+                            نام
+                        </div>
+                        <div class="box-input">
+                            <input type="text" />
+
+                        </div>
+                    </div>
+                    <div class="box-entery">
+                        <div class="box-lable">
+                            نام
+                        </div>
+                        <div class="box-input">
+                            <input type="text" />
+
+                        </div>
+                    </div>
+                    <div class="box-entery">
+                        <div class="box-lable">
+                            نام خانوادگی
+                        </div>
+                        <div class="box-input">
+                            <input type="text" />
+
+                        </div>
+                    </div>
+                    <div class="box-entery">
+                        <div class="box-lable">
+                            کد ملی
+                        </div>
+                        <div class="box-input">
+                            <input type="text" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </main>
+
+</body>
+</html>

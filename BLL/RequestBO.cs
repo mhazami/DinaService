@@ -19,10 +19,7 @@ namespace BLL
             {
                 throw new Exception("لطفا آدرس خود را وارد کنید");
             }
-            if (string.IsNullOrEmpty(obj.Message))
-            {
-                throw new Exception("لطفا متن پیام خود را وارد کنید");
-            }
+         
             if (obj.ApplicationType == ApplicationType.None)
             {
                 throw new Exception("لطفا مورد پرس و جوی خود را وارد کنید");
@@ -33,13 +30,13 @@ namespace BLL
         {
             if (base.Insert(obj))
             {
-                SendMail(obj);
+                SendEMail(obj);
                 return true;
             }
 
             return false;
         }
-        public void SendMail(Request request)
+        public void SendEMail(Request request)
         {
             SmtpMail oMail = new SmtpMail("TryIt");
             SmtpClient oSmtp = new SmtpClient();
@@ -65,7 +62,7 @@ namespace BLL
                 // User and password for ESMTP authentication, if your server doesn't require
                 // User authentication, please remove the following codes.
                 User = "info@dinaservice.com",
-                Password = "$5Dc^YGXyz",
+                Password = "Dinaservice1451045",
 
                 // some SMTP servers uses 587 port, you can change it to 587
                 Port = 587

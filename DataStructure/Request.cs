@@ -19,7 +19,6 @@ namespace DataStructure
 
         public ApplicationType ApplicationType { get; set; }
 
-        [Required]
         public string Message { get; set; }
 
     }

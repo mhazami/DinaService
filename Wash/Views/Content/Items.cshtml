@@ -8,7 +8,7 @@
 }
 
 <div class="post-item">
-
+    
 
     <div class="head-post" style="background-image: url('@Url.Action("ShowImage","Home",new { id=Model.FileId})');">
         <div class="container">
@@ -21,6 +21,23 @@
         </div>
     </div>
     <div class="container">
+        <div class="define">
+            <div class="company-defined">
+                <h1>تعمیر لباسشویی در تهران</h1>
+                <strong>
+                    تعمیر لباسشویی در تهران
+                </strong>
+                <p>
+                    کافیست با ما تماس بگیرید
+                </p>
+                <p>
+                    021-26103606 , 021-77478564
+                </p>
+            </div>
+            <div class="logo">
+                <img alt="تعمیر لباسشویی در تهران" src="~/Content/Images/dinaservice.png" />
+            </div>
+        </div>
         <div class="contnet-post">
             <ul class="paragraph-item">
                 <li>
@@ -37,11 +54,11 @@
             <div class="project-tags">
                 <span>برچسب ها : </span>
                 @*@{
-                        foreach (string item in (List<string>)ViewBag.KeyWord)
-                        {
-                            <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item.Replace(' ','-')})">#@item</a>
-                        }
-                    }*@
+                    foreach (string item in (List<string>)ViewBag.KeyWord)
+                    {
+                        <a href="@Url.Action("Category","Content",new { area="",id=2,slug=item.Replace(' ','-')})">#@item</a>
+                    }
+                }*@
                 <a href="@Url.Action("Category","Content",new { area="",id=0,slug=$"تعمیر-ماشین-لباسشویی"})">#تعمیر ماشین لباسشویی</a>
                 <a href="@Url.Action("Category","Content",new { area="",id=0,slug=$"تعمیر-ماشین-لباسشویی-{ViewBag.brand}"})">#تعمیر ماشین لباسشویی @ViewBag.brand</a>
                 <a href="@Url.Action("Category","Content",new { area="",id=0,slug=Model.Slug.Replace(' ','-')})">#@Model.Slug</a>
