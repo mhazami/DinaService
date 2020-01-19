@@ -157,6 +157,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\1637.png" />
+    <Content Include="Content\Images\close.png" />
     <Content Include="Content\Images\Companys-logo\admiral-16-logo-png-transparent.png" />
     <Content Include="Content\Images\Companys-logo\AEG.png" />
     <Content Include="Content\Images\Companys-logo\Bloomberg.png" />
@@ -218,6 +219,9 @@
     <Content Include="Content\Images\image-slider\image-slider-wash-2.jpg" />
     <Content Include="Content\Images\image-slider\image-slider-wash-3.jpg" />
     <Content Include="Content\Images\image-slider\image-slider-wash-4.jpg" />
+    <Content Include="Content\Images\chat.png" />
+    <Content Include="Content\Images\telegram-white.png" />
+    <Content Include="Content\Images\telegram.png" />
     <Content Include="Content\Images\image-work.jpg" />
     <Content Include="Content\Images\img-washing.jpg" />
     <Content Include="Content\Images\imgix1.jpg" />
@@ -245,6 +249,8 @@
     <Content Include="Content\Images\washing-machine.png" />
     <Content Include="Content\Images\washing-machine.svg" />
     <Content Include="Content\Images\washing.jpg" />
+    <Content Include="Content\Images\whatsapp-white.png" />
+    <Content Include="Content\Images\whatsapp.png" />
     <Content Include="Content\Images\Whirlpool.png" />
     <Content Include="Content\Images\wm.png" />
     <Content Include="Content\Video\SampleVideo_720x480_5mb.mp4" />

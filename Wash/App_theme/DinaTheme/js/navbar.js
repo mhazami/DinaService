@@ -168,3 +168,13 @@
     });
 
 });
+
+
+$(document).mouseup(function (e) {
+    var container = $(".support-btn");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $(".chat-box").removeClass("open");
+        $(".support-btn").removeClass("opened");
+
+    }
+});
